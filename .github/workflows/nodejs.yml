@@ -27,5 +27,6 @@ jobs:
     - name: Deploy to GitHub Pages
       uses: Cecilapp/GitHub-Pages-deploy@master
       env:
+        EMAIL: dev@hunsalz.de
         GH_TOKEN: ${{ secrets.GH_PAGES_TOKEN }}
         BUILD_DIR: dist/
