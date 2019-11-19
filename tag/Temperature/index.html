@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html data-html-server-rendered="true" lang="en" data-vue-tag="%7B%22lang%22:%7B%22ssr%22:%22en%22%7D%7D">
+
+<head>
+  <title>Hello, world! - Smart Sensor</title><meta name="gridsome:hash" content="672b470f2766af7f6b8200697b4b23dc5fa7bc51"><meta data-vue-tag="ssr" charset="utf-8"><meta data-vue-tag="ssr" name="generator" content="Gridsome v0.7.11"><meta data-vue-tag="ssr" data-key="viewport" name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover"><meta data-vue-tag="ssr" data-key="format-detection" name="format-detection" content="telephone=no"><meta data-vue-tag="ssr" data-key="description" name="description" content="Show smart sensor data"><link data-vue-tag="ssr" rel="icon" href="data:,"><link data-vue-tag="ssr" rel="icon" type="image/png" sizes="16x16" href="/assets/static/favicon.ce0531f.9bb7ffafafc09ac851d81afb65b8ef59.png"><link data-vue-tag="ssr" rel="icon" type="image/png" sizes="32x32" href="/assets/static/favicon.ac8d93a.9bb7ffafafc09ac851d81afb65b8ef59.png"><link data-vue-tag="ssr" rel="icon" type="image/png" sizes="96x96" href="/assets/static/favicon.b9532cc.9bb7ffafafc09ac851d81afb65b8ef59.png"><link data-vue-tag="ssr" rel="apple-touch-icon" type="image/png" sizes="76x76" href="/assets/static/favicon.f22e9f3.9bb7ffafafc09ac851d81afb65b8ef59.png"><link data-vue-tag="ssr" rel="apple-touch-icon" type="image/png" sizes="152x152" href="/assets/static/favicon.62d22cb.9bb7ffafafc09ac851d81afb65b8ef59.png"><link data-vue-tag="ssr" rel="apple-touch-icon" type="image/png" sizes="120x120" href="/assets/static/favicon.1539b60.9bb7ffafafc09ac851d81afb65b8ef59.png"><link data-vue-tag="ssr" rel="apple-touch-icon" type="image/png" sizes="167x167" href="/assets/static/favicon.dc0cdc5.9bb7ffafafc09ac851d81afb65b8ef59.png"><link data-vue-tag="ssr" rel="apple-touch-icon" type="image/png" sizes="180x180" href="/assets/static/favicon.7b22250.9bb7ffafafc09ac851d81afb65b8ef59.png"><link rel="preload" href="/assets/css/0.styles.d830eec0.css" as="style"><link rel="preload" href="/assets/js/app.31214125.js" as="script"><link rel="preload" href="/assets/js/page--src--templates--tag-vue.a507ca5a.js" as="script"><link rel="prefetch" href="/assets/js/page--node-modules--gridsome--app--pages--404-vue.7a9ce589.js"><link rel="prefetch" href="/assets/js/page--src--pages--index-vue.2eef7060.js"><link rel="prefetch" href="/assets/js/page--src--templates--sensor-vue.4cb9febf.js"><link rel="stylesheet" href="/assets/css/0.styles.d830eec0.css"><noscript data-vue-tag="ssr"><style>.g-image--loading{display:none;}</style></noscript>
+</head>
+
+<body >
+  <script>
+    // Add dark / light detection that runs before Vue.js load. Borrowed from overreacted.io
+    (function () {
+      window.__onThemeChange = function () { };
+      function setTheme(newTheme) {
+        window.__theme = newTheme;
+        preferredTheme = newTheme;
+        document.body.setAttribute('data-theme', newTheme);
+        window.__onThemeChange(newTheme);
+      }
+
+      var preferredTheme;
+      try {
+        preferredTheme = localStorage.getItem('theme');
+      } catch (err) { }
+
+      window.__setPreferredTheme = function (newTheme) {
+        setTheme(newTheme);
+        try {
+          localStorage.setItem('theme', newTheme);
+        } catch (err) { }
+      }
+
+      var darkQuery = window.matchMedia('(prefers-color-scheme: dark)');
+      darkQuery.addListener(function (e) {
+        window.__setPreferredTheme(e.matches ? 'dark' : 'light')
+      });
+
+      setTheme(preferredTheme || (darkQuery.matches ? 'dark' : 'light'));
+    })();
+  </script>
+
+  <div id="app" data-server-rendered="true"><header class="header"><div class="header__left"><a href="/" class="logo active"><span class="logo__text">← Smart Sensor</span></a></div><div class="header__right"><button role="button" aria-label="Toggle dark/light" class="toggle-theme"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-moon"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path></svg></button></div></header><main class="main"><h1 class="tag-title text-center space-bottom">
+    # Temperature
+  </h1><div class="sensors"><div class="sensor-card content-box"><div class="sensor-card__header"><!----></div><div class="sensor-card__content"><h2 class="sensor-card__title">Kitchen</h2><p class="sensor-card__description">Sensor values of my kitchen</p><div class="sensor-meta sensor-card__meta">
+  Last update 19. November 2019.
+  <strong>1 min read.</strong></div><div class="sensor-tags sensor-card__tags"></div><a href="/kitchen/" class="sensor-card__link">Link</a></div></div></div></main><footer class="footer"><span class="footer__copyright">Copyright © 2019. </span><span class="footer__links">Powered by <a href="//gridsome.org"> Gridsome </a></span></footer></div>
+  <script>window.__INITIAL_STATE__={"data":{"tag":{"title":"Temperature","belongsTo":{"edges":[{"node":{"title":"Kitchen","path":"\u002Fkitchen\u002F","date":"19. November 2019","timeToRead":1,"description":"Sensor values of my kitchen","content":"\u003Cp\u003ELorem ipsum ...\u003C\u002Fp\u003E\n"}}]}}},"context":{}};(function(){var s;(s=document.currentScript||document.scripts[document.scripts.length-1]).parentNode.removeChild(s);}());</script><script src="/assets/js/app.31214125.js" defer></script><script src="/assets/js/page--src--templates--tag-vue.a507ca5a.js" defer></script>
+</body>
+
+</html>
