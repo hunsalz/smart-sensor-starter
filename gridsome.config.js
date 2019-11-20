@@ -4,11 +4,13 @@
 // Changes here requires a server restart.
 // To restart press CTRL + C in terminal and run `gridsome develop`
 
+const PATH_PREFIX = '/smart-sensor-starter';
+
 module.exports = {
   siteName: 'Smart Sensor',
   siteDescription: 'Show smart sensor data',
   siteUrl: 'https://hunsalz.github.io',
-  pathPrefix: '/smart-sensor-starter',
+  pathPrefix: PATH_PREFIX,
 
   templates: {
     Sensor: '/:title',
@@ -38,8 +40,8 @@ module.exports = {
         startUrl: '/',
         display: 'standalone',
         statusBarStyle: 'default',
-        manifestPath: 'manifest.json',
-        serviceWorkerPath: 'service-worker.js',
+        manifestPath: PATH_PREFIX + '/manifest.json',
+        serviceWorkerPath: PATH_PREFIX + '/service-worker.js',
         cachedFileTypes: 'js,json,css,html,png,jpg,jpeg,svg',
         shortName: 'Sensors',
         themeColor: '#666600',
