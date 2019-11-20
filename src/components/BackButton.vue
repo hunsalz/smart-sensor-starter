@@ -1,6 +1,6 @@
 <template>
-  <g-link class="logo" to="/">
-    <span class="logo__text">&larr; {{ $static.metadata.siteName }}</span>
+  <g-link class="back-button" to="/">
+    <span class="back-button__text">&larr; {{ $static.metadata.siteName }}</span>
   </g-link>
 </template>
 
@@ -13,7 +13,7 @@ query {
 </static-query>
 
 <style lang="scss">
-.logo {
+.back-button {
   text-decoration: none;
   color: var(--body-color) !important;
   font-size: 0.9em;
