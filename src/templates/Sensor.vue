@@ -18,22 +18,15 @@
       </div>
     </div>
 
-    <div class="sensor-comments">
-      <!-- add comment widgets here -->
-    </div>
-
-    <Author class="sensor-author" />
   </Layout>
 </template>
 
 <script>
 import SensorMeta from "~/components/SensorMeta";
 import SensorTags from "~/components/SensorTags";
-import Author from "~/components/Author.vue";
 
 export default {
   components: {
-    Author,
     SensorMeta,
     SensorTags
   },
@@ -113,15 +106,4 @@ query Sensor ($id: ID!) {
   }
 }
 
-.sensor-comments {
-  padding: calc(var(--space) / 2);
-
-  &:empty {
-    display: none;
-  }
-}
-
-.sensor-author {
-  margin-top: calc(var(--space) / 2);
-}
 </style>
