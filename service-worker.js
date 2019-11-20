@@ -27,75 +27,75 @@ self.addEventListener('message', (event) => {
 self.__precacheManifest = [
   {
     "url": "404.html",
-    "revision": "17b5395b387827f9d7765dfdb3b67d70"
+    "revision": "8a710d453b343d5d5e3c8bcd1e597e5e"
   },
   {
     "url": "404/index.html",
-    "revision": "17b5395b387827f9d7765dfdb3b67d70"
+    "revision": "8a710d453b343d5d5e3c8bcd1e597e5e"
   },
   {
-    "url": "assets/css/0.styles.c47fd1bb.css",
-    "revision": "83976214abf7c62c4a14b37772a12fc2"
+    "url": "assets/css/0.styles.3d35d6d0.css",
+    "revision": "24bc7bb8cdf82a058d8b61cc1c9665bb"
   },
   {
     "url": "assets/data/404/index.json",
-    "revision": "a77cd465f9e1407385a4bb70b25afbdc"
+    "revision": "c601c4991aadbadb1973c312e7d75d4e"
   },
   {
     "url": "assets/data/index.json",
-    "revision": "f03f792a084084cd8846973ee93c2b8c"
+    "revision": "e2ab6b36db840cb38dfa21a8a0e6f8e1"
   },
   {
     "url": "assets/data/kitchen/index.json",
-    "revision": "805ce163a747efcc7cfd83dab25a283c"
+    "revision": "2cdf0433e9775c7563efe964de4e50f9"
   },
   {
     "url": "assets/data/markdown-test-file/index.json",
-    "revision": "829ee30e25235bf2d42460e8b09dd88d"
+    "revision": "9bd9f0a258843fec80a0a3e64672041b"
   },
   {
     "url": "assets/data/say-hello-to-gridsome/index.json",
-    "revision": "b9c4aed1a8568362e0ad8e32a36b3c6b"
+    "revision": "087a488f946b67115490237dd141c3eb"
   },
   {
     "url": "assets/data/tag/Humidity/index.json",
-    "revision": "48b0c76404a7ad1ff605a7fb72734518"
+    "revision": "7c9c3ced2443f47a478cf33886b90e59"
   },
   {
     "url": "assets/data/tag/Markdown/index.json",
-    "revision": "c16db93c773e82e15eb2e1510e022119"
+    "revision": "77784f8b42706ff52efef077f6a6f018"
   },
   {
     "url": "assets/data/tag/Releases/index.json",
-    "revision": "06c4d21e5844c04bf179f6d693fc6e05"
+    "revision": "9c8321844dc68eb26b1d188e0e7f1e2e"
   },
   {
     "url": "assets/data/tag/Temperature/index.json",
-    "revision": "e3cf3201a5bc666228034b96457c715f"
+    "revision": "bd85186debec305cc77f6257d04e148c"
   },
   {
     "url": "assets/data/tag/Test files/index.json",
-    "revision": "637b32cb0965bfba931b2166cd385793"
+    "revision": "02b560fe7829485c36b662a76f32a851"
   },
   {
-    "url": "assets/js/app.1973289c.js",
-    "revision": "709588afb1be1d5f20f708dee7ccf984"
+    "url": "assets/js/app.50fe4b99.js",
+    "revision": "3ed41eaebe34976902c66e7e561a2a15"
   },
   {
     "url": "assets/js/page--node-modules--gridsome--app--pages--404-vue.614a583c.js",
     "revision": "d4b63dd5e636064dda977d245aff2282"
   },
   {
-    "url": "assets/js/page--src--pages--index-vue.ef0b1df4.js",
-    "revision": "b1a1f0da56c3b0c5fd537a854ba1d872"
+    "url": "assets/js/page--src--pages--index-vue.a442facc.js",
+    "revision": "9a93ec5e1476599cfef4226652e50c7c"
   },
   {
-    "url": "assets/js/page--src--templates--sensor-vue.68a470a1.js",
-    "revision": "b277ef07a0a30a3590375b9cbf24f507"
+    "url": "assets/js/page--src--templates--sensor-vue.9bfa4ed0.js",
+    "revision": "24e7bdd4bfa25eb4426193b7330953f7"
   },
   {
-    "url": "assets/js/page--src--templates--tag-vue.d326a260.js",
-    "revision": "3787b537d6327d74f371a96126c41f94"
+    "url": "assets/js/page--src--templates--tag-vue.0c517d16.js",
+    "revision": "54073ca8fbe71a3b08cd7163d68a2c0e"
   },
   {
     "url": "assets/static/esp32.07cc2b7.5f26e714a295fea020dbdff12a80a332.jpeg",
@@ -163,11 +163,11 @@ self.__precacheManifest = [
   },
   {
     "url": "index.html",
-    "revision": "e42bf09ead04f2466ef514b8ffa9922d"
+    "revision": "c70303da505ac6806a4f5c201969e82b"
   },
   {
     "url": "kitchen/index.html",
-    "revision": "fc1e62cb99d1882a65c77d0bba2d67ee"
+    "revision": "00c243315f80a86a057dd6fbdb8ba7a1"
   },
   {
     "url": "manifest.json",
@@ -175,31 +175,31 @@ self.__precacheManifest = [
   },
   {
     "url": "markdown-test-file/index.html",
-    "revision": "32b624ef337f0c56736035e14c49d8f6"
+    "revision": "116ea4a628dea4396a3374061ebcfe2a"
   },
   {
     "url": "say-hello-to-gridsome/index.html",
-    "revision": "cfbac7ca5544c17a3f6586e30a4b2049"
+    "revision": "055cef8997a210c7d11bb4700a56694f"
   },
   {
     "url": "tag/Humidity/index.html",
-    "revision": "a1f6cc00829709178363d8d346cfb420"
+    "revision": "8b214917c8bad2865f76ce92cdf31558"
   },
   {
     "url": "tag/Markdown/index.html",
-    "revision": "dcfd875014f89afa5d042bdf4da63613"
+    "revision": "451a0804068363425d8cd8890d933b2e"
   },
   {
     "url": "tag/Releases/index.html",
-    "revision": "8651675e3d55a60c8808b7dea29de511"
+    "revision": "0cf1962ab076c13fa1992c002a14034a"
   },
   {
     "url": "tag/Temperature/index.html",
-    "revision": "aa2e81462a8e984949c90edeffe63f13"
+    "revision": "37cf58359ed6715cbb0246fc8058bd16"
   },
   {
     "url": "tag/Test files/index.html",
-    "revision": "428e63f5542a830ccf70e888fd34fee6"
+    "revision": "3bef1bf496ab9dfeb1c5b7308d404069"
   },
   {
     "url": "404",
