@@ -1,5 +1,5 @@
 <template>
-  <Layout :show-logo="false">
+  <Layout :show-logo="true">
     <div class="sensors">
       <SensorCard v-for="edge in $page.sensors.edges" :key="edge.node.id" :sensor="edge.node" />
     </div>
