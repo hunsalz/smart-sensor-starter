@@ -27,67 +27,67 @@ self.addEventListener('message', (event) => {
 self.__precacheManifest = [
   {
     "url": "404.html",
-    "revision": "8a710d453b343d5d5e3c8bcd1e597e5e"
+    "revision": "ba7d1be17eb4bb9a00b81fb591600db6"
   },
   {
     "url": "404/index.html",
-    "revision": "8a710d453b343d5d5e3c8bcd1e597e5e"
+    "revision": "ba7d1be17eb4bb9a00b81fb591600db6"
   },
   {
-    "url": "assets/css/0.styles.3d35d6d0.css",
-    "revision": "24bc7bb8cdf82a058d8b61cc1c9665bb"
+    "url": "assets/css/0.styles.274701bb.css",
+    "revision": "8836ef0377c6bbe21b0bbacc7af275c6"
   },
   {
     "url": "assets/data/404/index.json",
-    "revision": "c601c4991aadbadb1973c312e7d75d4e"
+    "revision": "232daf31080e2672d4bb655dc8229a96"
   },
   {
     "url": "assets/data/index.json",
-    "revision": "e2ab6b36db840cb38dfa21a8a0e6f8e1"
+    "revision": "834fa251057ef515c716e3ee992a333b"
   },
   {
     "url": "assets/data/kitchen/index.json",
-    "revision": "2cdf0433e9775c7563efe964de4e50f9"
+    "revision": "24220fe4e87dc1ae6076cadbe242627c"
   },
   {
     "url": "assets/data/markdown-test-file/index.json",
-    "revision": "9bd9f0a258843fec80a0a3e64672041b"
+    "revision": "15fe69bd91b585b8d24a678b9d84193b"
   },
   {
     "url": "assets/data/say-hello-to-gridsome/index.json",
-    "revision": "087a488f946b67115490237dd141c3eb"
+    "revision": "8aeea12081febb9b9afb3da4e922adc1"
   },
   {
     "url": "assets/data/tag/Humidity/index.json",
-    "revision": "7c9c3ced2443f47a478cf33886b90e59"
+    "revision": "8f8858787a2062a69d32d8b14e30de6c"
   },
   {
     "url": "assets/data/tag/Markdown/index.json",
-    "revision": "77784f8b42706ff52efef077f6a6f018"
+    "revision": "b3bf16f8a1e84a54ca576fb81c174d91"
   },
   {
     "url": "assets/data/tag/Releases/index.json",
-    "revision": "9c8321844dc68eb26b1d188e0e7f1e2e"
+    "revision": "43f75d92773c447b83daf593eb10a71c"
   },
   {
     "url": "assets/data/tag/Temperature/index.json",
-    "revision": "bd85186debec305cc77f6257d04e148c"
+    "revision": "ee6d0e134244b0018152c15c0d12fd26"
   },
   {
     "url": "assets/data/tag/Test files/index.json",
-    "revision": "02b560fe7829485c36b662a76f32a851"
+    "revision": "1b48aa76854662c51a7ff67f84875de2"
   },
   {
-    "url": "assets/js/app.50fe4b99.js",
-    "revision": "3ed41eaebe34976902c66e7e561a2a15"
+    "url": "assets/js/app.1689f1c4.js",
+    "revision": "2fd3788711ffcb1dd3f4393f5b51a0ce"
   },
   {
     "url": "assets/js/page--node-modules--gridsome--app--pages--404-vue.614a583c.js",
     "revision": "d4b63dd5e636064dda977d245aff2282"
   },
   {
-    "url": "assets/js/page--src--pages--index-vue.a442facc.js",
-    "revision": "9a93ec5e1476599cfef4226652e50c7c"
+    "url": "assets/js/page--src--pages--index-vue.edf132af.js",
+    "revision": "8e90b44d8ba9864a041a34e4ad69128c"
   },
   {
     "url": "assets/js/page--src--templates--sensor-vue.9bfa4ed0.js",
@@ -163,11 +163,11 @@ self.__precacheManifest = [
   },
   {
     "url": "index.html",
-    "revision": "c70303da505ac6806a4f5c201969e82b"
+    "revision": "309c8faa18a0dce5a9e30267df9dfa3f"
   },
   {
     "url": "kitchen/index.html",
-    "revision": "00c243315f80a86a057dd6fbdb8ba7a1"
+    "revision": "a3b1f274dfb958877ddf6315aa3fc158"
   },
   {
     "url": "manifest.json",
@@ -175,31 +175,31 @@ self.__precacheManifest = [
   },
   {
     "url": "markdown-test-file/index.html",
-    "revision": "116ea4a628dea4396a3374061ebcfe2a"
+    "revision": "9a88416903ccfad00ab01e3f0a693f5d"
   },
   {
     "url": "say-hello-to-gridsome/index.html",
-    "revision": "055cef8997a210c7d11bb4700a56694f"
+    "revision": "f226fa08c925529fac135c8177cbf927"
   },
   {
     "url": "tag/Humidity/index.html",
-    "revision": "8b214917c8bad2865f76ce92cdf31558"
+    "revision": "9ba6be7935fb474fbe297da640a239eb"
   },
   {
     "url": "tag/Markdown/index.html",
-    "revision": "451a0804068363425d8cd8890d933b2e"
+    "revision": "fbd836d30445a12999fbcc60332558a0"
   },
   {
     "url": "tag/Releases/index.html",
-    "revision": "0cf1962ab076c13fa1992c002a14034a"
+    "revision": "737135704f674caa27a6e88d60333194"
   },
   {
     "url": "tag/Temperature/index.html",
-    "revision": "37cf58359ed6715cbb0246fc8058bd16"
+    "revision": "29035b61b9395b1eccda78a097fff4ef"
   },
   {
     "url": "tag/Test files/index.html",
-    "revision": "3bef1bf496ab9dfeb1c5b7308d404069"
+    "revision": "28662906a22802eb223329e2eb584468"
   },
   {
     "url": "404",
