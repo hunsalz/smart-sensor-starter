@@ -1,5 +1,5 @@
 <template>
-  <div class="sensor-meta">
+  <div class="meta-info">
     Last updated at {{ sensor.date }}
     <!--template v-if="sensor.timeToRead">
       <strong>{{ sensor.timeToRead }} min read.</strong>
@@ -14,7 +14,7 @@ export default {
 </script>
 
 <style lang="scss">
-.sensor-meta {
+.meta-info {
   font-size: 0.8em;
   opacity: 0.8;
 }

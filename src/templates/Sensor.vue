@@ -3,7 +3,7 @@
     <div class="sensor-title">
       <h1 class="sensor-title__text">{{ $page.sensor.title }}</h1>
 
-      <SensorMeta :sensor="$page.sensor" />
+      <MetaInfo :sensor="$page.sensor" />
     </div>
 
     <div class="sensor content-box">
@@ -14,7 +14,7 @@
       <div class="sensor__content" v-html="$page.sensor.content" />
 
       <div class="sensor__footer">
-        <SensorTags :sensor="$page.sensor" />
+        <TagList :sensor="$page.sensor" />
       </div>
     </div>
 
@@ -22,13 +22,13 @@
 </template>
 
 <script>
-import SensorMeta from "~/components/SensorMeta";
-import SensorTags from "~/components/SensorTags";
+import MetaInfo from "~/components/MetaInfo";
+import TagList from "~/components/TagList";
 
 export default {
   components: {
-    SensorMeta,
-    SensorTags
+    MetaInfo,
+    TagList
   },
   metaInfo() {
     return {

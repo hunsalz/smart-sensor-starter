@@ -1,6 +1,6 @@
 <template>
-  <div class="sensor-tags">
-    <g-link class="sensor-tags__link" v-for="tag in sensor.tags" :key="tag.id" :to="tag.path">
+  <div class="tag-list">
+    <g-link class="tag-list__link" v-for="tag in sensor.tags" :key="tag.id" :to="tag.path">
       <span>#</span>
       {{ tag.title }}
     </g-link>
@@ -14,7 +14,7 @@ export default {
 </script>
 
 <style lang="scss">
-.sensor-tags {
+.tag-list {
   margin: 1em 0 0;
 
   &__link {

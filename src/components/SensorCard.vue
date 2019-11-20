@@ -12,8 +12,8 @@
       <h2 class="sensor-card__title" v-html="sensor.title" />
       <p class="sensor-card__description" v-html="sensor.description" />
 
-      <SensorMeta class="sensor-card__meta" :sensor="sensor" />
-      <SensorTags class="sensor-card__tags" :sensor="sensor" />
+      <MetaInfo class="sensor-card__meta" :sensor="sensor" />
+      <TagList class="sensor-card__tags" :sensor="sensor" />
 
       <g-link class="sensor-card__link" :to="sensor.path">Link</g-link>
     </div>
@@ -21,13 +21,13 @@
 </template>
 
 <script>
-import SensorMeta from "~/components/SensorMeta";
-import SensorTags from "~/components/SensorTags";
+import MetaInfo from "~/components/MetaInfo";
+import TagList from "~/components/TagList";
 
 export default {
   components: {
-    SensorMeta,
-    SensorTags
+    MetaInfo,
+    TagList
   },
   props: ["sensor"]
 };
