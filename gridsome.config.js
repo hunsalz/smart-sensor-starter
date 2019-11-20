@@ -40,8 +40,8 @@ module.exports = {
         startUrl: '/',
         display: 'standalone',
         statusBarStyle: 'default',
-        manifestPath: PATH_PREFIX + '/manifest.json',
-        serviceWorkerPath: PATH_PREFIX + '/service-worker.js',
+        manifestPath: '/manifest.json', // see https://github.com/rishabh3112/gridsome-plugin-pwa/pull/18
+        serviceWorkerPath: '/service-worker.js', // see https://github.com/rishabh3112/gridsome-plugin-pwa/pull/18
         cachedFileTypes: 'js,json,css,html,png,jpg,jpeg,svg',
         shortName: 'Sensors',
         themeColor: '#666600',
