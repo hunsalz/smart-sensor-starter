@@ -27,79 +27,75 @@ self.addEventListener('message', (event) => {
 self.__precacheManifest = [
   {
     "url": "404.html",
-    "revision": "3185b9cbbf3944ae8b80927edf4bf3cd"
+    "revision": "17b5395b387827f9d7765dfdb3b67d70"
   },
   {
     "url": "404/index.html",
-    "revision": "3185b9cbbf3944ae8b80927edf4bf3cd"
+    "revision": "17b5395b387827f9d7765dfdb3b67d70"
   },
   {
-    "url": "assets/css/0.styles.d830eec0.css",
-    "revision": "e228c1dd208ddf059f49156d5a0ec65c"
+    "url": "assets/css/0.styles.c47fd1bb.css",
+    "revision": "83976214abf7c62c4a14b37772a12fc2"
   },
   {
     "url": "assets/data/404/index.json",
-    "revision": "708d3665a44785dea118cce53446cd49"
+    "revision": "a77cd465f9e1407385a4bb70b25afbdc"
   },
   {
     "url": "assets/data/index.json",
-    "revision": "29c18c11482835a4a74262d0854dd71a"
+    "revision": "f03f792a084084cd8846973ee93c2b8c"
   },
   {
     "url": "assets/data/kitchen/index.json",
-    "revision": "d44ecf83a75f3d4840e176702b59231a"
+    "revision": "805ce163a747efcc7cfd83dab25a283c"
   },
   {
     "url": "assets/data/markdown-test-file/index.json",
-    "revision": "6647ed47d98adeab1ec3a3757d1195d2"
+    "revision": "829ee30e25235bf2d42460e8b09dd88d"
   },
   {
     "url": "assets/data/say-hello-to-gridsome/index.json",
-    "revision": "30b8bcda5ac9f9ef01b13054436d5142"
+    "revision": "b9c4aed1a8568362e0ad8e32a36b3c6b"
   },
   {
     "url": "assets/data/tag/Humidity/index.json",
-    "revision": "9ae4ea31eaf18e513aaba95fcb6e9aca"
+    "revision": "48b0c76404a7ad1ff605a7fb72734518"
   },
   {
     "url": "assets/data/tag/Markdown/index.json",
-    "revision": "d8c0ef3c1d59233a505073b1ad802cfb"
+    "revision": "c16db93c773e82e15eb2e1510e022119"
   },
   {
     "url": "assets/data/tag/Releases/index.json",
-    "revision": "ac1d936eb2e7ca0be430f1fc73ebaffb"
+    "revision": "06c4d21e5844c04bf179f6d693fc6e05"
   },
   {
     "url": "assets/data/tag/Temperature/index.json",
-    "revision": "3b2e2ad78ea1f434934aa5b723f9b01e"
+    "revision": "e3cf3201a5bc666228034b96457c715f"
   },
   {
     "url": "assets/data/tag/Test files/index.json",
-    "revision": "94fee9f61429083f6936f5bcd5fefa2f"
+    "revision": "637b32cb0965bfba931b2166cd385793"
   },
   {
-    "url": "assets/js/app.55298366.js",
-    "revision": "356c9c316d7405d472551623c09f3544"
+    "url": "assets/js/app.1973289c.js",
+    "revision": "709588afb1be1d5f20f708dee7ccf984"
   },
   {
-    "url": "assets/js/page--node-modules--gridsome--app--pages--404-vue.6e92453a.js",
-    "revision": "b875cbb2fa8d71653fa389789585ef62"
+    "url": "assets/js/page--node-modules--gridsome--app--pages--404-vue.614a583c.js",
+    "revision": "d4b63dd5e636064dda977d245aff2282"
   },
   {
-    "url": "assets/js/page--src--pages--index-vue.5549312e.js",
-    "revision": "ae3ac70c7dc92d35dfcf3bb1604816d8"
+    "url": "assets/js/page--src--pages--index-vue.ef0b1df4.js",
+    "revision": "b1a1f0da56c3b0c5fd537a854ba1d872"
   },
   {
-    "url": "assets/js/page--src--templates--sensor-vue.a88d8136.js",
-    "revision": "a3d2ecf46d01440fa333a3355947429c"
+    "url": "assets/js/page--src--templates--sensor-vue.68a470a1.js",
+    "revision": "b277ef07a0a30a3590375b9cbf24f507"
   },
   {
-    "url": "assets/js/page--src--templates--tag-vue.4bfbecc3.js",
-    "revision": "101f395d94e77f5dd23926d0b78c2f18"
-  },
-  {
-    "url": "assets/static/author.e6b6009.4c5944374ea7ab45614c03412195f01d.jpg",
-    "revision": "cab96e9b1b147eebe6890b05a549becd"
+    "url": "assets/js/page--src--templates--tag-vue.d326a260.js",
+    "revision": "3787b537d6327d74f371a96126c41f94"
   },
   {
     "url": "assets/static/esp32.07cc2b7.5f26e714a295fea020dbdff12a80a332.jpeg",
@@ -167,11 +163,11 @@ self.__precacheManifest = [
   },
   {
     "url": "index.html",
-    "revision": "065aa8ca5c8e5a4b232cb4e57f11693e"
+    "revision": "e42bf09ead04f2466ef514b8ffa9922d"
   },
   {
     "url": "kitchen/index.html",
-    "revision": "88685329e0e6aedc3d0372434c9a8895"
+    "revision": "fc1e62cb99d1882a65c77d0bba2d67ee"
   },
   {
     "url": "manifest.json",
@@ -179,31 +175,31 @@ self.__precacheManifest = [
   },
   {
     "url": "markdown-test-file/index.html",
-    "revision": "776c1188ea9cde2b8affed9aa1f47521"
+    "revision": "32b624ef337f0c56736035e14c49d8f6"
   },
   {
     "url": "say-hello-to-gridsome/index.html",
-    "revision": "d95fbbf3cd092d9892d466ee9df38bdc"
+    "revision": "cfbac7ca5544c17a3f6586e30a4b2049"
   },
   {
     "url": "tag/Humidity/index.html",
-    "revision": "b499e7d74a332937243387dbe5e0e8b2"
+    "revision": "a1f6cc00829709178363d8d346cfb420"
   },
   {
     "url": "tag/Markdown/index.html",
-    "revision": "40d70253c4ff0f33e187dcb9995c5491"
+    "revision": "dcfd875014f89afa5d042bdf4da63613"
   },
   {
     "url": "tag/Releases/index.html",
-    "revision": "d1c72221aee275c42c1e581300d605eb"
+    "revision": "8651675e3d55a60c8808b7dea29de511"
   },
   {
     "url": "tag/Temperature/index.html",
-    "revision": "f6f16728b7796b36401b3af9f15779b4"
+    "revision": "aa2e81462a8e984949c90edeffe63f13"
   },
   {
     "url": "tag/Test files/index.html",
-    "revision": "5360034678f0548777c164bd634034cc"
+    "revision": "428e63f5542a830ccf70e888fd34fee6"
   },
   {
     "url": "404",
