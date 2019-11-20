@@ -12,6 +12,7 @@
       <h2 class="sensor-card__title" v-html="sensor.title" />
       <p class="sensor-card__description" v-html="sensor.description" />
 
+      <SensorValues class="sensor-card__meta" :sensor="sensor" />
       <MetaInfo class="sensor-card__meta" :sensor="sensor" />
       <TagList class="sensor-card__tags" :sensor="sensor" />
 
@@ -21,11 +22,13 @@
 </template>
 
 <script>
+import SensorValues from "~/components/SensorValues";
 import MetaInfo from "~/components/MetaInfo";
 import TagList from "~/components/TagList";
 
 export default {
   components: {
+    SensorValues,
     MetaInfo,
     TagList
   },
