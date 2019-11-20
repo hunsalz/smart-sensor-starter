@@ -7,6 +7,8 @@
 module.exports = {
   siteName: 'Smart Sensor',
   siteDescription: 'Show smart sensor data',
+  siteUrl: 'https://hunsalz.github.io',
+  pathPrefix: '/smart-sensor-starter',
 
   templates: {
     Sensor: '/:title',
