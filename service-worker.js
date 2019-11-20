@@ -27,11 +27,11 @@ self.addEventListener('message', (event) => {
 self.__precacheManifest = [
   {
     "url": "404.html",
-    "revision": "b91ae880d21421e29641242e7baffe18"
+    "revision": "3185b9cbbf3944ae8b80927edf4bf3cd"
   },
   {
     "url": "404/index.html",
-    "revision": "b91ae880d21421e29641242e7baffe18"
+    "revision": "3185b9cbbf3944ae8b80927edf4bf3cd"
   },
   {
     "url": "assets/css/0.styles.d830eec0.css",
@@ -39,47 +39,47 @@ self.__precacheManifest = [
   },
   {
     "url": "assets/data/404/index.json",
-    "revision": "0b323974d6976892fe8ee9c5c9cb44e3"
+    "revision": "708d3665a44785dea118cce53446cd49"
   },
   {
     "url": "assets/data/index.json",
-    "revision": "420f2218dc93cea3d2f4a72c45412651"
+    "revision": "29c18c11482835a4a74262d0854dd71a"
   },
   {
     "url": "assets/data/kitchen/index.json",
-    "revision": "04f66c82217072f5fe31b155e2dfa7af"
+    "revision": "d44ecf83a75f3d4840e176702b59231a"
   },
   {
     "url": "assets/data/markdown-test-file/index.json",
-    "revision": "f38b4e2e822a6d538c916522e61852f1"
+    "revision": "6647ed47d98adeab1ec3a3757d1195d2"
   },
   {
     "url": "assets/data/say-hello-to-gridsome/index.json",
-    "revision": "d498c21dccbb2c4579394769835f460d"
+    "revision": "30b8bcda5ac9f9ef01b13054436d5142"
   },
   {
     "url": "assets/data/tag/Humidity/index.json",
-    "revision": "2f2a04cb86fee69d71b832b96edf84b1"
+    "revision": "9ae4ea31eaf18e513aaba95fcb6e9aca"
   },
   {
     "url": "assets/data/tag/Markdown/index.json",
-    "revision": "a5fa872c7b9990ee59a2a15915a36630"
+    "revision": "d8c0ef3c1d59233a505073b1ad802cfb"
   },
   {
     "url": "assets/data/tag/Releases/index.json",
-    "revision": "18163bfd6559bf54067eacf8790fdfdf"
+    "revision": "ac1d936eb2e7ca0be430f1fc73ebaffb"
   },
   {
     "url": "assets/data/tag/Temperature/index.json",
-    "revision": "4a010bc8650a47323ccbd37902fa0e44"
+    "revision": "3b2e2ad78ea1f434934aa5b723f9b01e"
   },
   {
     "url": "assets/data/tag/Test files/index.json",
-    "revision": "437115ca0e6a70f67d2b702630594fac"
+    "revision": "94fee9f61429083f6936f5bcd5fefa2f"
   },
   {
-    "url": "assets/js/app.73ef96b1.js",
-    "revision": "bee6a2a3fc8354b1797282da162c7745"
+    "url": "assets/js/app.55298366.js",
+    "revision": "356c9c316d7405d472551623c09f3544"
   },
   {
     "url": "assets/js/page--node-modules--gridsome--app--pages--404-vue.6e92453a.js",
@@ -167,43 +167,43 @@ self.__precacheManifest = [
   },
   {
     "url": "index.html",
-    "revision": "399efa6c2efbd2177e6ad1d051a9d666"
+    "revision": "065aa8ca5c8e5a4b232cb4e57f11693e"
   },
   {
     "url": "kitchen/index.html",
-    "revision": "378512098869785bd889b479f7e4b752"
+    "revision": "88685329e0e6aedc3d0372434c9a8895"
   },
   {
-    "url": "markdown-test-file/index.html",
-    "revision": "5f36ae0806a02e153a89fee33396f70c"
-  },
-  {
-    "url": "say-hello-to-gridsome/index.html",
-    "revision": "458a6c547c5cc3b61f01a38fcecffe47"
-  },
-  {
-    "url": "smart-sensor-starter/manifest.json",
+    "url": "manifest.json",
     "revision": "9850f1879b51766d062de6c3ab3c4585"
   },
   {
+    "url": "markdown-test-file/index.html",
+    "revision": "776c1188ea9cde2b8affed9aa1f47521"
+  },
+  {
+    "url": "say-hello-to-gridsome/index.html",
+    "revision": "d95fbbf3cd092d9892d466ee9df38bdc"
+  },
+  {
     "url": "tag/Humidity/index.html",
-    "revision": "2e4c45a39f995a15d2d0474aa557e302"
+    "revision": "b499e7d74a332937243387dbe5e0e8b2"
   },
   {
     "url": "tag/Markdown/index.html",
-    "revision": "18bbe28d75ce5ef30b9b1dc7fe48045f"
+    "revision": "40d70253c4ff0f33e187dcb9995c5491"
   },
   {
     "url": "tag/Releases/index.html",
-    "revision": "df1ce2fc1e34b65bd8cb7bfbd07fa96a"
+    "revision": "d1c72221aee275c42c1e581300d605eb"
   },
   {
     "url": "tag/Temperature/index.html",
-    "revision": "22236203207dc8adfb3407268bc0b680"
+    "revision": "f6f16728b7796b36401b3af9f15779b4"
   },
   {
     "url": "tag/Test files/index.html",
-    "revision": "cc3b841328268288956f361b12529095"
+    "revision": "5360034678f0548777c164bd634034cc"
   },
   {
     "url": "404",
