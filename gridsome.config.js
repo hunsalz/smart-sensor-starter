@@ -30,6 +30,24 @@ module.exports = {
           }
         }
       }
+    },
+    {
+      use: 'gridsome-plugin-pwa',
+      options: {
+        title: 'Smart Sensor',
+        startUrl: '/',
+        display: 'standalone',
+        statusBarStyle: 'default',
+        manifestPath: 'manifest.json',
+        serviceWorkerPath: 'service-worker.js',
+        cachedFileTypes: 'js,json,css,html,png,jpg,jpeg,svg',
+        shortName: 'Sensors',
+        themeColor: '#666600',
+        backgroundColor: '#ffffff',
+        icon: 'src/assets/images/website-icon.png',
+        msTileImage: '',
+        msTileColor: '#666600'
+      }
     }
   ],
 
