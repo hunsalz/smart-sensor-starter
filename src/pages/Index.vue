@@ -23,6 +23,10 @@ query {
           title
           path
         }
+        values {
+          id
+          title
+        }
       }
     }
   }

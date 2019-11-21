@@ -13,6 +13,8 @@
 
       <div class="sensor__content" v-html="$page.sensor.content" />
 
+      <SensorValues class="sensor-card__meta" :sensor="$page.sensor" />
+
       <div class="sensor__footer">
         <TagList :sensor="$page.sensor" />
       </div>
@@ -22,11 +24,13 @@
 </template>
 
 <script>
+import SensorValues from "~/components/SensorValues";
 import MetaInfo from "~/components/MetaInfo";
 import TagList from "~/components/TagList";
 
 export default {
   components: {
+    SensorValues,
     MetaInfo,
     TagList
   },
@@ -55,6 +59,10 @@ query Sensor ($id: ID!) {
       id
       title
       path
+    }
+    values {
+      id
+      title
     }
     description
     content

@@ -1,7 +1,6 @@
 <template>
   <div class="sensor-values">
     <g-link class="sensor-values__link" v-for="value in sensor.values" :key="value.id" :to="value.path">
-      ff
       {{ value.title }}
     </g-link>
   </div>
