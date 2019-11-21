@@ -4,13 +4,11 @@
 // Changes here requires a server restart.
 // To restart press CTRL + C in terminal and run `gridsome develop`
 
-const PATH_PREFIX = '/smart-sensor-starter';
-
 module.exports = {
   siteName: 'Smart Sensor',
   siteDescription: 'Show smart sensor data',
   siteUrl: 'https://hunsalz.github.io',
-  pathPrefix: PATH_PREFIX,
+  pathPrefix: '/smart-sensor-starter',
 
   templates: {
     Sensor: '/:title',
@@ -19,15 +17,17 @@ module.exports = {
 
   plugins: [
     {
-      // create sensor cards from markdown files
       use: '@gridsome/source-filesystem',
       options: {
         typeName: 'Sensor',
         path: 'content/sensors/*.md',
         refs: {
-          // creates a GraphQL collection from 'tags' in front-matter and adds a reference.
           tags: {
             typeName: 'Tag',
+            create: true
+          },
+          values: {
+            typeName: 'Value',
             create: true
           }
         }
@@ -58,10 +58,7 @@ module.exports = {
     remark: {
       externalLinksTarget: '_blank',
       externalLinksRel: ['nofollow', 'noopener', 'noreferrer'],
-      anchorClassName: 'icon icon-link',
-      plugins: [
-        '@gridsome/remark-prismjs'
-      ]
+      anchorClassName: 'icon icon-link'
     }
   }
 }
