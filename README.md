@@ -12,7 +12,7 @@
 
 ## Demo URL
 
-https://gridsome-starter-blog.netlify.com
+https://hunsalz.github.io/smart-sensor-starter
 
 ## Install
 
