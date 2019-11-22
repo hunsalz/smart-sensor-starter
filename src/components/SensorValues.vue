@@ -1,8 +1,10 @@
 <template>
   <div class="sensor-values">
-    <g-link class="sensor-values__link" v-for="value in sensor.values" :key="value.id" :to="value.path">
-      {{ value.title }}
-    </g-link>
+    <p class="sensor-values__link" v-for="data in sensor.data" :key="data.key">
+      {{ data.key }}
+      {{ data.value }}
+      {{ data.unit }}
+    </p>
   </div>
 </template>
 

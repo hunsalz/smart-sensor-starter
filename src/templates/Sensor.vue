@@ -54,15 +54,15 @@ query Sensor ($id: ID!) {
     title
     path
     date (format: "D. MMMM YYYY")
-    timeToRead
     tags {
       id
       title
       path
     }
-    values {
-      id
-      title
+    data {
+      key
+      value
+      unit
     }
     description
     content

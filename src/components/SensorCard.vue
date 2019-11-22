@@ -11,10 +11,13 @@
     <div class="sensor-card__content">
       <h2 class="sensor-card__title" v-html="sensor.title" />
       <p class="sensor-card__description" v-html="sensor.description" />
-
       <SensorValues class="sensor-card__meta" :sensor="sensor" />
       <MetaInfo class="sensor-card__meta" :sensor="sensor" />
       <TagList class="sensor-card__tags" :sensor="sensor" />
+
+      <div>
+        {{sensor.data[0].id}}
+      </div>
 
       <g-link class="sensor-card__link" :to="sensor.path">Link</g-link>
     </div>
