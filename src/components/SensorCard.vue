@@ -11,9 +11,13 @@
     <div class="sensor-card__content">
       <h2 class="sensor-card__title" v-html="sensor.title" />
       <p class="sensor-card__description" v-html="sensor.description" />
-      <SensorValues class="sensor-card__meta" :sensor="sensor" />
-      <MetaInfo class="sensor-card__meta" :sensor="sensor" />
+      <p>
+        <SensorValues class="sensor-card__meta" :sensor="sensor" />
+      </p>
+
       <TagList class="sensor-card__tags" :sensor="sensor" />
+      <p></p>
+      <MetaInfo class="sensor-card__meta" :sensor="sensor" />
 
       <g-link class="sensor-card__link" :to="sensor.path">Link</g-link>
     </div>
@@ -61,7 +65,7 @@ export default {
     margin-top: 0;
   }
 
-/*   &:hover {
+  /*   &:hover {
     transform: translateY(-5px);
     box-shadow: 1px 10px 30px 0 rgba(0, 0, 0, 0.1);
   } */

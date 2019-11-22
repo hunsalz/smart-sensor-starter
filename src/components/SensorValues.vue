@@ -1,10 +1,8 @@
 <template>
   <div class="sensor-values">
-    <p class="sensor-values__link" v-for="data in sensor.data" :key="data.key">
-      {{ data.key }}
-      {{ data.value }}
-      {{ data.unit }}
-    </p>
+    <div class="sensor-values__data" v-for="data in sensor.data" :key="data.key">
+      <span>{{ data.key }} - {{ data.value }} {{ data.unit }}</span>
+    </div>
   </div>
 </template>
 
@@ -18,15 +16,10 @@ export default {
 .sensor-values {
   margin: 1em 0 0;
 
-  &__link {
-    margin-right: 0.7em;
+  &__data {
     font-size: 0.8em;
     color: currentColor;
     text-decoration: none;
-    background-color: var(--bg-color);
-    color: currentColor !important; //Todo: remove important;
-    padding: 0.5em;
-    border-radius: var(--radius);
   }
 }
 </style>
