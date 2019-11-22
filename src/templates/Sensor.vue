@@ -1,8 +1,8 @@
 <template>
   <Layout>
+    
     <div class="sensor-title">
       <h1 class="sensor-title__text">{{ $page.sensor.title }}</h1>
-
       <MetaInfo :sensor="$page.sensor" />
     </div>
 
@@ -10,11 +10,8 @@
       <div class="sensor__header">
         <g-image alt="Cover image" v-if="$page.sensor.cover_image" :src="$page.sensor.cover_image" />
       </div>
-
       <div class="sensor__content" v-html="$page.sensor.content" />
-
       <SensorValues class="sensor-card__meta" :sensor="$page.sensor" />
-
       <div class="sensor__footer">
         <TagList :sensor="$page.sensor" />
       </div>
