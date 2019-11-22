@@ -25,10 +25,6 @@ module.exports = {
           tags: {
             typeName: 'Tag',
             create: true
-          },
-          values: {
-            typeName: 'Value',
-            create: true
           }
         }
       }
