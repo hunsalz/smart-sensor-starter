@@ -43,23 +43,27 @@ self.__precacheManifest = [
   },
   {
     "url": "assets/data/garden/index.json",
-    "revision": "4cd016057727e58408ba63a88fd7cc53"
+    "revision": "e255b38249b3aa1f7895a994b5385fc9"
   },
   {
     "url": "assets/data/index.json",
-    "revision": "58b2fd1040aaa77c369e0bfda13d2327"
+    "revision": "ea4074a11ba5c1bce7dadca611d1a8ce"
   },
   {
     "url": "assets/data/kitchen/index.json",
-    "revision": "2a6cd6b7e24543e0c6c9ac3a6ad9aaac"
+    "revision": "11dbc01342f29d2bc6293c1dc86184d3"
+  },
+  {
+    "url": "assets/data/tag/Altitude/index.json",
+    "revision": "31d9fea069106efe06b4428f08fde94b"
   },
   {
     "url": "assets/data/tag/Humidity/index.json",
-    "revision": "c223db8e6e721cdd0223d6d4ede5bfea"
+    "revision": "cf67d5a8c940f8a8dcdb2851fe785ace"
   },
   {
     "url": "assets/data/tag/Temperature/index.json",
-    "revision": "db0a08991ad77c3d77b7f0e7ef338c9e"
+    "revision": "30d59252b26b07a3d334c1f0c948d5d4"
   },
   {
     "url": "assets/js/app.729dd0ce.js",
@@ -131,27 +135,31 @@ self.__precacheManifest = [
   },
   {
     "url": "garden/index.html",
-    "revision": "3e1808a895673f3761c5a797f476fbf9"
+    "revision": "b8a152940a6b9b82e5ad9631b69cbc5d"
   },
   {
     "url": "index.html",
-    "revision": "d87c9a8ee19a9f1fd72f6c1769693cb7"
+    "revision": "4919b320850c9a916a447aeca04cb17c"
   },
   {
     "url": "kitchen/index.html",
-    "revision": "dc66a665770bf4fb2b33c2618e1d01dc"
+    "revision": "b29e96ed8224d7b17e6fbfdbd36ab014"
   },
   {
     "url": "manifest.json",
     "revision": "9850f1879b51766d062de6c3ab3c4585"
   },
   {
+    "url": "tag/Altitude/index.html",
+    "revision": "3e503c42b05cb1af3d51a5360adcafc7"
+  },
+  {
     "url": "tag/Humidity/index.html",
-    "revision": "20bd4c24fa5a8c6d5f2ef5e8b002a0b1"
+    "revision": "f5e72697031ee999c2ba64e826c48491"
   },
   {
     "url": "tag/Temperature/index.html",
-    "revision": "90e5b7daf1af708757fb915ecfc23e96"
+    "revision": "3c587ffde75db8e8fb111929917664f3"
   },
   {
     "url": "404",
@@ -164,6 +172,10 @@ self.__precacheManifest = [
   {
     "url": "tag/Humidity",
     "revision": "1f756d6572c2f9a962114629cd4ac1eb"
+  },
+  {
+    "url": "tag/Altitude",
+    "revision": "7f3ea71b1bf36c086397d84f28eb78a3"
   },
   {
     "url": "garden",
