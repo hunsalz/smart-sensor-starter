@@ -41,7 +41,8 @@ export default {
     SensorCard
   },
   metaInfo: {
-    title: "Hello, world!"
+    title: "Smart Sensor",
+    titleTemplate: '%s'
   }
 };
 </script>
