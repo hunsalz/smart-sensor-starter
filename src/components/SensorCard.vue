@@ -15,10 +15,6 @@
       <MetaInfo class="sensor-card__meta" :sensor="sensor" />
       <TagList class="sensor-card__tags" :sensor="sensor" />
 
-      <div>
-        {{sensor.data[0].id}}
-      </div>
-
       <g-link class="sensor-card__link" :to="sensor.path">Link</g-link>
     </div>
   </div>
