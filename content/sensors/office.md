@@ -7,7 +7,6 @@ tags:
   - 'Temperature' 
   - 'Humidity'
 cover_image: ./images/esp32.jpeg
-description: "Sensor values of my office"
 data:
     - key: Temperature
       value: '22.9'
@@ -16,4 +15,4 @@ data:
       value: '54'
       unit: '%'
 ---
-Lorem ipsum
+Sensor values of my office

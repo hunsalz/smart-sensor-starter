@@ -8,7 +8,6 @@ tags:
   - 'Humidity'
   - 'Altitude'
 cover_image: ./images/esp32.jpeg
-description: "Sensor values of my garden"
 data:
     - key: Temperature
       value: '22.1'
@@ -20,4 +19,4 @@ data:
       value: '154'
       unit: 'm'
 ---
-Lorem ipsum
+Sensor values of my garden

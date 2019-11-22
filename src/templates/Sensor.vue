@@ -37,7 +37,7 @@ export default {
       meta: [
         {
           name: "description",
-          content: this.$page.sensor.description
+          content: this.$page.sensor.content
         }
       ]
     };
@@ -61,7 +61,6 @@ query Sensor ($id: ID!) {
       value
       unit
     }
-    description
     content
     cover_image (width: 860, blur: 10)
   }

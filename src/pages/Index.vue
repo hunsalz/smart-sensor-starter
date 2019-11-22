@@ -14,7 +14,7 @@ query {
         id
         title
         date (format: "D. MMMM YYYY")
-        description
+        content
         cover_image (width: 770, height: 380, blur: 10)
         path
         tags {
