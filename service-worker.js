@@ -43,19 +43,19 @@ self.__precacheManifest = [
   },
   {
     "url": "assets/data/garden/index.json",
-    "revision": "a2c2279c771f6151b56f857a079d6fc4"
+    "revision": "8cfd1f99481a57f2243ef223e07ab2af"
   },
   {
     "url": "assets/data/index.json",
-    "revision": "a3b4d01f6edb3a61b5fce380615ebe55"
+    "revision": "f249b58f03b57dbf6caf62c756d8437c"
   },
   {
     "url": "assets/data/kitchen/index.json",
-    "revision": "8876d759af6cc5d1f416baf6b0c3f9fe"
+    "revision": "b900c6ae5a7fa7a8638d6c945e435213"
   },
   {
     "url": "assets/data/office/index.json",
-    "revision": "809cb663904ebe4285dcdb84a194f18b"
+    "revision": "de853ea9bbe1f10623af59f208c10f45"
   },
   {
     "url": "assets/data/tag/Altitude/index.json",
@@ -139,15 +139,15 @@ self.__precacheManifest = [
   },
   {
     "url": "garden/index.html",
-    "revision": "c8c51889e4faec35cc20226f8c49a085"
+    "revision": "67152a8b53769625063a62288fc4c93e"
   },
   {
     "url": "index.html",
-    "revision": "fb19f0d2105042345a8cdd4137def007"
+    "revision": "ff9575ed1e808a6174c88e4c6d6fab4e"
   },
   {
     "url": "kitchen/index.html",
-    "revision": "c35cac9405944392b13b5f3cd22e3c2d"
+    "revision": "de6e2f577a2b57224fcbbcc0063cd2be"
   },
   {
     "url": "manifest.json",
@@ -155,7 +155,7 @@ self.__precacheManifest = [
   },
   {
     "url": "office/index.html",
-    "revision": "b0f0047aa4e10baa779ca15a267c41dc"
+    "revision": "4bfd7039a721a5b5c7cba82091fbb708"
   },
   {
     "url": "tag/Altitude/index.html",
