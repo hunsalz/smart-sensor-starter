@@ -27,67 +27,67 @@ self.addEventListener('message', (event) => {
 self.__precacheManifest = [
   {
     "url": "404.html",
-    "revision": "488380c1fb3bb77cac11bc110f1a747e"
+    "revision": "021c2e121a241a38b4b386fab8511872"
   },
   {
     "url": "404/index.html",
-    "revision": "488380c1fb3bb77cac11bc110f1a747e"
+    "revision": "021c2e121a241a38b4b386fab8511872"
   },
   {
-    "url": "assets/css/0.styles.5b01a8b0.css",
-    "revision": "67a375dd9bcd7459fe9eff155aa26d01"
+    "url": "assets/css/0.styles.11d87edf.css",
+    "revision": "af15817a8cb9efe5aafa6a2311317338"
   },
   {
     "url": "assets/data/404/index.json",
-    "revision": "a6c552177c6caf23091bf8e01e47b75f"
+    "revision": "31d4c104994cd395d5dc363d165c207d"
   },
   {
     "url": "assets/data/garden/index.json",
-    "revision": "df8b48db1d1ae9405546f2213671a745"
+    "revision": "a2c2279c771f6151b56f857a079d6fc4"
   },
   {
     "url": "assets/data/index.json",
-    "revision": "8182849f37ebc14331e58eb702178a63"
+    "revision": "a3b4d01f6edb3a61b5fce380615ebe55"
   },
   {
     "url": "assets/data/kitchen/index.json",
-    "revision": "ab5cbac1a704e4ba2caa3012370bca42"
+    "revision": "8876d759af6cc5d1f416baf6b0c3f9fe"
   },
   {
     "url": "assets/data/office/index.json",
-    "revision": "b30cae052791bb847d7665a5a3a3a3d7"
+    "revision": "809cb663904ebe4285dcdb84a194f18b"
   },
   {
     "url": "assets/data/tag/Altitude/index.json",
-    "revision": "0119b27ba5f1389ba015ac52478b863b"
+    "revision": "81e62df823e177adbd100a3e0faf5cbd"
   },
   {
     "url": "assets/data/tag/Humidity/index.json",
-    "revision": "e67c9205dcff869dca00ece992fd56cb"
+    "revision": "e5d475a2cc2605cc17c3b97d2ad3601d"
   },
   {
     "url": "assets/data/tag/Temperature/index.json",
-    "revision": "28f6ac93365d2805c0f01207e1cf6f5a"
+    "revision": "3517058524735c3395d3b66a839f81e4"
   },
   {
-    "url": "assets/js/app.8a2ad74a.js",
-    "revision": "e2ef2054dc47903ee201d7c1c68a53df"
+    "url": "assets/js/app.909bb5a0.js",
+    "revision": "c24617a2965fe17b7fe45b2addbd25ee"
   },
   {
-    "url": "assets/js/page--node-modules--gridsome--app--pages--404-vue.74193d29.js",
+    "url": "assets/js/page--node-modules--gridsome--app--pages--404-vue.68fe12b0.js",
     "revision": "f09cbcbea7e9381983660ad60cea6f1a"
   },
   {
-    "url": "assets/js/page--src--pages--index-vue.0041aa51.js",
-    "revision": "0f04ee29818e1f4c0fd4b60cad70ed04"
+    "url": "assets/js/page--src--pages--index-vue.32ea849c.js",
+    "revision": "6ccc68dabe6010bf87d358fd53b8e122"
   },
   {
-    "url": "assets/js/page--src--templates--sensor-vue.b4d33a72.js",
-    "revision": "05fa79c2b3b83a627b1a3df9293b9b3a"
+    "url": "assets/js/page--src--templates--sensor-vue.0150faa5.js",
+    "revision": "676f41d27acb70c5f585d1291f4d2a36"
   },
   {
-    "url": "assets/js/page--src--templates--tag-vue.78b573c6.js",
-    "revision": "96a473da9e2cdce1832d5bc2464f366b"
+    "url": "assets/js/page--src--templates--tag-vue.ffd70161.js",
+    "revision": "846f978f2ebc55ca60289a81c29f16df"
   },
   {
     "url": "assets/static/esp32.07cc2b7.5f26e714a295fea020dbdff12a80a332.jpeg",
@@ -103,35 +103,35 @@ self.__precacheManifest = [
   },
   {
     "url": "assets/static/favicon.1539b60.9bb7ffafafc09ac851d81afb65b8ef59.png",
-    "revision": "d2a802ddb91346ba1bacd54ab5d9aace"
+    "revision": "7e3c420ed3359221ac22eedbc5cc1630"
   },
   {
     "url": "assets/static/favicon.62d22cb.9bb7ffafafc09ac851d81afb65b8ef59.png",
-    "revision": "ff82882c2da0bb17285633973ae6d65b"
+    "revision": "2f85c47cd65b86c6507ff18b2b8d5e98"
   },
   {
     "url": "assets/static/favicon.7b22250.9bb7ffafafc09ac851d81afb65b8ef59.png",
-    "revision": "f9974bad556938f2707848d1814f13a1"
+    "revision": "fa38503a9bbe98901bd244b830e4d6c5"
   },
   {
     "url": "assets/static/favicon.ac8d93a.9bb7ffafafc09ac851d81afb65b8ef59.png",
-    "revision": "f7be2331ae350e64cd1600af80c3683b"
+    "revision": "6b22178d5429b8ac29e5ced482659f49"
   },
   {
     "url": "assets/static/favicon.b9532cc.9bb7ffafafc09ac851d81afb65b8ef59.png",
-    "revision": "466eb6d2639408db8b9b58c037297d53"
+    "revision": "540320e5aa9702b00a08f9e00d7a921e"
   },
   {
     "url": "assets/static/favicon.ce0531f.9bb7ffafafc09ac851d81afb65b8ef59.png",
-    "revision": "69003266b28a85cbbdb7b0ca7c6757f3"
+    "revision": "a8710ab24cde9ded477cd08f602f7349"
   },
   {
     "url": "assets/static/favicon.dc0cdc5.9bb7ffafafc09ac851d81afb65b8ef59.png",
-    "revision": "7cf51ec517585d2700f4feb85597548d"
+    "revision": "7e2074d4885eacfb8d44276b74beac92"
   },
   {
     "url": "assets/static/favicon.f22e9f3.9bb7ffafafc09ac851d81afb65b8ef59.png",
-    "revision": "9fff9a2ceadee823efa116130802fb9a"
+    "revision": "94b22eed0bfc12ff09d62a86659c4fab"
   },
   {
     "url": "assets/static/website-icon.png",
@@ -139,15 +139,15 @@ self.__precacheManifest = [
   },
   {
     "url": "garden/index.html",
-    "revision": "a2dd8d4fef02d97302720e5fbaa67948"
+    "revision": "c8c51889e4faec35cc20226f8c49a085"
   },
   {
     "url": "index.html",
-    "revision": "4dc90e7c9da26c6acd99b9c51d509a15"
+    "revision": "fb19f0d2105042345a8cdd4137def007"
   },
   {
     "url": "kitchen/index.html",
-    "revision": "cc200cf776e0b54378888f480e9c8d6d"
+    "revision": "c35cac9405944392b13b5f3cd22e3c2d"
   },
   {
     "url": "manifest.json",
@@ -155,19 +155,19 @@ self.__precacheManifest = [
   },
   {
     "url": "office/index.html",
-    "revision": "08afc16edc9dc86f1fc1120a8709a986"
+    "revision": "b0f0047aa4e10baa779ca15a267c41dc"
   },
   {
     "url": "tag/Altitude/index.html",
-    "revision": "2a9d519e8befa954906dd3ed5896a432"
+    "revision": "e1b0ae2c48bf732feacd527766fbde77"
   },
   {
     "url": "tag/Humidity/index.html",
-    "revision": "872dbb84c793ce6a633fef642c69b73b"
+    "revision": "40bb5981dfd93671ea2f0fe04014b11c"
   },
   {
     "url": "tag/Temperature/index.html",
-    "revision": "c86e773b26299a72d0a9fadebe3441e5"
+    "revision": "89c78c1f5541695c82a8f719a3a983e3"
   },
   {
     "url": "404",
@@ -186,12 +186,12 @@ self.__precacheManifest = [
     "revision": "7f3ea71b1bf36c086397d84f28eb78a3"
   },
   {
-    "url": "kitchen",
-    "revision": "00d96ba4a29deb50d190184bcb516747"
-  },
-  {
     "url": "garden",
     "revision": "5c4bb96b75c4a24cdd2909e0a5d9951c"
+  },
+  {
+    "url": "kitchen",
+    "revision": "00d96ba4a29deb50d190184bcb516747"
   },
   {
     "url": "office",
