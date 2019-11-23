@@ -27,11 +27,11 @@ self.addEventListener('message', (event) => {
 self.__precacheManifest = [
   {
     "url": "404.html",
-    "revision": "d311b340998fd4931d300a77a6ab27a1"
+    "revision": "488380c1fb3bb77cac11bc110f1a747e"
   },
   {
     "url": "404/index.html",
-    "revision": "d311b340998fd4931d300a77a6ab27a1"
+    "revision": "488380c1fb3bb77cac11bc110f1a747e"
   },
   {
     "url": "assets/css/0.styles.5b01a8b0.css",
@@ -39,55 +39,55 @@ self.__precacheManifest = [
   },
   {
     "url": "assets/data/404/index.json",
-    "revision": "e6ae77237035f6135d36b489e2cd8e53"
+    "revision": "a6c552177c6caf23091bf8e01e47b75f"
   },
   {
     "url": "assets/data/garden/index.json",
-    "revision": "d185a390b921c2a1855223fae14e19b4"
+    "revision": "df8b48db1d1ae9405546f2213671a745"
   },
   {
     "url": "assets/data/index.json",
-    "revision": "d47d06f41b816a936e3a7e484c9dc6f2"
+    "revision": "8182849f37ebc14331e58eb702178a63"
   },
   {
     "url": "assets/data/kitchen/index.json",
-    "revision": "3efda12af88ea4bae488897001f68272"
+    "revision": "ab5cbac1a704e4ba2caa3012370bca42"
   },
   {
     "url": "assets/data/office/index.json",
-    "revision": "738836299bc485999edfb634dc4b96af"
+    "revision": "b30cae052791bb847d7665a5a3a3a3d7"
   },
   {
     "url": "assets/data/tag/Altitude/index.json",
-    "revision": "8648bcc0be8f52f98241c3fbb378c1da"
+    "revision": "0119b27ba5f1389ba015ac52478b863b"
   },
   {
     "url": "assets/data/tag/Humidity/index.json",
-    "revision": "b377c769a42b1c74291bc3bb7bbc675c"
+    "revision": "e67c9205dcff869dca00ece992fd56cb"
   },
   {
     "url": "assets/data/tag/Temperature/index.json",
-    "revision": "2da3428dd0c2578ffbb2e529243238e9"
+    "revision": "28f6ac93365d2805c0f01207e1cf6f5a"
   },
   {
-    "url": "assets/js/app.5b01257e.js",
-    "revision": "abd519c1b8a050a4eee0844e5f8f4efd"
+    "url": "assets/js/app.8a2ad74a.js",
+    "revision": "e2ef2054dc47903ee201d7c1c68a53df"
   },
   {
     "url": "assets/js/page--node-modules--gridsome--app--pages--404-vue.74193d29.js",
     "revision": "f09cbcbea7e9381983660ad60cea6f1a"
   },
   {
-    "url": "assets/js/page--src--pages--index-vue.2b4fdfd6.js",
-    "revision": "6ccc68dabe6010bf87d358fd53b8e122"
+    "url": "assets/js/page--src--pages--index-vue.0041aa51.js",
+    "revision": "0f04ee29818e1f4c0fd4b60cad70ed04"
   },
   {
-    "url": "assets/js/page--src--templates--sensor-vue.7ded6680.js",
-    "revision": "676f41d27acb70c5f585d1291f4d2a36"
+    "url": "assets/js/page--src--templates--sensor-vue.b4d33a72.js",
+    "revision": "05fa79c2b3b83a627b1a3df9293b9b3a"
   },
   {
-    "url": "assets/js/page--src--templates--tag-vue.d7a34433.js",
-    "revision": "846f978f2ebc55ca60289a81c29f16df"
+    "url": "assets/js/page--src--templates--tag-vue.78b573c6.js",
+    "revision": "96a473da9e2cdce1832d5bc2464f366b"
   },
   {
     "url": "assets/static/esp32.07cc2b7.5f26e714a295fea020dbdff12a80a332.jpeg",
@@ -139,15 +139,15 @@ self.__precacheManifest = [
   },
   {
     "url": "garden/index.html",
-    "revision": "ee646dcfa8367526171b884990e2377f"
+    "revision": "a2dd8d4fef02d97302720e5fbaa67948"
   },
   {
     "url": "index.html",
-    "revision": "8ca7da3d4ba98dc7b4d677282a2223c7"
+    "revision": "4dc90e7c9da26c6acd99b9c51d509a15"
   },
   {
     "url": "kitchen/index.html",
-    "revision": "d6e5415ab9c3d0d6e21b8212b6ce3e56"
+    "revision": "cc200cf776e0b54378888f480e9c8d6d"
   },
   {
     "url": "manifest.json",
@@ -155,19 +155,19 @@ self.__precacheManifest = [
   },
   {
     "url": "office/index.html",
-    "revision": "d11fa18061eda0bcd174b142aea6f4ec"
+    "revision": "08afc16edc9dc86f1fc1120a8709a986"
   },
   {
     "url": "tag/Altitude/index.html",
-    "revision": "529ee44b4f9dfdb6cba2d7ddf79594bf"
+    "revision": "2a9d519e8befa954906dd3ed5896a432"
   },
   {
     "url": "tag/Humidity/index.html",
-    "revision": "e4a90c3e503e8e824b50aef8bccba024"
+    "revision": "872dbb84c793ce6a633fef642c69b73b"
   },
   {
     "url": "tag/Temperature/index.html",
-    "revision": "9b9ae5e8e72f5d1b2d9cb3eca8f0fab6"
+    "revision": "c86e773b26299a72d0a9fadebe3441e5"
   },
   {
     "url": "404",
@@ -186,16 +186,16 @@ self.__precacheManifest = [
     "revision": "7f3ea71b1bf36c086397d84f28eb78a3"
   },
   {
-    "url": "office",
-    "revision": "ed147028263968140ce030738a5f490b"
-  },
-  {
     "url": "kitchen",
     "revision": "00d96ba4a29deb50d190184bcb516747"
   },
   {
     "url": "garden",
     "revision": "5c4bb96b75c4a24cdd2909e0a5d9951c"
+  },
+  {
+    "url": "office",
+    "revision": "ed147028263968140ce030738a5f490b"
   }
 ].concat(self.__precacheManifest || []);
 workbox.precaching.precacheAndRoute(self.__precacheManifest, {});
