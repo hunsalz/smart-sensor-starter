@@ -42,23 +42,20 @@ export default {
 <style lang="scss">
 .header {
   display: flex;
+  // position: sticky;
+  // background: var(--header-color);
   justify-content: space-between;
   align-items: center;
   min-height: var(--header-height);
   padding: 0 calc(var(--space) / 2);
   top: 0;
   z-index: 10;
+  width: 100%;
 
   &__left,
   &__right {
     display: flex;
     align-items: center;
-  }
-
-  @media screen and (min-width: 1300px) {
-    // make header sticky for large screens
-    position: sticky;
-    width: 100%;
   }
 }
 
