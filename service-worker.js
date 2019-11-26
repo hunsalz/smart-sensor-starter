@@ -43,19 +43,19 @@ self.__precacheManifest = [
   },
   {
     "url": "assets/data/garden/index.json",
-    "revision": "86495966202425e47120f3aa6f372ea3"
+    "revision": "66bfedde44fe1eddaad06a257590e5fc"
   },
   {
     "url": "assets/data/index.json",
-    "revision": "e2ceef02ec455f45d5629baa4de8203c"
+    "revision": "515a2a0791f46741e010a5a531427cd4"
   },
   {
     "url": "assets/data/kitchen/index.json",
-    "revision": "f277e4c4b209a44f86eb1461900dabcb"
+    "revision": "40d62fab53fb4430e1b18dbc5cfc578b"
   },
   {
     "url": "assets/data/office/index.json",
-    "revision": "2db24e5277bac8565784d8fafe7f1c74"
+    "revision": "14d9aea8d67086ba4d2433ab9bfbda4b"
   },
   {
     "url": "assets/data/tag/Altitude/index.json",
@@ -139,15 +139,15 @@ self.__precacheManifest = [
   },
   {
     "url": "garden/index.html",
-    "revision": "c6f739cca295bbc039ca93ac6af6cbff"
+    "revision": "47f85a6e7640ed0932295b402f2dc425"
   },
   {
     "url": "index.html",
-    "revision": "ffe540eaa5347f8ac3f9149b4218ae35"
+    "revision": "0f7dd9a37c197597b681d78767a5122e"
   },
   {
     "url": "kitchen/index.html",
-    "revision": "a91c94928848c0fdea4677e44ea4ee6b"
+    "revision": "f0fc54f7f70c26308c47f53d90d24ff6"
   },
   {
     "url": "manifest.json",
@@ -155,7 +155,7 @@ self.__precacheManifest = [
   },
   {
     "url": "office/index.html",
-    "revision": "597a92082b4b4908d00984851e8c31b8"
+    "revision": "f211954a28288c599de16178d6744718"
   },
   {
     "url": "tag/Altitude/index.html",
@@ -186,16 +186,16 @@ self.__precacheManifest = [
     "revision": "7f3ea71b1bf36c086397d84f28eb78a3"
   },
   {
-    "url": "garden",
-    "revision": "5c4bb96b75c4a24cdd2909e0a5d9951c"
-  },
-  {
     "url": "kitchen",
     "revision": "00d96ba4a29deb50d190184bcb516747"
   },
   {
     "url": "office",
     "revision": "ed147028263968140ce030738a5f490b"
+  },
+  {
+    "url": "garden",
+    "revision": "5c4bb96b75c4a24cdd2909e0a5d9951c"
   }
 ].concat(self.__precacheManifest || []);
 workbox.precaching.precacheAndRoute(self.__precacheManifest, {});
