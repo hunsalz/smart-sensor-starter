@@ -47,7 +47,7 @@ self.__precacheManifest = [
   },
   {
     "url": "assets/data/index.json",
-    "revision": "7caae3c7f1f6a54e12d54d91408a7ca9"
+    "revision": "e2ceef02ec455f45d5629baa4de8203c"
   },
   {
     "url": "assets/data/kitchen/index.json",
@@ -55,7 +55,7 @@ self.__precacheManifest = [
   },
   {
     "url": "assets/data/office/index.json",
-    "revision": "d8dbe707754980237496ecdac3230676"
+    "revision": "2db24e5277bac8565784d8fafe7f1c74"
   },
   {
     "url": "assets/data/tag/Altitude/index.json",
@@ -143,7 +143,7 @@ self.__precacheManifest = [
   },
   {
     "url": "index.html",
-    "revision": "81bb57b8de554c295ff2f972dcc9f180"
+    "revision": "ffe540eaa5347f8ac3f9149b4218ae35"
   },
   {
     "url": "kitchen/index.html",
@@ -155,7 +155,7 @@ self.__precacheManifest = [
   },
   {
     "url": "office/index.html",
-    "revision": "73328e1d1cb74b73aa25ba6c789c5649"
+    "revision": "597a92082b4b4908d00984851e8c31b8"
   },
   {
     "url": "tag/Altitude/index.html",
