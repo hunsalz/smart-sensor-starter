@@ -1,6 +1,8 @@
 <template>
   <div class="sensor-values">
-
+    <div class="sensor-values__data" v-for="data in sensor.data" :key="data.key">
+      <span>{{ data.key }} = {{ data.value }} {{ data.unit }}</span>
+    </div>
   </div>
 </template>
 

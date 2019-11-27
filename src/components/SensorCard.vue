@@ -14,9 +14,7 @@
     <div class="sensor-card__content">
       <h2 class="sensor-card__title" v-html="sensor.title" />
       <p class="sensor-card__content" v-html="sensor.content" />
-      <p>
-        <SensorValues class="sensor-card__meta" :sensor="sensor" />
-      </p>
+
 
       <TagList class="sensor-card__tags" :sensor="sensor" />
       <MetaInfo class="sensor-card__meta" :sensor="sensor" />
