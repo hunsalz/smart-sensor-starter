@@ -43,11 +43,11 @@ self.__precacheManifest = [
   },
   {
     "url": "assets/data/garden/index.json",
-    "revision": "66bfedde44fe1eddaad06a257590e5fc"
+    "revision": "89ac0ecfdd815a823bd50d34d910c0c5"
   },
   {
     "url": "assets/data/index.json",
-    "revision": "515a2a0791f46741e010a5a531427cd4"
+    "revision": "19082710b4ba6a8e17cfd299412d2c8d"
   },
   {
     "url": "assets/data/kitchen/index.json",
@@ -55,7 +55,7 @@ self.__precacheManifest = [
   },
   {
     "url": "assets/data/office/index.json",
-    "revision": "14d9aea8d67086ba4d2433ab9bfbda4b"
+    "revision": "d8dbe707754980237496ecdac3230676"
   },
   {
     "url": "assets/data/tag/Altitude/index.json",
@@ -139,11 +139,11 @@ self.__precacheManifest = [
   },
   {
     "url": "garden/index.html",
-    "revision": "47f85a6e7640ed0932295b402f2dc425"
+    "revision": "4805dd6631e466ed08f475d3fedf7924"
   },
   {
     "url": "index.html",
-    "revision": "0f7dd9a37c197597b681d78767a5122e"
+    "revision": "3ccc54e49f0aed180e4531c46b2c5d8f"
   },
   {
     "url": "kitchen/index.html",
@@ -155,7 +155,7 @@ self.__precacheManifest = [
   },
   {
     "url": "office/index.html",
-    "revision": "f211954a28288c599de16178d6744718"
+    "revision": "73328e1d1cb74b73aa25ba6c789c5649"
   },
   {
     "url": "tag/Altitude/index.html",
@@ -186,16 +186,16 @@ self.__precacheManifest = [
     "revision": "7f3ea71b1bf36c086397d84f28eb78a3"
   },
   {
+    "url": "garden",
+    "revision": "5c4bb96b75c4a24cdd2909e0a5d9951c"
+  },
+  {
     "url": "kitchen",
     "revision": "00d96ba4a29deb50d190184bcb516747"
   },
   {
     "url": "office",
     "revision": "ed147028263968140ce030738a5f490b"
-  },
-  {
-    "url": "garden",
-    "revision": "5c4bb96b75c4a24cdd2909e0a5d9951c"
   }
 ].concat(self.__precacheManifest || []);
 workbox.precaching.precacheAndRoute(self.__precacheManifest, {});
