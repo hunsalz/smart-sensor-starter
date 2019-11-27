@@ -11,7 +11,13 @@
         :src="sensor.cover_image"
       />
     </div>
+    <div class="sensor-card__content">
+      <h2 class="sensor-card__title" v-html="sensor.title" />
+      <p class="sensor-card__content" v-html="sensor.content" />
 
+
+      <g-link class="sensor-card__link" :to="sensor.path">Link</g-link>
+    </div>
   </div>
 </template>
 
