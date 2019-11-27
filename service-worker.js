@@ -27,67 +27,71 @@ self.addEventListener('message', (event) => {
 self.__precacheManifest = [
   {
     "url": "404.html",
-    "revision": "d8126e1bb979d8e929842201ea32fde1"
+    "revision": "4b307f0338731502d3c65ce31625a2ab"
   },
   {
     "url": "404/index.html",
-    "revision": "d8126e1bb979d8e929842201ea32fde1"
+    "revision": "4b307f0338731502d3c65ce31625a2ab"
   },
   {
-    "url": "assets/css/0.styles.11d87edf.css",
+    "url": "assets/css/styles.styles.199a7602.css",
     "revision": "af15817a8cb9efe5aafa6a2311317338"
   },
   {
     "url": "assets/data/404/index.json",
-    "revision": "239cff3ac1dc3fd7f4012d6c04bf0896"
+    "revision": "3ec7460bfe0176836ab28b9d8373202e"
   },
   {
     "url": "assets/data/garden/index.json",
-    "revision": "5ffec8108b565b08ac51880e7a461088"
+    "revision": "017b10fe6fba89931efa17236ef3d83e"
   },
   {
     "url": "assets/data/index.json",
-    "revision": "fbd3cc4589195d76d25e297e7ca13055"
+    "revision": "dd6e978cafc103155e2fb35c48ba955f"
   },
   {
     "url": "assets/data/kitchen/index.json",
-    "revision": "1255a579f24a787fe459465ac868f78c"
+    "revision": "1f9af485a35310e31ee3732a262153af"
   },
   {
     "url": "assets/data/office/index.json",
-    "revision": "7c9917da0dd269ff36d6c52f531341af"
+    "revision": "bc4e0baac22a8178f5f1f1abd1749dd4"
   },
   {
     "url": "assets/data/tag/Altitude/index.json",
-    "revision": "fa9f5d25624d10e9f91d82e09250d25d"
+    "revision": "2a207b76bb933c5ecbbdd6598b54b0e6"
   },
   {
     "url": "assets/data/tag/Humidity/index.json",
-    "revision": "8bc8e383affc433abd1183018f005a1b"
+    "revision": "ec708f71bd3b7720ab290b2fa6b85296"
   },
   {
     "url": "assets/data/tag/Temperature/index.json",
-    "revision": "f54a01f701fffaae7b1eada61187212d"
+    "revision": "f1fc34a313f631912d80e72650d5f396"
   },
   {
-    "url": "assets/js/app.76b61a24.js",
-    "revision": "c2789fb65dea4ec601161b534925ad3a"
+    "url": "assets/js/app.0a5fd5f7.js",
+    "revision": "d1b0d82998c4d54be3790e8af5b0bf14"
   },
   {
-    "url": "assets/js/page--node-modules--gridsome--app--pages--404-vue.74193d29.js",
-    "revision": "f09cbcbea7e9381983660ad60cea6f1a"
+    "url": "assets/js/page--node-modules--gridsome--app--pages--404-vue.405e6217.js",
+    "revision": "798d5a2a58be5febe684b998fa748b6b"
   },
   {
-    "url": "assets/js/page--src--pages--index-vue.8f6ef807.js",
-    "revision": "bbd424f19f50935604b4f754908824c0"
+    "url": "assets/js/page--src--pages--index-vue.0aa67855.js",
+    "revision": "5ec3390a7d160fd8ad7a41928cc19616"
   },
   {
-    "url": "assets/js/page--src--templates--sensor-vue.1abac57a.js",
-    "revision": "0b3925e555d7edbeab61569e3a4dd25e"
+    "url": "assets/js/page--src--pages--index-vue~page--src--templates--tag-vue.16d238b0.js",
+    "revision": "f2ea6e30846002233fd9fc5d175dde99"
   },
   {
-    "url": "assets/js/page--src--templates--tag-vue.fd025d4d.js",
-    "revision": "b7dbc117afea509b7fcf6e275f0f2b27"
+    "url": "assets/js/page--src--templates--sensor-vue.742af043.js",
+    "revision": "8f103ada2fbfe8d2026d394d37dd8a50"
+  },
+  {
+    "url": "assets/js/page--src--templates--tag-vue.db974ac5.js",
+    "revision": "fd88955b1bc91616bd6331ff9f608726"
   },
   {
     "url": "assets/static/esp32.07cc2b7.5f26e714a295fea020dbdff12a80a332.jpeg",
@@ -103,35 +107,35 @@ self.__precacheManifest = [
   },
   {
     "url": "assets/static/favicon.1539b60.9bb7ffafafc09ac851d81afb65b8ef59.png",
-    "revision": "d2a802ddb91346ba1bacd54ab5d9aace"
+    "revision": "7e3c420ed3359221ac22eedbc5cc1630"
   },
   {
     "url": "assets/static/favicon.62d22cb.9bb7ffafafc09ac851d81afb65b8ef59.png",
-    "revision": "ff82882c2da0bb17285633973ae6d65b"
+    "revision": "2f85c47cd65b86c6507ff18b2b8d5e98"
   },
   {
     "url": "assets/static/favicon.7b22250.9bb7ffafafc09ac851d81afb65b8ef59.png",
-    "revision": "f9974bad556938f2707848d1814f13a1"
+    "revision": "fa38503a9bbe98901bd244b830e4d6c5"
   },
   {
     "url": "assets/static/favicon.ac8d93a.9bb7ffafafc09ac851d81afb65b8ef59.png",
-    "revision": "f7be2331ae350e64cd1600af80c3683b"
+    "revision": "6b22178d5429b8ac29e5ced482659f49"
   },
   {
     "url": "assets/static/favicon.b9532cc.9bb7ffafafc09ac851d81afb65b8ef59.png",
-    "revision": "466eb6d2639408db8b9b58c037297d53"
+    "revision": "540320e5aa9702b00a08f9e00d7a921e"
   },
   {
     "url": "assets/static/favicon.ce0531f.9bb7ffafafc09ac851d81afb65b8ef59.png",
-    "revision": "69003266b28a85cbbdb7b0ca7c6757f3"
+    "revision": "a8710ab24cde9ded477cd08f602f7349"
   },
   {
     "url": "assets/static/favicon.dc0cdc5.9bb7ffafafc09ac851d81afb65b8ef59.png",
-    "revision": "7cf51ec517585d2700f4feb85597548d"
+    "revision": "7e2074d4885eacfb8d44276b74beac92"
   },
   {
     "url": "assets/static/favicon.f22e9f3.9bb7ffafafc09ac851d81afb65b8ef59.png",
-    "revision": "9fff9a2ceadee823efa116130802fb9a"
+    "revision": "94b22eed0bfc12ff09d62a86659c4fab"
   },
   {
     "url": "assets/static/website-icon.png",
@@ -139,15 +143,15 @@ self.__precacheManifest = [
   },
   {
     "url": "garden/index.html",
-    "revision": "ac4061115b4247d17ef4479700c09c28"
+    "revision": "a790deab51b5fe7d3202694eccef79e8"
   },
   {
     "url": "index.html",
-    "revision": "791091690fd899eaec93ba7fbe90aacc"
+    "revision": "9848a6b844a7241ba9b5ae6e937c0871"
   },
   {
     "url": "kitchen/index.html",
-    "revision": "f65a77e959dda9692b8ed1ddfafdf645"
+    "revision": "af64c91bb55f1299c94c7eca302e8b58"
   },
   {
     "url": "manifest.json",
@@ -155,19 +159,19 @@ self.__precacheManifest = [
   },
   {
     "url": "office/index.html",
-    "revision": "a0ccbd1ad44e67ca44193c771a5bb9a5"
+    "revision": "cf0821cc51cb1273458cdd1de9e09765"
   },
   {
     "url": "tag/Altitude/index.html",
-    "revision": "2adb6d9915d9f0f459c830ebfa6ac501"
+    "revision": "9e47432bd5835606acb4a64f94066b9a"
   },
   {
     "url": "tag/Humidity/index.html",
-    "revision": "cece6a70e26312291b204bd02d292143"
+    "revision": "1289336b4ae57a8bed1c0cbf589f5712"
   },
   {
     "url": "tag/Temperature/index.html",
-    "revision": "3ed725b1fcc5fa3d780757918455c02f"
+    "revision": "6956b1c1b315ff1c5ca4fafda799bdcc"
   },
   {
     "url": "404",
