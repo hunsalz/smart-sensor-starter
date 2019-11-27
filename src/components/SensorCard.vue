@@ -18,8 +18,9 @@
         <SensorValues class="sensor-card__meta" :sensor="sensor" />
       </p>
 
+      <MetaInfo class="sensor-card__meta" :sensor="sensor" />
       <TagList class="sensor-card__tags" :sensor="sensor" />
-
+      
 
       <g-link class="sensor-card__link" :to="sensor.path">Link</g-link>
     </div>
