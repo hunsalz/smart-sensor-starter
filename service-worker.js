@@ -27,11 +27,11 @@ self.addEventListener('message', (event) => {
 self.__precacheManifest = [
   {
     "url": "404.html",
-    "revision": "4b307f0338731502d3c65ce31625a2ab"
+    "revision": "af59eff22b8fd3d65a1ec76b27098b3b"
   },
   {
     "url": "404/index.html",
-    "revision": "4b307f0338731502d3c65ce31625a2ab"
+    "revision": "af59eff22b8fd3d65a1ec76b27098b3b"
   },
   {
     "url": "assets/css/styles.styles.199a7602.css",
@@ -39,47 +39,47 @@ self.__precacheManifest = [
   },
   {
     "url": "assets/data/404/index.json",
-    "revision": "3ec7460bfe0176836ab28b9d8373202e"
+    "revision": "8702a5a0eaaeb6830c8a1c87eff1b36c"
   },
   {
     "url": "assets/data/garden/index.json",
-    "revision": "017b10fe6fba89931efa17236ef3d83e"
+    "revision": "4a5d70f55960a57f65bd015795345e7d"
   },
   {
     "url": "assets/data/index.json",
-    "revision": "dd6e978cafc103155e2fb35c48ba955f"
+    "revision": "0792ccd8666e55b30e93160fd8464d6f"
   },
   {
     "url": "assets/data/kitchen/index.json",
-    "revision": "1f9af485a35310e31ee3732a262153af"
+    "revision": "ba9c610c66cccaafda83c88627dc78d7"
   },
   {
     "url": "assets/data/office/index.json",
-    "revision": "bc4e0baac22a8178f5f1f1abd1749dd4"
+    "revision": "8d93a59a02ee029ad07815af33579cb3"
   },
   {
     "url": "assets/data/tag/Altitude/index.json",
-    "revision": "2a207b76bb933c5ecbbdd6598b54b0e6"
+    "revision": "aacfe6bfd474e7f3168bace680de2d4e"
   },
   {
     "url": "assets/data/tag/Humidity/index.json",
-    "revision": "ec708f71bd3b7720ab290b2fa6b85296"
+    "revision": "a75e6d682d5aac58e5dde1a3e3346e91"
   },
   {
     "url": "assets/data/tag/Temperature/index.json",
-    "revision": "f1fc34a313f631912d80e72650d5f396"
+    "revision": "c8dd1444c2099bc47397e60ee555f469"
   },
   {
-    "url": "assets/js/app.0a5fd5f7.js",
-    "revision": "d1b0d82998c4d54be3790e8af5b0bf14"
+    "url": "assets/js/app.2b8066ca.js",
+    "revision": "94582c3cebf1640e2723021a9bc71d03"
   },
   {
     "url": "assets/js/page--node-modules--gridsome--app--pages--404-vue.405e6217.js",
     "revision": "798d5a2a58be5febe684b998fa748b6b"
   },
   {
-    "url": "assets/js/page--src--pages--index-vue.0aa67855.js",
-    "revision": "5ec3390a7d160fd8ad7a41928cc19616"
+    "url": "assets/js/page--src--pages--index-vue.d457eb29.js",
+    "revision": "0ba46076365d1dab478e339f07b301a1"
   },
   {
     "url": "assets/js/page--src--pages--index-vue~page--src--templates--tag-vue.16d238b0.js",
@@ -143,15 +143,15 @@ self.__precacheManifest = [
   },
   {
     "url": "garden/index.html",
-    "revision": "a790deab51b5fe7d3202694eccef79e8"
+    "revision": "d35ae9a91e08c6b2d53dc5f0867bce06"
   },
   {
     "url": "index.html",
-    "revision": "9848a6b844a7241ba9b5ae6e937c0871"
+    "revision": "2dff0fd7b6ac4a6f6d1498c76893d454"
   },
   {
     "url": "kitchen/index.html",
-    "revision": "af64c91bb55f1299c94c7eca302e8b58"
+    "revision": "5f9a3fb533ae4f79664ec4f78dbc9b01"
   },
   {
     "url": "manifest.json",
@@ -159,19 +159,19 @@ self.__precacheManifest = [
   },
   {
     "url": "office/index.html",
-    "revision": "cf0821cc51cb1273458cdd1de9e09765"
+    "revision": "7c9a2bb4594767275417d9a3c0d6d420"
   },
   {
     "url": "tag/Altitude/index.html",
-    "revision": "9e47432bd5835606acb4a64f94066b9a"
+    "revision": "d04d7fe4195e231fb00d81b1af8b8751"
   },
   {
     "url": "tag/Humidity/index.html",
-    "revision": "1289336b4ae57a8bed1c0cbf589f5712"
+    "revision": "5db54c335201e502b800e3c4e7435c95"
   },
   {
     "url": "tag/Temperature/index.html",
-    "revision": "6956b1c1b315ff1c5ca4fafda799bdcc"
+    "revision": "94bd0361ab4018853db4bb35f7d42ab7"
   },
   {
     "url": "404",
@@ -194,12 +194,12 @@ self.__precacheManifest = [
     "revision": "5c4bb96b75c4a24cdd2909e0a5d9951c"
   },
   {
-    "url": "kitchen",
-    "revision": "00d96ba4a29deb50d190184bcb516747"
-  },
-  {
     "url": "office",
     "revision": "ed147028263968140ce030738a5f490b"
+  },
+  {
+    "url": "kitchen",
+    "revision": "00d96ba4a29deb50d190184bcb516747"
   }
 ].concat(self.__precacheManifest || []);
 workbox.precaching.precacheAndRoute(self.__precacheManifest, {});
