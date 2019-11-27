@@ -27,11 +27,11 @@ self.addEventListener('message', (event) => {
 self.__precacheManifest = [
   {
     "url": "404.html",
-    "revision": "dd1cafed11aecb38c3fb20cac18e6dec"
+    "revision": "9be18ee264b9453b4a8da9621dc7544d"
   },
   {
     "url": "404/index.html",
-    "revision": "dd1cafed11aecb38c3fb20cac18e6dec"
+    "revision": "9be18ee264b9453b4a8da9621dc7544d"
   },
   {
     "url": "assets/css/styles.styles.199a7602.css",
@@ -39,39 +39,39 @@ self.__precacheManifest = [
   },
   {
     "url": "assets/data/404/index.json",
-    "revision": "072d3d609d88c5533d2354bb5244e67a"
+    "revision": "23c952fc1524eeaf9206c58f930a9225"
   },
   {
     "url": "assets/data/garden/index.json",
-    "revision": "2cbf0e36e7b6cc343827382b8108120f"
+    "revision": "226009de5e37bb3718a2e51d91736f0f"
   },
   {
     "url": "assets/data/index.json",
-    "revision": "b2c02bac4c4241c8a2cd741c2dcf8282"
+    "revision": "cde8ba215b4432f61e8bbd56d5ecea18"
   },
   {
     "url": "assets/data/kitchen/index.json",
-    "revision": "4b1a4c34ae93c848c6404e7aad77a678"
+    "revision": "a17fb2e729cbd10bd5e4b447b5aa2879"
   },
   {
     "url": "assets/data/office/index.json",
-    "revision": "25880afcb3eaf12ca919c9c7ef30d2d7"
+    "revision": "47e7088318a58fcdb5e1bb0c16999947"
   },
   {
     "url": "assets/data/tag/Altitude/index.json",
-    "revision": "324b714554a8e1094ec2cd5f8b10ffa1"
+    "revision": "185427ab7a5d4e8cfa5641bacc45b211"
   },
   {
     "url": "assets/data/tag/Humidity/index.json",
-    "revision": "8b89d5c868bc0cea7b242dcd3ce779af"
+    "revision": "79abb110c600bb5d825af72fce23484b"
   },
   {
     "url": "assets/data/tag/Temperature/index.json",
-    "revision": "ea25ace659a0924c1566b585fd00dea5"
+    "revision": "09a35b7356bd7cdcd8fb97af68647884"
   },
   {
-    "url": "assets/js/app.b0881f2a.js",
-    "revision": "151ffb1064db0e8f7bdc2f5f90a331b0"
+    "url": "assets/js/app.856cc67b.js",
+    "revision": "5cde1a5c56a6503831153f07a494732d"
   },
   {
     "url": "assets/js/page--node-modules--gridsome--app--pages--404-vue.405e6217.js",
@@ -82,8 +82,8 @@ self.__precacheManifest = [
     "revision": "5ec3390a7d160fd8ad7a41928cc19616"
   },
   {
-    "url": "assets/js/page--src--pages--index-vue~page--src--templates--tag-vue.070fbb78.js",
-    "revision": "1224ed0dc3e8c4869cb6de127a7749b7"
+    "url": "assets/js/page--src--pages--index-vue~page--src--templates--tag-vue.f16316fb.js",
+    "revision": "48d840366443fa30207535e914098908"
   },
   {
     "url": "assets/js/page--src--templates--sensor-vue.742af043.js",
@@ -143,15 +143,15 @@ self.__precacheManifest = [
   },
   {
     "url": "garden/index.html",
-    "revision": "2a2f4715aa4d60a663f5b67ad38b62a4"
+    "revision": "d9e0f56ee4a8f73e56d3da46fd4214ef"
   },
   {
     "url": "index.html",
-    "revision": "b9093816318f7152f93a6eee12081baf"
+    "revision": "3ad839059c2bb86dab5a264fbd96e893"
   },
   {
     "url": "kitchen/index.html",
-    "revision": "52268baee0691c7ada8ab01d2c569a11"
+    "revision": "c29e703b0c7c4b00832ee92f8a508343"
   },
   {
     "url": "manifest.json",
@@ -159,19 +159,19 @@ self.__precacheManifest = [
   },
   {
     "url": "office/index.html",
-    "revision": "97187cc8d24b5f87cb7a419c4f559604"
+    "revision": "01ff4b5b260eb1befaa9645c5689ff17"
   },
   {
     "url": "tag/Altitude/index.html",
-    "revision": "23b29d718a19a55c6ac2bb2299ca0421"
+    "revision": "78de43b06ee3dc62f31f9cc102fc21ce"
   },
   {
     "url": "tag/Humidity/index.html",
-    "revision": "30ec210a53ea185cd72ef9a06d3ef93f"
+    "revision": "48b4d51bdcaa2428ccab70ce284060ef"
   },
   {
     "url": "tag/Temperature/index.html",
-    "revision": "7ff562d08698e4f1601eae5e79f9abbb"
+    "revision": "5443c40feae5144dfb8d3d640f24f033"
   },
   {
     "url": "404",
