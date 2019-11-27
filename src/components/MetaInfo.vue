@@ -1,10 +1,5 @@
 <template>
-  <div class="meta-info">
-    Last updated at {{ sensor.date }}
-    <!--template v-if="sensor.timeToRead">
-      <strong>{{ sensor.timeToRead }} min read.</strong>
-    </template-->
-  </div>
+  <div class="meta-info">Last updated at {{ sensor.date }}</div>
 </template>
 
 <script>

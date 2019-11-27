@@ -1,7 +1,11 @@
 <template>
   <Layout :show-back-button="false">
     <div class="grid">
-      <SensorCard v-for="edge in $page.sensors.edges" :key="edge.node.id" :sensor="edge.node" />
+      <SensorCard
+        v-for="edge in $page.sensors.edges"
+        :key="edge.node.id"
+        :sensor="edge.node"
+      />
     </div>
   </Layout>
 </template>

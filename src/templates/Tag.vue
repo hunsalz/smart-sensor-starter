@@ -1,11 +1,13 @@
 <template>
   <Layout>
-    <h1 class="tag-title text-center space-bottom">
-      # {{ $page.tag.title }}
-    </h1>
+    <h1 class="tag-title text-center space-bottom"># {{ $page.tag.title }}</h1>
 
     <div class="sensors">
-      <SensorCard v-for="edge in $page.tag.belongsTo.edges" :key="edge.node.id" :sensor="edge.node"/>
+      <SensorCard
+        v-for="edge in $page.tag.belongsTo.edges"
+        :key="edge.node.id"
+        :sensor="edge.node"
+      />
     </div>
   </Layout>
 </template>
@@ -32,7 +34,7 @@ query Tag ($id: ID!) {
 </page-query>
 
 <script>
-import SensorCard from '~/components/SensorCard.vue'
+import SensorCard from "~/components/SensorCard.vue";
 
 export default {
   components: {
@@ -43,9 +45,7 @@ export default {
       title: this.$page.tag.title
     };
   }
-}
+};
 </script>
 
-<style lang="scss">
-
-</style>
+<style lang="scss"></style>

@@ -1,5 +1,8 @@
 <template>
-  <div class="sensor-card content-box" :class="{'sensor-card--has-sensorer' : sensor.sensorer}">
+  <div
+    class="sensor-card content-box"
+    :class="{ 'sensor-card--has-sensorer': sensor.sensorer }"
+  >
     <div class="sensor-card__header">
       <g-image
         alt="Cover image"
@@ -16,7 +19,6 @@
       </p>
 
       <TagList class="sensor-card__tags" :sensor="sensor" />
-      <p></p>
       <MetaInfo class="sensor-card__meta" :sensor="sensor" />
 
       <g-link class="sensor-card__link" :to="sensor.path">Link</g-link>

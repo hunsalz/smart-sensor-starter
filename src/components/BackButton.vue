@@ -1,6 +1,8 @@
 <template>
   <g-link class="back-button" to="/">
-    <span class="back-button__text">&larr; {{ $static.metadata.siteName }}</span>
+    <span class="back-button__text"
+      >&larr; {{ $static.metadata.siteName }}</span
+    >
   </g-link>
 </template>
 

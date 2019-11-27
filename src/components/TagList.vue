@@ -1,6 +1,11 @@
 <template>
   <div class="tag-list">
-    <g-link class="tag-list__link" v-for="tag in sensor.tags" :key="tag.id" :to="tag.path">
+    <g-link
+      class="tag-list__link"
+      v-for="tag in sensor.tags"
+      :key="tag.id"
+      :to="tag.path"
+    >
       <span>#</span>
       {{ tag.title }}
     </g-link>
