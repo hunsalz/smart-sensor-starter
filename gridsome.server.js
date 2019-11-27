@@ -10,6 +10,6 @@ module.exports = function (api) {
     // Use the Data store API here: https://gridsome.org/docs/data-store-api/
   })
   api.chainWebpack(config => {
-    config.mode('development')
+    //config.mode('development')
   })  
 }
