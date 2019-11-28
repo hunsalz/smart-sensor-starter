@@ -20,7 +20,7 @@
 
       <TagList class="sensor-card__tags" :sensor="sensor" />
 
-      <div class="meta-info">Last updated at {{ sensor.date }}</div>
+      
 
       <g-link class="sensor-card__link" :to="sensor.path">Link</g-link>
     </div>
