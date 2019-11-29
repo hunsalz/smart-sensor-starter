@@ -15,7 +15,7 @@
       <h2 class="sensor-card__title" v-html="sensor.title" />
       <p class="sensor-card__content" v-html="sensor.content" />
       <p>
-        <SensorValues :sensor="sensor" />
+        test
       </p>
 
       <!-- <TagList class="sensor-card__tags" :sensor="sensor" />
