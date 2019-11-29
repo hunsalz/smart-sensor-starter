@@ -27,11 +27,11 @@ self.addEventListener('message', (event) => {
 self.__precacheManifest = [
   {
     "url": "404.html",
-    "revision": "04374f3f0867b1bad7a4e9b7f382506b"
+    "revision": "437fffcdd1fd8f5760891586bc61ee54"
   },
   {
     "url": "404/index.html",
-    "revision": "04374f3f0867b1bad7a4e9b7f382506b"
+    "revision": "437fffcdd1fd8f5760891586bc61ee54"
   },
   {
     "url": "assets/css/0.styles.378d53fe.css",
@@ -39,55 +39,55 @@ self.__precacheManifest = [
   },
   {
     "url": "assets/data/404/index.json",
-    "revision": "cfc1fd764116aa44468cd06ac7c141a8"
+    "revision": "182e98ffbf854ba5486f71494bb45b11"
   },
   {
     "url": "assets/data/garden/index.json",
-    "revision": "2c490237746fe96152da859c7c42bba5"
+    "revision": "6618a2cae96172c13cb500097feabff8"
   },
   {
     "url": "assets/data/index.json",
-    "revision": "4a52c5575203b547b30f0d5978b88c42"
+    "revision": "07e4ee0233ebdc307dc9ca1377ceb6cd"
   },
   {
     "url": "assets/data/kitchen/index.json",
-    "revision": "397052a60b1c1f84ab2025df8fe67721"
+    "revision": "d6e07880c8e3db2d855a0d858366a5c7"
   },
   {
     "url": "assets/data/office/index.json",
-    "revision": "f30a6ac98553b95fffce13341accc51f"
+    "revision": "4ee175dc4b24ece636b6f18e95f4b3db"
   },
   {
     "url": "assets/data/tag/Altitude/index.json",
-    "revision": "6ba980506a8042065b445f2491b867f4"
+    "revision": "8223bdf8230e9eb088fed3b815a9157c"
   },
   {
     "url": "assets/data/tag/Humidity/index.json",
-    "revision": "8377be926d12cf97e6b86d9c2dcc42c3"
+    "revision": "96bcebf58f38e2a58adef03218f941cc"
   },
   {
     "url": "assets/data/tag/Temperature/index.json",
-    "revision": "99579a67e118f125a004acf53431a06a"
+    "revision": "880614380ae4773df2a70e28494445e0"
   },
   {
-    "url": "assets/js/app.e4cd966f.js",
-    "revision": "ea1b7be30f6546e58a9d681c39b7ab43"
+    "url": "assets/js/app.5023480b.js",
+    "revision": "33f12ce7d26ff6151cd56fe4dc0fd1d5"
   },
   {
     "url": "assets/js/page--node-modules--gridsome--app--pages--404-vue.68fe12b0.js",
     "revision": "f09cbcbea7e9381983660ad60cea6f1a"
   },
   {
-    "url": "assets/js/page--src--pages--index-vue.838693ea.js",
-    "revision": "6d52dd1ad19f05c9eff958c91eb33420"
+    "url": "assets/js/page--src--pages--index-vue.01466d2a.js",
+    "revision": "115ec2c1d9d33df387e080a07cc0b5df"
   },
   {
-    "url": "assets/js/page--src--templates--sensor-vue.e9017884.js",
+    "url": "assets/js/page--src--templates--sensor-vue.5f8adbb1.js",
     "revision": "b6b4bc5e317f9f25f93711bbeca497f0"
   },
   {
-    "url": "assets/js/page--src--templates--tag-vue.39a9c436.js",
-    "revision": "074a1c7a4c546dbe0c8b04b2b3e6a614"
+    "url": "assets/js/page--src--templates--tag-vue.64807566.js",
+    "revision": "7d17be358c1308c35965893a92114d27"
   },
   {
     "url": "assets/static/esp32.07cc2b7.5f26e714a295fea020dbdff12a80a332.jpeg",
@@ -139,15 +139,15 @@ self.__precacheManifest = [
   },
   {
     "url": "garden/index.html",
-    "revision": "615fcfe3bdfdbc27e1ccfd4b2be79acd"
+    "revision": "385935a759f2959b0fdaa3a4629a63e7"
   },
   {
     "url": "index.html",
-    "revision": "69ac86fe878b6e46433e78ecda129267"
+    "revision": "793b8aa3d89ae481ec809d2308fe288f"
   },
   {
     "url": "kitchen/index.html",
-    "revision": "ba69c2b3fad7bdf475f8cae6531fd745"
+    "revision": "c21a08248f7a34c9501d8e290ed83255"
   },
   {
     "url": "manifest.json",
@@ -155,19 +155,19 @@ self.__precacheManifest = [
   },
   {
     "url": "office/index.html",
-    "revision": "2a1fae731884abb4b59ef0568a9dd6fe"
+    "revision": "2011f04b505379b4c5f1a169f74f506f"
   },
   {
     "url": "tag/Altitude/index.html",
-    "revision": "6f7a502cfa440a81e38e7f21d999a9b7"
+    "revision": "2aab678f0a78d58778c83b8d588de505"
   },
   {
     "url": "tag/Humidity/index.html",
-    "revision": "70e742f96e65e085180d4f0f30c27a2f"
+    "revision": "78ff34113af546e675693879b09731cf"
   },
   {
     "url": "tag/Temperature/index.html",
-    "revision": "459c11b14a16350d57661d45f1189d2f"
+    "revision": "692a0e946d0a3e93bc45fe48dd0d678f"
   },
   {
     "url": "404",
