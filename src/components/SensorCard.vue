@@ -16,7 +16,7 @@
       <p class="sensor-card__content" v-html="sensor.content" />
       <SensorValues :sensor="sensor" />
       <TagList class="sensor-card__tags" :sensor="sensor" />
-      <MetaInfo :sensor="sensor" />
+      <div class="meta-info">Last updated at {{ sensor.date }}</div>
       <g-link class="sensor-card__link" :to="sensor.path">Link</g-link>
     </div>
   </div>
