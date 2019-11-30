@@ -29,7 +29,7 @@ module.exports = {
         }
       }
     },
-    {
+/*     {
       use: "gridsome-plugin-pwa",
       options: {
         title: "Smart Sensor",
@@ -46,7 +46,7 @@ module.exports = {
         msTileImage: "",
         msTileColor: "#666600"
       }
-    }
+    } */
   ],
 
   transformers: {
