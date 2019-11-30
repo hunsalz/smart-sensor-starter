@@ -13,23 +13,21 @@
     </div>
     <div class="sensor-card__content">
       <h2 class="sensor-card__title" v-html="sensor.title" />
-      <p class="sensor-card__content" v-html="sensor.content" />
+      <div class="sensor-card__content" v-html="sensor.content" />
       <SensorValues :sensor="sensor" />
       <TagList class="sensor-card__tags" :sensor="sensor" />
-      <div class="meta-info">Last updated at {{ sensor.date }}</div>
+      <div class="sensor-card__updated">Last updated at {{ sensor.date }}</div>
       <g-link class="sensor-card__link" :to="sensor.path">Link</g-link>
     </div>
   </div>
 </template>
 
 <script>
-import MetaInfo from "~/components/MetaInfo";
 import SensorValues from "~/components/SensorValues";
 import TagList from "~/components/TagList";
 
 export default {
   components: {
-    MetaInfo,
     SensorValues,
     TagList
   },
@@ -71,6 +69,12 @@ export default {
   &__tags {
     z-index: 1;
     position: relative;
+  }
+
+  &__updated {
+    padding-top: 1em;
+    font-size: 0.8em;
+    opacity: 0.4;
   }
 
   &__link {
