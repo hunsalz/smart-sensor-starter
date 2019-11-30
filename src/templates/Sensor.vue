@@ -23,14 +23,14 @@
 </template>
 
 <script>
-import SensorValues from "~/components/SensorValues";
 import MetaInfo from "~/components/MetaInfo";
+import SensorValues from "~/components/SensorValues";
 import TagList from "~/components/TagList";
 
 export default {
   components: {
-    SensorValues,
     MetaInfo,
+    SensorValues,
     TagList
   },
   metaInfo() {

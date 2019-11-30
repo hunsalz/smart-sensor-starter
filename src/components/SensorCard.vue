@@ -16,18 +16,20 @@
       <div class="sensor-card__content" v-html="sensor.content" />
       <SensorValues :sensor="sensor" />
       <TagList class="sensor-card__tags" :sensor="sensor" />
-      <div class="sensor-card__updated">Last updated at {{ sensor.date }}</div>
+      <MetaInfo class="sensor-card__meta" :sensor="sensor" />
       <g-link class="sensor-card__link" :to="sensor.path">Link</g-link>
     </div>
   </div>
 </template>
 
 <script>
+import MetaInfo from "~/components/MetaInfo";
 import SensorValues from "~/components/SensorValues";
 import TagList from "~/components/TagList";
 
 export default {
   components: {
+    MetaInfo,
     SensorValues,
     TagList
   },
@@ -71,10 +73,8 @@ export default {
     position: relative;
   }
 
-  &__updated {
+  &__meta {
     padding-top: 1em;
-    font-size: 0.8em;
-    opacity: 0.4;
   }
 
   &__link {
