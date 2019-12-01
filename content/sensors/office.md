@@ -6,7 +6,7 @@ canonical_url: false
 tags: 
   - 'Temperature' 
   - 'Humidity'
-cover_image: ./images/esp32.jpeg
+cover_image: ./images/office.jpg
 data:
     - key: Temperature
       value: '22.9'

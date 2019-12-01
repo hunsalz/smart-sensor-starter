@@ -1,12 +1,13 @@
 ---
-title: Kitchen
+title: Bathroom
 date: 2019-11-19
 published: true
 canonical_url: false
 tags: 
   - 'Temperature' 
   - 'Humidity'
-cover_image: ./images/esp32.jpeg
+  - 'Home'
+cover_image: ./images/bathroom.jpg
 data:
     - key: Temperature
       value: '22.1'
@@ -15,4 +16,4 @@ data:
       value: '34'
       unit: '%'
 ---
-Sensor values of my kitchen
+Sensor values of my bathroom

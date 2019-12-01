@@ -6,8 +6,8 @@ canonical_url: false
 tags: 
   - 'Temperature' 
   - 'Humidity'
-  - 'Altitude'
-cover_image: ./images/esp32.jpeg
+  - 'Home'
+cover_image: ./images/garden.jpg
 data:
     - key: Temperature
       value: '22.1'
