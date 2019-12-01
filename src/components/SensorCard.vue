@@ -1,21 +1,18 @@
 <template>
-  <div
-    class="sensor-card content-box"
-    :class="{ 'sensor-card--has-sensorer': sensor.sensorer }"
-  >
+  <div class="sensor-card content-box">
     <div class="sensor-card__header">
       <g-image
-        alt="Cover image"
-        v-if="sensor.cover_image"
         class="sensor-card__image"
+        v-if="sensor.cover_image"
         :src="sensor.cover_image"
+        alt="Cover image"
       />
     </div>
     <div class="sensor-card__content">
       <h2 class="sensor-card__title" v-html="sensor.title" />
-      <SensorValues :sensor="sensor" />
-      <TagList class="sensor-card__tags" :sensor="sensor" />
+      <SensorList :sensor="sensor" />
       <MetaInfo class="sensor-card__meta" :sensor="sensor" />
+      <TagList class="sensor-card__tags" :sensor="sensor" />
       <g-link class="sensor-card__link" :to="sensor.path">Link</g-link>
     </div>
   </div>
@@ -23,14 +20,14 @@
 
 <script>
 import MetaInfo from "~/components/MetaInfo";
-import SensorValues from "~/components/SensorValues";
 import TagList from "~/components/TagList";
+import SensorList from "~/components/SensorList";
 
 export default {
   components: {
     MetaInfo,
-    SensorValues,
-    TagList
+    TagList,
+    SensorList
   },
   props: ["sensor"]
 };

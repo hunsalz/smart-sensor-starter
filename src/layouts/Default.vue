@@ -44,10 +44,10 @@ export default {
 <style lang="scss">
 .header {
   display: flex;
-  position: sticky;
-  background: var(--header-bg);
   justify-content: space-between;
   align-items: center;
+  position: sticky;
+  background: var(--header-bg);
   min-height: var(--header-height);
   padding: 0 calc(var(--space) / 2);
   top: 0;

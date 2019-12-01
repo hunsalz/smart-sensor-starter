@@ -1,34 +1,31 @@
 <template>
-  <div class="tag-list">
-    <g-link
-      class="tag-list__link"
-      v-for="tag in sensor.tags"
-      :key="tag.id"
-      :to="tag.path"
-    >
-      <span>#</span>
-      {{ tag.title }}
-    </g-link>
+  <div class="sensor-list">
+    <div v-for="data in sensor.data" :key="data.key">
+      <DataLabel class="sensor-list__label" :data="data" />
+    </div>
   </div>
 </template>
 
 <script>
+import DataLabel from "~/components/DataLabel";
+
 export default {
+  components: {
+    DataLabel
+  },
   props: ["sensor"]
 };
 </script>
 
 <style lang="scss">
-.tag-list {
+.sensor-list {
   margin: 1em 0 0;
 
-  &__link {
+  &__label {
     margin-right: 0.7em;
     padding: 0.5em;
-    font-size: 0.8em;
     color: currentColor;
     text-decoration: none;
-    background-color: var(--bg-color);
     color: currentColor !important;
     border-radius: var(--radius);
     white-space: nowrap;

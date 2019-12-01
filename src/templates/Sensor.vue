@@ -14,7 +14,7 @@
         />
       </div>
       <div class="sensor__content" v-html="$page.sensor.content" />
-      <SensorValues class="sensor-card__meta" :sensor="$page.sensor" />
+      <SensorList :sensor="$page.sensor" />
       <div class="sensor__footer">
         <TagList :sensor="$page.sensor" />
       </div>
@@ -24,13 +24,13 @@
 
 <script>
 import MetaInfo from "~/components/MetaInfo";
-import SensorValues from "~/components/SensorValues";
+import SensorList from "~/components/SensorList";
 import TagList from "~/components/TagList";
 
 export default {
   components: {
     MetaInfo,
-    SensorValues,
+    SensorList,
     TagList
   },
   metaInfo() {
