@@ -59,7 +59,7 @@ query Sensor ($id: ID!) {
       path
     }
     data {
-      key
+      label
       value
       unit
     }

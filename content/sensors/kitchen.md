@@ -9,10 +9,10 @@ tags:
   - 'Home'
 cover_image: ./images/kitchen.jpg
 data:
-    - key: Temperature
+    - label: Temperature
       value: '24.6'
       unit: '°C'
-    - key: Humidity
+    - label: Humidity
       value: '45'
       unit: '%'
 ---

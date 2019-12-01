@@ -27,7 +27,7 @@ query {
           path
         }
         data {
-          key
+          label
           value
           unit
         }

@@ -1,6 +1,6 @@
 <template>
   <div class="data-layout">
-    <div class="data-layout__label">{{ data.key }}</div>
+    <div class="data-layout__label">{{ data.label }}</div>
     <div>
       <span class="data-layout__value">{{ data.value }} </span>
       <span class="data-layout__unit">{{ data.unit }}</span>

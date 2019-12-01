@@ -9,13 +9,13 @@ tags:
   - 'Home'
 cover_image: ./images/garden.jpg
 data:
-    - key: Temperature
+    - label: Temperature
       value: '28.1'
       unit: '°C'
-    - key: Humidity
+    - label: Humidity
       value: '34'
       unit: '%'
-    - key: Altitude
+    - label: Altitude
       value: '154'
       unit: 'm'
 ---

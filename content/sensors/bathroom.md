@@ -9,10 +9,10 @@ tags:
   - 'Home'
 cover_image: ./images/bathroom.jpg
 data:
-    - key: Temperature
+    - label: Temperature
       value: '24.7'
       unit: '°C'
-    - key: Humidity
+    - label: Humidity
       value: '65.2'
       unit: '%'
 ---

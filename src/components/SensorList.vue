@@ -1,6 +1,6 @@
 <template>
   <div class="sensor-list">
-    <div v-for="data in sensor.data" :key="data.key">
+    <div v-for="data in sensor.data" :key="data.label">
       <DataLayout class="sensor-list__label" :data="data" />
     </div>
   </div>

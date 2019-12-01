@@ -8,10 +8,10 @@ tags:
   - 'Humidity'
 cover_image: ./images/office.jpg
 data:
-    - key: Temperature
+    - label: Temperature
       value: '22.9'
       unit: '°C'
-    - key: Humidity
+    - label: Humidity
       value: '54'
       unit: '%'
 ---
