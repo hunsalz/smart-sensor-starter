@@ -10,7 +10,7 @@ tags:
 cover_image: ./images/garden.jpg
 data:
     - key: Temperature
-      value: '22.1'
+      value: '28.1'
       unit: '°C'
     - key: Humidity
       value: '34'

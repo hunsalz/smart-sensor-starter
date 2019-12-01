@@ -10,10 +10,10 @@ tags:
 cover_image: ./images/bathroom.jpg
 data:
     - key: Temperature
-      value: '22.1'
+      value: '24.7'
       unit: '°C'
     - key: Humidity
-      value: '34'
+      value: '65.2'
       unit: '%'
 ---
 Sensor values of my bathroom
