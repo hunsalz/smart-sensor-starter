@@ -1,17 +1,17 @@
 <template>
   <div class="sensor-list">
     <div v-for="data in sensor.data" :key="data.key">
-      <DataLabel class="sensor-list__label" :data="data" />
+      <DataLayout class="sensor-list__label" :data="data" />
     </div>
   </div>
 </template>
 
 <script>
-import DataLabel from "~/components/DataLabel";
+import DataLayout from "~/components/DataLayout";
 
 export default {
   components: {
-    DataLabel
+    DataLayout
   },
   props: ["sensor"]
 };
