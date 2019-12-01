@@ -1,14 +1,16 @@
-// Default variables
+// default variables
 html {
   --base-font-size: 20px;
 }
 
-// Light default theme
+// default theme light
 body {
+  --body-color: #444;
   --bg-color: #f3f7f9;
   --bg-content-color: #fff;
   --bg-code: #fffbf3;
-  --body-color: #444;
+  --header-bg: #0d2538;
+  --header-color: #fff;
   --title-color: #111;
   --link-color: #6b17e6;
   --border-color: rgba(0, 0, 0, 0.1);
@@ -18,13 +20,15 @@ body {
   --radius: 5px;
 }
 
-// Override variables for Dark theme
+// dark theme
 body[data-theme="dark"] {
+  --body-color: #ced8de;
   --bg-color: #0d2538;
   --bg-content-color: #0f2d44;
   --bg-code: rgba(0, 0, 0, 0.3);
+  --header-bg: #fff;
+  --header-color: #0d2538;
   --border-color: rgba(255, 255, 255, 0.1);
-  --body-color: #ced8de;
   --title-color: #fff;
   --link-color: #af9cef;
 }

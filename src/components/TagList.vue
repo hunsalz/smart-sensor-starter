@@ -31,6 +31,7 @@ export default {
     color: currentColor !important; //Todo: remove important;
     padding: 0.5em;
     border-radius: var(--radius);
+    white-space: nowrap;
   }
 }
 </style>

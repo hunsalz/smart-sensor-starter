@@ -44,8 +44,8 @@ export default {
 <style lang="scss">
 .header {
   display: flex;
-  // position: sticky;
-  // background: var(--header-color);
+  position: sticky;
+  background: var(--header-bg);
   justify-content: space-between;
   align-items: center;
   min-height: var(--header-height);

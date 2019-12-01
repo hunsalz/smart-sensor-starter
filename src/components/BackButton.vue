@@ -17,7 +17,7 @@ query {
 <style lang="scss">
 .back-button {
   text-decoration: none;
-  color: var(--body-color) !important;
+  color: var(--header-color) !important;
   font-size: 0.9em;
 
   &__image {
