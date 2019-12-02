@@ -1,17 +1,23 @@
 <template>
   <div class="bar-chart">
     <div class="bar-chart__title">{{ title }}</div>
-    <!-- <div class="bar-chart__label">{{ label }}</div> TODO use moment.js to format unix timestamp -->
     <div>
       <span class="bar-chart__value">{{ value }} </span>
       <span class="bar-chart__unit">{{ unit }}</span>
     </div>
+    <div class="bar-chart__label">{{ formatUnixTimestamp(label) }}</div>
   </div>
 </template>
 
 <script>
 export default {
-  props: ["title", "label", "value", "unit"]
+  props: ["title", "label", "value", "unit"],
+  methods: {
+    formatUnixTimestamp(unixTimestamp) {
+      let timestamp = this.$moment.unix(unixTimestamp);
+      return this.$moment(timestamp).format("L - LTS");
+    }
+  }
 };
 </script>
 
@@ -21,7 +27,7 @@ export default {
   text-decoration: none;
 
   &__title {
-    font-size: 0.8em;
+    font-size: 1em;
   }
 
   &__label {

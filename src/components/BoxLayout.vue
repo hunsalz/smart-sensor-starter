@@ -1,6 +1,6 @@
 <template>
   <div class="box-layout">
-    <div v-for="data in sensor.data" :key="data.title">
+    <div v-for="data in entry.data" :key="data.title">
       <div class="box-layout__container" v-if="data.values.length > 1">
         <BarChart
           :title="data.title"
@@ -33,7 +33,7 @@ export default {
     BarChart,
     FigureLayout
   },
-  props: ["sensor"]
+  props: ["entry"]
 };
 </script>
 

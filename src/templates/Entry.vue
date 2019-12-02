@@ -1,21 +1,21 @@
 <template>
   <Layout>
-    <div class="sensor-title">
-      <h1 class="sensor-title__text">{{ $page.sensor.title }}</h1>
-      <MetaInfo :sensor="$page.sensor" />
+    <div class="detail-title">
+      <h1 class="detail-title__text">{{ $page.entry.title }}</h1>
+      <MetaInfo :entry="$page.entry" />
     </div>
-    <div class="sensor content-box">
-      <div class="sensor__header">
+    <div class="detail content-box">
+      <div class="detail__header">
         <g-image
           alt="Cover image"
-          v-if="$page.sensor.cover_image"
-          :src="$page.sensor.cover_image"
+          v-if="$page.entry.cover_image"
+          :src="$page.entry.cover_image"
         />
       </div>
-      <div class="sensor__content" v-html="$page.sensor.content" />
-      <BoxLayout :sensor="$page.sensor" />
-      <div class="sensor__footer">
-        <TagList :sensor="$page.sensor" />
+      <div class="detail__content" v-html="$page.entry.content" />
+      <BoxLayout :entry="$page.entry" />
+      <div class="detail__footer">
+        <TagList :entry="$page.entry" />
       </div>
     </div>
   </Layout>
@@ -34,11 +34,11 @@ export default {
   },
   metaInfo() {
     return {
-      title: this.$page.sensor.title,
+      title: this.$page.entry.title,
       meta: [
         {
           name: "description",
-          content: this.$page.sensor.content
+          content: this.$page.entry.content
         }
       ]
     };
@@ -47,8 +47,8 @@ export default {
 </script>
 
 <page-query>
-query Sensor ($id: ID!) {
-  sensor: sensor (id: $id) {
+query Entry ($id: ID!) {
+  entry: entry (id: $id) {
     title
     path
     date (format: "D. MMMM YYYY")
@@ -70,12 +70,12 @@ query Sensor ($id: ID!) {
 </page-query>
 
 <style lang="scss">
-.sensor-title {
+.detail-title {
   padding: calc(var(--space) / 2) 0 calc(var(--space) / 2);
   text-align: center;
 }
 
-.sensor {
+.detail {
   &__header {
     width: calc(100% + var(--space) * 2);
     margin-left: calc(var(--space) * -1);

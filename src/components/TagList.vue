@@ -2,7 +2,7 @@
   <div class="tag-list">
     <g-link
       class="tag-list__link"
-      v-for="tag in sensor.tags"
+      v-for="tag in entry.tags"
       :key="tag.id"
       :to="tag.path"
     >
@@ -14,7 +14,7 @@
 
 <script>
 export default {
-  props: ["sensor"]
+  props: ["entry"]
 };
 </script>
 

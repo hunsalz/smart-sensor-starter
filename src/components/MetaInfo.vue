@@ -1,10 +1,10 @@
 <template>
-  <div class="meta-info">Last updated at {{ sensor.date }}</div>
+  <div class="meta-info">Last updated at {{ entry.date }}</div>
 </template>
 
 <script>
 export default {
-  props: ["sensor"]
+  props: ["entry"]
 };
 </script>
 

@@ -3,17 +3,16 @@
     <div class="card-layout__header">
       <g-image
         class="card-layout__image"
-        v-if="sensor.cover_image"
-        :src="sensor.cover_image"
+        v-if="entry.cover_image"
+        :src="entry.cover_image"
         alt="Cover image"
       />
     </div>
     <div class="card-layout__content">
-      <h2 class="card-layout__title" v-html="sensor.title" />
-      <BoxLayout :sensor="sensor" />
-      <MetaInfo class="card-layout__meta" :sensor="sensor" />
-      <TagList class="card-layout__tags" :sensor="sensor" />
-      <g-link class="card-layout__link" :to="sensor.path">Link</g-link>
+      <h2 class="card-layout__title" v-html="entry.title" />
+      <BoxLayout :entry="entry" />
+      <TagList class="card-layout__tags" :entry="entry" />
+      <g-link class="card-layout__link" :to="entry.path">Link</g-link>
     </div>
   </div>
 </template>
@@ -29,7 +28,7 @@ export default {
     MetaInfo,
     TagList
   },
-  props: ["sensor"]
+  props: ["entry"]
 };
 </script>
 

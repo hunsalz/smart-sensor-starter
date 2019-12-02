@@ -4,7 +4,7 @@
     <CardLayout
       v-for="edge in $page.tag.belongsTo.edges"
       :key="edge.node.id"
-      :sensor="edge.node"
+      :entry="edge.node"
     />
   </Layout>
 </template>
@@ -16,7 +16,7 @@ query Tag ($id: ID!) {
     belongsTo {
       edges {
         node {
-          ...on Sensor {
+          ...on Entry {
             title
             path
             date (format: "D. MMMM YYYY")

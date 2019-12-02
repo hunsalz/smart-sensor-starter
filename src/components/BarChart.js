@@ -1,7 +1,6 @@
 import { Bar } from "vue-chartjs";
 
 export default {
-  props: ["sensor"],
   extends: Bar,
   data: () => ({
     chartdata: {

@@ -1,6 +1,6 @@
 <template>
   <div class="bar-chart">
-    <BarChart :sensor="sensor" />
+    <BarChart :entry="entry" />
   </div>
 </template>
 

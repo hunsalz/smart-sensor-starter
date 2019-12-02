@@ -2,9 +2,9 @@
   <Layout :show-back-button="false">
     <div class="grid">
       <CardLayout
-        v-for="edge in $page.sensors.edges"
+        v-for="edge in $page.entries.edges"
         :key="edge.node.id"
-        :sensor="edge.node"
+        :entry="edge.node"
       />
     </div>
   </Layout>
@@ -12,7 +12,7 @@
 
 <page-query>
 query {
-  sensors: allSensor(filter: { published: { eq: true }}) {
+  entries: allEntry(filter: { published: { eq: true }}) {
     edges {
       node {
         id
@@ -54,7 +54,6 @@ export default {
 
 <style lang="scss">
 .grid {
-  
   display: grid;
   grid-gap: 20px;
   grid-template-columns: repeat(1, 1fr);

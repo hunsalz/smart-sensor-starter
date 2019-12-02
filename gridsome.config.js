@@ -5,13 +5,13 @@
 // To restart press CTRL + C in terminal and run `gridsome develop`
 
 module.exports = {
-  siteName: "Smart Sensor",
-  siteDescription: "Show smart sensor data",
+  siteName: "Sensor Dashboard",
+  siteDescription: "Dashboard with various sensor values",
   siteUrl: "https://hunsalz.github.io",
-  pathPrefix: "/smart-sensor-starter",
+  pathPrefix: "/gridsome-starter-dashboard",
 
   templates: {
-    Sensor: "/:title",
+    Entry: "/:title",
     Tag: "/tag/:id"
   },
 
@@ -19,8 +19,9 @@ module.exports = {
     {
       use: "@gridsome/source-filesystem",
       options: {
-        typeName: "Sensor",
-        path: "content/sensors/*.md",
+        typeName: "Entry",
+        baseDir: "./content",
+        path: "*.md",
         refs: {
           tags: {
             typeName: "Tag",
@@ -28,18 +29,18 @@ module.exports = {
           }
         }
       }
-    },
-/*     {
+    }
+    /*     {
       use: "gridsome-plugin-pwa",
       options: {
-        title: "Smart Sensor",
+        title: "Sensor Dashboard",
         startUrl: "/",
         display: "standalone",
         statusBarStyle: "default",
         manifestPath: "/manifest.json", // see https://github.com/rishabh3112/gridsome-plugin-pwa/pull/18
         serviceWorkerPath: "/service-worker.js", // see https://github.com/rishabh3112/gridsome-plugin-pwa/pull/18
         cachedFileTypes: "js,json,css,html,png,jpg,jpeg,svg",
-        shortName: "Sensors",
+        shortName: "Dashboard",
         themeColor: "#666600",
         backgroundColor: "#ffffff",
         icon: "src/assets/images/website-icon.png",
