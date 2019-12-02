@@ -2,14 +2,14 @@ import { Bar } from "vue-chartjs";
 
 export default {
   extends: Bar,
-  props: ["width", "height"], // see https://github.com/apertureless/vue-chartjs/issues/503
+  props: ["title", "labels", "values", "unit", "width", "height"], // for width and height see https://github.com/apertureless/vue-chartjs/issues/503
   data: () => ({
     chartdata: {
-      labels: ["1", "2", "3", "4"],
+      labels: [],
       datasets: [
         {
           backgroundColor: "#f87979",
-          data: [40, 20, 30, 50]
+          data: []
         }
       ]
     },
@@ -46,6 +46,8 @@ export default {
   }),
 
   mounted() {
+    this.chartdata.labels = this.labels;
+    this.chartdata.datasets[0].data = this.values;
     this.renderChart(this.chartdata, this.options);
   }
 };

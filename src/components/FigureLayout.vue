@@ -10,14 +10,11 @@
 </template>
 
 <script>
+import formatMixin from "~/components/mixin/FormatMixin.js";
+
 export default {
   props: ["title", "label", "value", "unit"],
-  methods: {
-    formatUnixTimestamp(unixTimestamp) {
-      let timestamp = this.$moment.unix(unixTimestamp);
-      return this.$moment(timestamp).format("L - LTS");
-    }
-  }
+  mixins: [formatMixin]
 };
 </script>
 
