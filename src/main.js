@@ -7,7 +7,7 @@ import moment from "moment";
 export default function(Vue, { router, head, isClient }) {
   // set default layout as a global component
   Vue.component("Layout", DefaultLayout);
-  // set Moment.Js globally available
-  moment.locale("de");
+  // set Moment.js globally available
+  moment.locale("de"); // TODO make configurable
   Vue.prototype.$moment = moment;
 }
