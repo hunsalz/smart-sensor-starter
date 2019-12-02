@@ -1,6 +1,6 @@
 <template>
-  <div class="bar-chart">
-    <BarChart :entry="entry" />
+  <div>
+    <BarChart class="bar-chart"/>
   </div>
 </template>
 
@@ -18,7 +18,7 @@ export default {
 <style lang="scss">
 .bar-chart {
   position: relative;
-  width: 80% !important;
+
   color: currentColor;
   text-decoration: none;
 

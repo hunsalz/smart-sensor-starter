@@ -25,7 +25,7 @@
 </template>
 
 <script>
-import BarChart from "~/components/BarChart";
+import BarChart from "~/components/BarChart.vue";
 import FigureLayout from "~/components/FigureLayout";
 
 export default {

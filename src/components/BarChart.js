@@ -2,6 +2,7 @@ import { Bar } from "vue-chartjs";
 
 export default {
   extends: Bar,
+  props: ["width", "height"], // see https://github.com/apertureless/vue-chartjs/issues/503
   data: () => ({
     chartdata: {
       labels: ["1", "2", "3", "4"],
@@ -17,7 +18,7 @@ export default {
         display: false
       },
       responsive: true,
-      maintainAspectRatio: true,
+      maintainAspectRatio: false,
       scales: {
         xAxes: [
           {
