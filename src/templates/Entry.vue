@@ -2,7 +2,6 @@
   <Layout>
     <div class="detail-title">
       <h1 class="detail-title__text">{{ $page.entry.title }}</h1>
-      <MetaInfo :entry="$page.entry" />
     </div>
     <div class="detail content-box">
       <div class="detail__header">
@@ -23,13 +22,11 @@
 
 <script>
 import BoxLayout from "~/components/BoxLayout";
-import MetaInfo from "~/components/MetaInfo";
 import TagList from "~/components/TagList";
 
 export default {
   components: {
     BoxLayout,
-    MetaInfo,
     TagList
   },
   metaInfo() {

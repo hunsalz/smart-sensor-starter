@@ -19,13 +19,11 @@
 
 <script>
 import BoxLayout from "~/components/BoxLayout";
-import MetaInfo from "~/components/MetaInfo";
 import TagList from "~/components/TagList";
 
 export default {
   components: {
     BoxLayout,
-    MetaInfo,
     TagList
   },
   props: ["entry"]
