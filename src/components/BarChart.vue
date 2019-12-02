@@ -1,25 +1,28 @@
 <template>
-  <div class="data-layout">
-    <div class="data-layout__label">{{ data.label }}</div>
-    <div>
-      <span class="data-layout__value">{{ data.value }} </span>
-      <span class="data-layout__unit">{{ data.unit }}</span>
-    </div>
+  <div class="bar-chart">
+    <BarChart :sensor="sensor" />
   </div>
 </template>
 
 <script>
+import BarChart from "~/components/BarChart.js";
+
 export default {
-  props: ["data"]
+  components: {
+    BarChart
+  },
+  props: ["title", "labels", "values", "unit"]
 };
 </script>
 
 <style lang="scss">
-.data-layout {
+.bar-chart {
+  position: relative;
+  width: 80% !important;
   color: currentColor;
   text-decoration: none;
 
-  &__label {
+  &__title {
     font-size: 0.8em;
   }
 

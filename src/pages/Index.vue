@@ -1,7 +1,7 @@
 <template>
   <Layout :show-back-button="false">
     <div class="grid">
-      <SensorCard
+      <CardLayout
         v-for="edge in $page.sensors.edges"
         :key="edge.node.id"
         :sensor="edge.node"
@@ -17,20 +17,21 @@ query {
       node {
         id
         title
-        date (format: "D. MMMM YYYY")
-        content
-        cover_image (width: 770, height: 380, blur: 10)
         path
+        date (format: "D. MMMM YYYY")
+        cover_image (width: 770, height: 380, blur: 10)
         tags {
           id
           title
           path
         }
         data {
-          label
-          value
+          title
+          labels
+          values
           unit
         }
+        content
       }
     }
   }
@@ -38,14 +39,14 @@ query {
 </page-query>
 
 <script>
-import SensorCard from "~/components/SensorCard.vue";
+import CardLayout from "~/components/CardLayout.vue";
 
 export default {
   components: {
-    SensorCard
+    CardLayout
   },
   metaInfo: {
-    title: "Smart Sensor",
+    title: "Overview page",
     titleTemplate: "%s"
   }
 };

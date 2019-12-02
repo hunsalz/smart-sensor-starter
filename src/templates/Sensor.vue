@@ -4,7 +4,6 @@
       <h1 class="sensor-title__text">{{ $page.sensor.title }}</h1>
       <MetaInfo :sensor="$page.sensor" />
     </div>
-
     <div class="sensor content-box">
       <div class="sensor__header">
         <g-image
@@ -14,7 +13,7 @@
         />
       </div>
       <div class="sensor__content" v-html="$page.sensor.content" />
-      <SensorList :sensor="$page.sensor" />
+      <BoxLayout :sensor="$page.sensor" />
       <div class="sensor__footer">
         <TagList :sensor="$page.sensor" />
       </div>
@@ -23,14 +22,14 @@
 </template>
 
 <script>
+import BoxLayout from "~/components/BoxLayout";
 import MetaInfo from "~/components/MetaInfo";
-import SensorList from "~/components/SensorList";
 import TagList from "~/components/TagList";
 
 export default {
   components: {
+    BoxLayout,
     MetaInfo,
-    SensorList,
     TagList
   },
   metaInfo() {
@@ -53,18 +52,19 @@ query Sensor ($id: ID!) {
     title
     path
     date (format: "D. MMMM YYYY")
+    cover_image (width: 860, blur: 10)
     tags {
       id
       title
       path
     }
     data {
-      label
-      value
+      title
+      labels
+      values
       unit
     }
     content
-    cover_image (width: 860, blur: 10)
   }
 }
 </page-query>

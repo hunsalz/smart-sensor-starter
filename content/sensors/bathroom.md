@@ -3,17 +3,23 @@ title: Bathroom
 date: 2019-11-19
 published: true
 canonical_url: false
+cover_image: ./images/bathroom.jpg
 tags: 
   - 'Temperature' 
   - 'Humidity'
   - 'Home'
-cover_image: ./images/bathroom.jpg
 data:
-    - label: Temperature
-      value: '24.7'
+    - title: Temperature
+      labels: 
+        - '1572691141'
+      values: 
+        - '24.7'
       unit: '°C'
-    - label: Humidity
-      value: '65.2'
+    - title: Humidity
+      labels: 
+        - '1572691141'
+      values: 
+        - '65.2'
       unit: '%'
 ---
 Sensor values of my bathroom

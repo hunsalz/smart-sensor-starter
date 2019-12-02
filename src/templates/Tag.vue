@@ -1,14 +1,11 @@
 <template>
   <Layout>
     <h1 class="tag-title text-center space-bottom"># {{ $page.tag.title }}</h1>
-
-    <div class="sensors">
-      <SensorCard
-        v-for="edge in $page.tag.belongsTo.edges"
-        :key="edge.node.id"
-        :sensor="edge.node"
-      />
-    </div>
+    <CardLayout
+      v-for="edge in $page.tag.belongsTo.edges"
+      :key="edge.node.id"
+      :sensor="edge.node"
+    />
   </Layout>
 </template>
 
@@ -23,7 +20,6 @@ query Tag ($id: ID!) {
             title
             path
             date (format: "D. MMMM YYYY")
-            timeToRead
             content
           }
         }
@@ -34,11 +30,11 @@ query Tag ($id: ID!) {
 </page-query>
 
 <script>
-import SensorCard from "~/components/SensorCard.vue";
+import CardLayout from "~/components/CardLayout.vue";
 
 export default {
   components: {
-    SensorCard
+    CardLayout
   },
   metaInfo() {
     return {

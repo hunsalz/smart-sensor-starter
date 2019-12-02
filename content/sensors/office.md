@@ -3,16 +3,22 @@ title: Office
 date: 2019-11-23
 published: true
 canonical_url: false
+cover_image: ./images/office.jpg
 tags: 
   - 'Temperature' 
   - 'Humidity'
-cover_image: ./images/office.jpg
 data:
-    - label: Temperature
-      value: '22.9'
+    - title: Temperature
+      labels: 
+        - '1572691141'
+      values: 
+        - '22.9'
       unit: '°C'
-    - label: Humidity
-      value: '54'
+    - title: Humidity
+      labels: 
+        - '1572691141'
+      values: 
+        - '54'
       unit: '%'
 ---
 Sensor values of my office

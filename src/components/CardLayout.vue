@@ -1,42 +1,48 @@
 <template>
-  <div class="sensor-card content-box">
-    <div class="sensor-card__header">
+  <div class="card-layout content-box">
+    <div class="card-layout__header">
       <g-image
-        class="sensor-card__image"
+        class="card-layout__image"
         v-if="sensor.cover_image"
         :src="sensor.cover_image"
         alt="Cover image"
       />
     </div>
-    <div class="sensor-card__content">
-      <h2 class="sensor-card__title" v-html="sensor.title" />
-      <SensorList :sensor="sensor" />
-      <MetaInfo class="sensor-card__meta" :sensor="sensor" />
-      <TagList class="sensor-card__tags" :sensor="sensor" />
-      <g-link class="sensor-card__link" :to="sensor.path">Link</g-link>
+    <div class="card-layout__content">
+      <h2 class="card-layout__title" v-html="sensor.title" />
+      <BoxLayout :sensor="sensor" />
+      <MetaInfo class="card-layout__meta" :sensor="sensor" />
+      <TagList class="card-layout__tags" :sensor="sensor" />
+      <g-link class="card-layout__link" :to="sensor.path">Link</g-link>
     </div>
   </div>
 </template>
 
 <script>
+import BoxLayout from "~/components/BoxLayout";
 import MetaInfo from "~/components/MetaInfo";
 import TagList from "~/components/TagList";
-import SensorList from "~/components/SensorList";
 
 export default {
   components: {
+    BoxLayout,
     MetaInfo,
-    TagList,
-    SensorList
+    TagList
   },
   props: ["sensor"]
 };
 </script>
 
 <style lang="scss">
-.sensor-card {
+.card-layout {
   margin-bottom: var(--space);
   position: relative;
+
+  // TODO remove?
+  /*   &:hover {
+    transform: translateY(-5px);
+    box-shadow: 1px 10px 30px 0 rgba(0, 0, 0, 0.1);
+  } */
 
   &__header {
     margin-left: calc(var(--space) * -1);
@@ -58,11 +64,6 @@ export default {
   &__title {
     margin-top: 0;
   }
-
-  /*   &:hover {
-    transform: translateY(-5px);
-    box-shadow: 1px 10px 30px 0 rgba(0, 0, 0, 0.1);
-  } */
 
   &__tags {
     z-index: 1;
