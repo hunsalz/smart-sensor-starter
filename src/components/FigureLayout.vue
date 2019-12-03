@@ -5,16 +5,18 @@
       <span class="figure-layout__value">{{ value }} </span>
       <span class="figure-layout__unit">{{ unit }}</span>
     </div>
-    <div class="figure-layout__label">Last update: {{ formatDateTime(label) }}</div>
+    <LastUpdate :datetime="label" />
   </div>
 </template>
 
 <script>
-import FormatMixin from "~/components/mixin/FormatMixin.js";
+import LastUpdate from "~/components/LastUpdate";
 
 export default {
-  props: ["title", "label", "value", "unit"],
-  mixins: [FormatMixin]
+  components: {
+    LastUpdate
+  },
+  props: ["title", "label", "value", "unit"]
 };
 </script>
 

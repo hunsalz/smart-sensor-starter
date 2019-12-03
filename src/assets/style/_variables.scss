@@ -11,12 +11,13 @@ body {
   --bg-code: #fffbf3;
   --header-bg: #0d2538;
   --header-color: #fff;
+  --header-height: 80px;
+  --border-color: rgba(0, 0, 0, 0.1);
   --title-color: #111;
   --link-color: #6b17e6;
-  --border-color: rgba(0, 0, 0, 0.1);
+  --chart-bg: #f87979;
   --space: 3.5rem;
   --content-width: 100%;
-  --header-height: 80px;
   --radius: 10px;
 }
 
@@ -31,6 +32,7 @@ body[data-theme="dark"] {
   --border-color: rgba(255, 255, 255, 0.1);
   --title-color: #fff;
   --link-color: #af9cef;
+  --chart-bg: #f87979;
 }
 
 // make things smaller for mobile

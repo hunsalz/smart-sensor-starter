@@ -27,11 +27,13 @@
 <script>
 import BarChart from "~/components/BarChart";
 import FigureLayout from "~/components/FigureLayout";
+import LineChart from "~/components/LineChart";
 
 export default {
   components: {
     BarChart,
-    FigureLayout
+    FigureLayout,
+    LineChart
   },
   props: ["entry"]
 };

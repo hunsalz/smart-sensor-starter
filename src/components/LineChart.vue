@@ -1,20 +1,20 @@
 <template>
   <div>
-    <div class="bar-chart-title">{{ title }}</div>
-    <div class="bar-chart">
-      <BarChart :chart-data="computedData" :options="options" />
+    <div class="line-chart-title">{{ title }}</div>
+    <div class="line-chart">
+      <LineChart :chart-data="computedData" :options="options" />
     </div>
     <LastUpdate :datetime="labels[0]" />
   </div>
 </template>
 
 <script>
-import BarChart from "~/components/js/BarChart.js";
+import LineChart from "~/components/js/LineChart.js";
 import LastUpdate from "~/components/LastUpdate";
 
 export default {
   components: {
-    BarChart,
+    LineChart,
     LastUpdate
   },
   props: ["title", "labels", "values", "unit"],
@@ -80,11 +80,11 @@ export default {
 </script>
 
 <style lang="scss">
-.bar-chart-title {
+.line-chart-title {
   font-size: 1em;
 }
 
-.bar-chart {
+.line-chart {
   display: inline-block;
   color: currentColor;
   text-decoration: none;
