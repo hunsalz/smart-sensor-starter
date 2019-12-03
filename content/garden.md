@@ -22,6 +22,7 @@ data:
         - '17.2'
         - '12.4'
       unit: '°C'
+      type: 'Bar'
     - title: Humidity
       labels: 
         - '2019-11-11 11:11:11'
@@ -34,6 +35,7 @@ data:
       values: 
         - '154'
       unit: 'm'
+      type: 'Bar'
 ---
 
 Sensor values of my garden

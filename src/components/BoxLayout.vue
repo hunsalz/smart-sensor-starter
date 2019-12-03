@@ -1,7 +1,10 @@
 <template>
   <div class="box-layout">
     <div v-for="data in entry.data" :key="data.title">
-      <div class="box-layout__container" v-if="data.values.length > 1">
+      <div class="box-layout__container" v-if="data.labels.length === 0 || data.values.length === 0">
+        <!-- RENDER NOTHING -->
+      </div>
+      <div class="box-layout__container" v-if="data.type === 'Bar'">
         <BarChart
           :title="data.title"
           :labels="data.labels"
@@ -9,16 +12,21 @@
           :unit="data.unit"
         />
       </div>
-      <div class="box-layout__container" v-else-if="data.values.length === 1">
+      <div class="box-layout__container" v-else-if="data.type === 'Line'">
+        <LineChart
+          :title="data.title"
+          :labels="data.labels"
+          :values="data.values"
+          :unit="data.unit"
+        />
+      </div>
+      <div class="box-layout__container" v-else>
         <FigureLayout
           :title="data.title"
           :label="data.labels[0]"
           :value="data.values[0]"
           :unit="data.unit"
         />
-      </div>
-      <div class="box-layout__container" v-else>
-        <!-- RENDER NOTHING -->
       </div>
     </div>
   </div>

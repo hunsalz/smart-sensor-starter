@@ -24,6 +24,7 @@ query Tag ($id: ID!) {
               labels
               values
               unit
+              type
             }
           }
         }

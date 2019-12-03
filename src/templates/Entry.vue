@@ -60,6 +60,7 @@ query Entry ($id: ID!) {
       labels
       values
       unit
+      type
     }
     content
   }

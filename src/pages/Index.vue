@@ -29,6 +29,7 @@ query {
           labels
           values
           unit
+          type
         }
         content
       }
