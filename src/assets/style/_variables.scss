@@ -15,9 +15,9 @@ body {
   --link-color: #6b17e6;
   --border-color: rgba(0, 0, 0, 0.1);
   --space: 3.5rem;
-  --content-width: 860px;
+  --content-width: 100%;
   --header-height: 80px;
-  --radius: 5px;
+  --radius: 10px;
 }
 
 // dark theme
@@ -33,7 +33,7 @@ body[data-theme="dark"] {
   --link-color: #af9cef;
 }
 
-// Make things smaller for mobile
+// make things smaller for mobile
 @media screen and (max-width: 650px) {
   html {
     --base-font-size: 17px;
@@ -41,5 +41,6 @@ body[data-theme="dark"] {
   body {
     --space: 1.5rem;
     --header-height: 60px;
+    --radius: 5px;
   }
 }

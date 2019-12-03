@@ -10,9 +10,9 @@
       </div>
     </header>
 
-    <main class="main">
+    <div class="main">
       <slot />
-    </main>
+    </div>
 
     <footer class="footer">
       <span class="footer__copyright"
@@ -46,13 +46,13 @@ export default {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  position: sticky;
+  position: fixed;
   background: var(--header-bg);
   min-height: var(--header-height);
   padding: 0 calc(var(--space) / 2);
   top: 0;
   z-index: 10;
-  width: 100%;
+  width: 100vw;
 
   &__left,
   &__right {
@@ -62,8 +62,7 @@ export default {
 }
 
 .main {
-  margin: 0 auto;
-  padding: 1.5vw 15px 0;
+  margin: 1em;
 }
 
 .footer {

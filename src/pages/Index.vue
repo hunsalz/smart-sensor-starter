@@ -55,7 +55,7 @@ export default {
 <style lang="scss">
 .grid {
   display: grid;
-  grid-gap: 20px;
+  grid-gap: 1em;
   grid-template-columns: repeat(1, 1fr);
   @media only screen and (min-width: 768px) {
     grid-template-columns: repeat(2, 1fr);

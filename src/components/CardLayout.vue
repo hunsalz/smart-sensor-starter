@@ -33,13 +33,6 @@ export default {
 <style lang="scss">
 .card-layout {
   margin-bottom: var(--space);
-  position: relative;
-
-  // TODO remove?
-  /*   &:hover {
-    transform: translateY(-5px);
-    box-shadow: 1px 10px 30px 0 rgba(0, 0, 0, 0.1);
-  } */
 
   &__header {
     margin-left: calc(var(--space) * -1);
@@ -65,10 +58,6 @@ export default {
   &__tags {
     z-index: 1;
     position: relative;
-  }
-
-  &__meta {
-    padding-top: 1em;
   }
 
   &__link {
