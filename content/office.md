@@ -1,7 +1,6 @@
 ---
 title: Office
-date: 2019-11-23
-published: true
+visible: true
 canonical_url: false
 cover_image: ./images/office.jpg
 tags: 

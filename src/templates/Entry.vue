@@ -49,7 +49,6 @@ query Entry ($id: ID!) {
   entry: entry (id: $id) {
     title
     path
-    date (format: "D. MMMM YYYY")
     cover_image (width: 860, blur: 10)
     tags {
       id
@@ -91,22 +90,6 @@ query Entry ($id: ID!) {
 
   &__main {
     margin: 1em;
-
-    h2:first-child {
-      margin-top: 0;
-    }
-
-    p:first-of-type {
-      font-size: 1.2em;
-      color: var(--title-color);
-    }
-
-    img {
-      width: calc(100% + var(--space) * 2);
-      margin-left: calc(var(--space) * -1);
-      display: block;
-      max-width: none;
-    }
   }
 
   &__content {

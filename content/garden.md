@@ -1,7 +1,6 @@
 ---
 title: Garden
-date: 2019-11-14
-published: true
+visible: true
 canonical_url: false
 cover_image: ./images/garden.jpg
 tags: 

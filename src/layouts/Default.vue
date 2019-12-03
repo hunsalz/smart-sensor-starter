@@ -4,13 +4,12 @@
       <div class="header__left">
         <BackButton v-if="showBackButton" />
       </div>
-
       <div class="header__right">
         <ToggleTheme />
       </div>
     </header>
 
-    <div class="content">
+    <div class="main">
       <slot />
     </div>
 
@@ -61,7 +60,7 @@ export default {
   }
 }
 
-.content {
+.main {
   margin-top: calc(var(--header-height) + 1em);
   margin-left: 1em;
   margin-right: 1em;

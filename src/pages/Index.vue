@@ -12,13 +12,12 @@
 
 <page-query>
 query {
-  entries: allEntry(filter: { published: { eq: true }}) {
+  entries: allEntry(filter: { visible: { eq: true }}) {
     edges {
       node {
         id
         title
         path
-        date (format: "D. MMMM YYYY")
         cover_image (width: 770, height: 380, blur: 10)
         tags {
           id
