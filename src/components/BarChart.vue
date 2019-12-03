@@ -4,7 +4,9 @@
     <div class="bar-chart">
       <BarChart :chart-data="computedData" :options="options" />
     </div>
-    <div class="figure-layout__label">{{ formatUnixTimestamp(labels[0]) }}</div>
+    <div class="figure-layout__label">
+      Last update: {{ formatDateTime(labels[0]) }}
+    </div>
   </div>
 </template>
 
@@ -47,9 +49,22 @@ export default {
             }
           }
         ]
+      },
+      tooltips: {
+        callbacks: {
+          // TODO format date time with correct locale
+          // title: function(tooltipItems, data) {
+          //   return formatDateTime(tooltipItems.label);
+          // }
+        }
       }
     }
   }),
+  methods: {
+    foo: function() {
+      return "foo";
+    }
+  },
   computed: {
     computedData: function() {
       return {

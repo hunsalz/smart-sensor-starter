@@ -5,7 +5,7 @@
       <span class="figure-layout__value">{{ value }} </span>
       <span class="figure-layout__unit">{{ unit }}</span>
     </div>
-    <div class="figure-layout__label">{{ formatUnixTimestamp(label) }}</div>
+    <div class="figure-layout__label">Last update: {{ formatDateTime(label) }}</div>
   </div>
 </template>
 

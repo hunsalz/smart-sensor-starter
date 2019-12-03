@@ -10,13 +10,13 @@ tags:
 data:
     - title: Temperature
       labels: 
-        - '1572691141'
+        - '2019-11-11 11:11:11'
       values: 
         - '24.6'
       unit: '°C'
     - title: Humidity
       labels: 
-        - '1572691141'
+        - '2019-11-11 11:11:11'
       values: 
         - '45'
       unit: '%'

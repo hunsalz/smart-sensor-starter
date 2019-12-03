@@ -1,8 +1,7 @@
 export default {
   methods: {
-    formatUnixTimestamp(unixTimestamp) {
-      let timestamp = this.$moment.unix(unixTimestamp);
-      return this.$moment(timestamp).format("L / LTS");
+    formatDateTime(datetime) {
+      return this.$moment(datetime).format("L / LTS");
     }
   }
 };
