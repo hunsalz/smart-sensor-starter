@@ -2,12 +2,12 @@
   <div class="box-layout">
     <div v-for="data in entry.data" :key="data.title">
       <div class="box-layout__container" v-if="data.values.length > 1">
-        <BarChart
+        <!-- <BarChart
           :title="data.title"
           :labels="data.labels"
           :values="data.values"
           :unit="data.unit"
-        />
+        /> -->
       </div>
       <div class="box-layout__container" v-else-if="data.values.length === 1">
         <FigureLayout
@@ -39,15 +39,10 @@ export default {
 
 <style lang="scss">
 .box-layout {
-  margin: 1em 0 0;
-
   &__container {
-    margin-right: 0.7em;
-    padding: 0.5em;
+    margin-top: 1em;
     color: currentColor;
     text-decoration: none;
-    color: currentColor !important;
-    border-radius: var(--radius);
     white-space: nowrap;
   }
 }

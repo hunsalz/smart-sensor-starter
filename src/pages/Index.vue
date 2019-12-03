@@ -55,7 +55,6 @@ export default {
 <style lang="scss">
 .grid {
   display: grid;
-  grid-gap: 1em;
   grid-template-columns: repeat(1, 1fr);
   @media only screen and (min-width: 768px) {
     grid-template-columns: repeat(2, 1fr);
@@ -63,5 +62,6 @@ export default {
   @media only screen and (min-width: 1024px) {
     grid-template-columns: repeat(3, 1fr);
   }
+  margin-top: var(--header-height);
 }
 </style>

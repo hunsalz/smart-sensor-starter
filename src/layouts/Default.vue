@@ -10,7 +10,7 @@
       </div>
     </header>
 
-    <div class="main">
+    <div class="content">
       <slot />
     </div>
 
@@ -61,8 +61,8 @@ export default {
   }
 }
 
-.main {
-  margin: 1em;
+.content {
+  // nothing yet
 }
 
 .footer {

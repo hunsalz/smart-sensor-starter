@@ -1,5 +1,5 @@
 <template>
-  <div class="card-layout content-box">
+  <div class="card-layout">
     <div class="card-layout__header">
       <g-image
         class="card-layout__image"
@@ -32,15 +32,17 @@ export default {
 
 <style lang="scss">
 .card-layout {
-  margin-bottom: var(--space);
+  margin: 1em;
+  background-color: var(--bg-content-color);
+  max-width: var(--content-width);
+  border-radius: var(--radius);
+  box-shadow: 1px 1px 5px 0 rgba(0, 0, 0, 0.02), 1px 1px 15px 0 rgba(0, 0, 0, 0.03);
+  transition: transform 0.3s, background-color 0.3s, box-shadow 0.6s;
+  transition: background-color 0.6s;
 
   &__header {
-    margin-left: calc(var(--space) * -1);
-    margin-right: calc(var(--space) * -1);
-    margin-bottom: calc(var(--space) / 2);
-    margin-top: calc(var(--space) * -1);
-    overflow: hidden;
     border-radius: var(--radius) var(--radius) 0 0;
+    overflow: hidden;
 
     &:empty {
       display: none;
@@ -49,6 +51,10 @@ export default {
 
   &__image {
     min-width: 100%;
+  }
+
+  &__content {
+    margin: 1em;
   }
 
   &__title {
