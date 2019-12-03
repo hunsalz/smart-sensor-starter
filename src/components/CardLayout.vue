@@ -1,5 +1,5 @@
 <template>
-  <div class="card-layout">
+  <div class="card-layout content-box">
     <div class="card-layout__header">
       <g-image
         class="card-layout__image"
@@ -8,7 +8,7 @@
         alt="Cover image"
       />
     </div>
-    <div class="card-layout__content">
+    <div class="card-layout__main">
       <h2 class="card-layout__title" v-html="entry.title" />
       <BoxLayout :entry="entry" />
       <TagList class="card-layout__tags" :entry="entry" />
@@ -32,13 +32,6 @@ export default {
 
 <style lang="scss">
 .card-layout {
-  margin: 1em;
-  background-color: var(--bg-content-color);
-  max-width: var(--content-width);
-  border-radius: var(--radius);
-  box-shadow: 1px 1px 5px 0 rgba(0, 0, 0, 0.02), 1px 1px 15px 0 rgba(0, 0, 0, 0.03);
-  transition: transform 0.3s, background-color 0.3s, box-shadow 0.6s;
-  transition: background-color 0.6s;
 
   &__header {
     border-radius: var(--radius) var(--radius) 0 0;
@@ -53,8 +46,9 @@ export default {
     min-width: 100%;
   }
 
-  &__content {
+  &__main {
     margin: 1em;
+    padding: 1em;
   }
 
   &__title {

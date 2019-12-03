@@ -19,8 +19,12 @@ query Tag ($id: ID!) {
           ...on Entry {
             title
             path
-            date (format: "D. MMMM YYYY")
-            content
+            data {
+              title
+              labels
+              values
+              unit
+            }
           }
         }
       }

@@ -6,15 +6,16 @@
     <div class="detail content-box">
       <div class="detail__header">
         <g-image
-          alt="Cover image"
+          class="detail__image"
           v-if="$page.entry.cover_image"
           :src="$page.entry.cover_image"
+          alt="Cover image"
         />
       </div>
-      <div class="detail__content" v-html="$page.entry.content" />
-      <BoxLayout :entry="$page.entry" />
-      <div class="detail__footer">
-        <TagList :entry="$page.entry" />
+      <div class="detail__main">
+        <BoxLayout :entry="$page.entry" />
+        <div class="detail__content" v-html="$page.entry.content" />
+        <TagList class="detail__tags" :entry="$page.entry" />
       </div>
     </div>
   </Layout>
@@ -73,24 +74,24 @@ query Entry ($id: ID!) {
 }
 
 .detail {
-  &__header {
-    width: calc(100% + var(--space) * 2);
-    margin-left: calc(var(--space) * -1);
-    margin-top: calc(var(--space) * -1);
-    margin-bottom: calc(var(--space) / 2);
-    overflow: hidden;
-    border-radius: var(--radius) var(--radius) 0 0;
+  padding-bottom: 1em;
 
-    img {
-      width: 100%;
-    }
+  &__header {
+    border-radius: var(--radius) var(--radius) 0 0;
+    overflow: hidden;
 
     &:empty {
       display: none;
     }
   }
 
-  &__content {
+  &__image {
+    min-width: 100%;
+  }
+
+  &__main {
+    margin: 1em;
+
     h2:first-child {
       margin-top: 0;
     }
@@ -106,6 +107,15 @@ query Entry ($id: ID!) {
       display: block;
       max-width: none;
     }
+  }
+
+  &__content {
+    margin-top: 1em;
+  }
+
+  &__tags {
+    z-index: 1;
+    position: relative;
   }
 }
 </style>

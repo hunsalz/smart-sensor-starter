@@ -62,7 +62,9 @@ export default {
 }
 
 .content {
-  // nothing yet
+  margin-top: calc(var(--header-height) + 1em);
+  margin-left: 1em;
+  margin-right: 1em;
 }
 
 .footer {
