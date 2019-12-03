@@ -2,12 +2,12 @@
   <div class="box-layout">
     <div v-for="data in entry.data" :key="data.title">
       <div class="box-layout__container" v-if="data.values.length > 1">
-        <!-- <BarChart
+        <BarChart
           :title="data.title"
           :labels="data.labels"
           :values="data.values"
           :unit="data.unit"
-        /> -->
+        />
       </div>
       <div class="box-layout__container" v-else-if="data.values.length === 1">
         <FigureLayout
