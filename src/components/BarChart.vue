@@ -58,11 +58,6 @@ export default {
       }
     }
   }),
-  methods: {
-    foo: function() {
-      return "foo";
-    }
-  },
   computed: {
     computedData: function() {
       return {
