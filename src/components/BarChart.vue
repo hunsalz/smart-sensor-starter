@@ -65,15 +65,11 @@ export default {
   },
   computed: {
     computedData: function() {
-      if (!this.color) {
-        this.color = "#f87979";
-      }
-
       return {
         labels: this.labels,
         datasets: [
           {
-            backgroundColor: this.color,
+            backgroundColor: this.color ? this.color : "#f87979",
             data: this.values
           }
         ]
