@@ -72,7 +72,7 @@ query Entry ($id: ID!) {
   display: flex;
   flex-direction: column;
   align-items: center;
-  
+
   &__title {
     padding: calc(var(--space) / 2) 0 calc(var(--space) / 2);
     text-align: center;
@@ -80,8 +80,6 @@ query Entry ($id: ID!) {
 }
 
 .entry {
-  padding-bottom: 1em;
-  
 
   &__header {
     border-radius: var(--radius) var(--radius) 0 0;
