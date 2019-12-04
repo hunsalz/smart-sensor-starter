@@ -39,4 +39,8 @@ data:
       color: yellow
 ---
 
-Sensor values of my garden
+## Sensor values of my garden
+
+Lorem ipsum ...
+
+### Lorem ipsum title

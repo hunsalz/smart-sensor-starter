@@ -1,21 +1,21 @@
 <template>
-  <Layout>
-    <div class="detail-title">
-      <h1 class="detail-title__text">{{ $page.entry.title }}</h1>
+  <Layout class="entry">
+    <div class="entry__title">
+      <h1 class="entry__title__text">{{ $page.entry.title }}</h1>
     </div>
-    <div class="detail content-box">
-      <div class="detail__header">
+    <div class="content-box">
+      <div class="entry__header">
         <g-image
-          class="detail__image"
+          class="entry__image"
           v-if="$page.entry.cover_image"
           :src="$page.entry.cover_image"
           alt="Cover image"
         />
       </div>
-      <div class="detail__main">
+      <div class="entry__main">
         <BoxLayout :entry="$page.entry" />
-        <div class="detail__content" v-html="$page.entry.content" />
-        <TagList class="detail__tags" :entry="$page.entry" />
+        <div class="entry__content" v-html="$page.entry.content" />
+        <TagList class="entry__tags" :entry="$page.entry" />
       </div>
     </div>
   </Layout>
@@ -68,13 +68,20 @@ query Entry ($id: ID!) {
 </page-query>
 
 <style lang="scss">
-.detail-title {
-  padding: calc(var(--space) / 2) 0 calc(var(--space) / 2);
-  text-align: center;
+.entry {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  
+  &__title {
+    padding: calc(var(--space) / 2) 0 calc(var(--space) / 2);
+    text-align: center;
+  }
 }
 
-.detail {
+.entry {
   padding-bottom: 1em;
+  
 
   &__header {
     border-radius: var(--radius) var(--radius) 0 0;
@@ -91,6 +98,7 @@ query Entry ($id: ID!) {
 
   &__main {
     margin: 1em;
+    padding: 1em;
   }
 
   &__content {
