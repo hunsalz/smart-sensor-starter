@@ -17,7 +17,7 @@ export default {
     BarChart,
     LastUpdate
   },
-  props: ["title", "labels", "values", "unit"],
+  props: ["title", "labels", "values", "unit", "color"],
   data: () => ({
     options: {
       responsive: true,
@@ -65,11 +65,15 @@ export default {
   },
   computed: {
     computedData: function() {
+      if (!this.color) {
+        this.color = "#f87979";
+      }
+
       return {
         labels: this.labels,
         datasets: [
           {
-            backgroundColor: "#f87979", // TODO use var(--chart-bg)
+            backgroundColor: this.color,
             data: this.values
           }
         ]

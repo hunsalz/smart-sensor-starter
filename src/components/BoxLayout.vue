@@ -10,6 +10,7 @@
           :labels="data.labels"
           :values="data.values"
           :unit="data.unit"
+          :color="data.color"
         />
       </div>
       <div class="box-layout__container" v-else-if="data.type === 'Line'">

@@ -30,6 +30,7 @@ query {
           values
           unit
           type
+          color
         }
         content
       }

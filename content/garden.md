@@ -36,6 +36,7 @@ data:
         - '154'
       unit: 'm'
       type: 'Bar'
+      color: yellow
 ---
 
 Sensor values of my garden
