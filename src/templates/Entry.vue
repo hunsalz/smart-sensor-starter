@@ -6,7 +6,6 @@
     <div class="content-box">
       <div class="entry__header">
         <g-image
-          class="entry__image"
           v-if="$page.entry.cover_image"
           :src="$page.entry.cover_image"
           alt="Cover image"
@@ -80,7 +79,6 @@ query Entry ($id: ID!) {
 }
 
 .entry {
-
   &__header {
     border-radius: var(--radius) var(--radius) 0 0;
     overflow: hidden;
@@ -88,10 +86,10 @@ query Entry ($id: ID!) {
     &:empty {
       display: none;
     }
-  }
 
-  &__image {
-    min-width: 100%;
+    .g-image {
+      min-width: 100%;
+    }
   }
 
   &__main {

@@ -1,9 +1,8 @@
 <template>
   <div class="card-layout content-box">
-    <g-link class="card-layout__link" :to="entry.path">
+    
       <div class="card-layout__header">
         <g-image
-          class="card-layout__image"
           v-if="entry.cover_image"
           :src="entry.cover_image"
           alt="Cover image"
@@ -11,10 +10,10 @@
       </div>
       <div class="card-layout__main">
         <h2 class="card-layout__title" v-html="entry.title" />
-        
+        <ChartLayout :entry="entry" />
         <TagList class="card-layout__tags" :entry="entry" />
       </div>
-    </g-link>
+    
   </div>
 </template>
 
@@ -40,10 +39,10 @@ export default {
     &:empty {
       display: none;
     }
-  }
 
-  &__image {
-    min-width: 100%;
+    .g-image {
+      min-width: 100%;
+    }
   }
 
   &__main {
