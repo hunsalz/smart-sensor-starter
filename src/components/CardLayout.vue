@@ -11,7 +11,7 @@
       </div>
       <div class="card-layout__main">
         <h2 class="card-layout__title" v-html="entry.title" />
-        <BoxLayout :entry="entry" />
+        <ChartLayout :entry="entry" />
         <TagList class="card-layout__tags" :entry="entry" />
       </div>
     </g-link>
@@ -19,12 +19,12 @@
 </template>
 
 <script>
-import BoxLayout from "~/components/BoxLayout";
+import ChartLayout from "~/components/ChartLayout";
 import TagList from "~/components/TagList";
 
 export default {
   components: {
-    BoxLayout,
+    ChartLayout,
     TagList
   },
   props: ["entry"]

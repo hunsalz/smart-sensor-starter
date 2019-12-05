@@ -13,7 +13,7 @@
         />
       </div>
       <div class="entry__main">
-        <BoxLayout :entry="$page.entry" />
+        <ChartLayout :entry="$page.entry" />
         <div class="entry__content" v-html="$page.entry.content" />
         <TagList class="entry__tags" :entry="$page.entry" />
       </div>
@@ -22,12 +22,12 @@
 </template>
 
 <script>
-import BoxLayout from "~/components/BoxLayout";
+import ChartLayout from "~/components/ChartLayout";
 import TagList from "~/components/TagList";
 
 export default {
   components: {
-    BoxLayout,
+    ChartLayout,
     TagList
   },
   metaInfo() {

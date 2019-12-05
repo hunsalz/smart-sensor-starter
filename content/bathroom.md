@@ -29,6 +29,6 @@ data:
         - '46.5'
         - '53.4'
       unit: '%'
-      type: 'Figure'
+      type: 'Value'
 ---
 Sensor values of my bathroom

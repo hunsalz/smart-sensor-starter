@@ -1,10 +1,10 @@
 <template>
-  <div class="box-layout">
+  <div class="chart-layout">
     <div v-for="data in entry.data" :key="data.title">
-      <div class="box-layout__container" v-if="data.labels.length === 0 || data.values.length === 0">
+      <div class="chart-layout__container" v-if="data.labels.length === 0 || data.values.length === 0">
         <!-- RENDER NOTHING -->
       </div>
-      <div class="box-layout__container" v-if="data.type === 'Bar'">
+      <div class="chart-layout__container" v-if="data.type === 'Bar'">
         <BarChart
           :title="data.title"
           :labels="data.labels"
@@ -13,7 +13,7 @@
           :color="data.color"
         />
       </div>
-      <div class="box-layout__container" v-else-if="data.type === 'Line'">
+      <div class="chart-layout__container" v-else-if="data.type === 'Line'">
         <LineChart
           :title="data.title"
           :labels="data.labels"
@@ -21,8 +21,8 @@
           :unit="data.unit"
         />
       </div>
-      <div class="box-layout__container" v-else>
-        <FigureLayout
+      <div class="chart-layout__container" v-else>
+        <ValueChart
           :title="data.title"
           :label="data.labels[0]"
           :value="data.values[0]"
@@ -35,21 +35,21 @@
 
 <script>
 import BarChart from "~/components/BarChart";
-import FigureLayout from "~/components/FigureLayout";
 import LineChart from "~/components/LineChart";
+import ValueChart from "~/components/ValueChart";
 
 export default {
   components: {
     BarChart,
-    FigureLayout,
-    LineChart
+    LineChart,
+    ValueChart
   },
   props: ["entry"]
 };
 </script>
 
 <style lang="scss">
-.box-layout {
+.chart-layout {
   &__container {
     margin-top: 1em;
     color: currentColor;
