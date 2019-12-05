@@ -7,7 +7,11 @@ export default {
   props: ["datetime"],
   methods: {
     format(datetime) {
-      return this.$moment(datetime).format("L / LTS");
+      if (datetime) {
+        return this.$moment(datetime).format("L / LTS");
+      } else {
+        return "n/a";
+      }
     }
   }
 };
