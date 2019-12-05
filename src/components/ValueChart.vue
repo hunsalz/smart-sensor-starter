@@ -1,9 +1,9 @@
 <template>
-  <div class="figure-layout">
-    <div class="figure-layout__title">{{ title }}</div>
+  <div class="value-layout">
+    <div class="value-layout__title">{{ title }}</div>
     <div>
-      <span class="figure-layout__value">{{ value }} </span>
-      <span class="figure-layout__unit">{{ unit }}</span>
+      <span class="value-layout__value">{{ value }} </span>
+      <span class="value-layout__unit">{{ unit }}</span>
     </div>
     <LastUpdate :datetime="label" />
   </div>
@@ -21,7 +21,7 @@ export default {
 </script>
 
 <style lang="scss">
-.figure-layout {
+.value-layout {
   color: currentColor;
   text-decoration: none;
 
