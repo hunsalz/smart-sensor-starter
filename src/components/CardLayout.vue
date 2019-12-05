@@ -13,7 +13,7 @@
         <ChartLayout :entry="entry" />
         <TagList class="card-layout__tags" :entry="entry" />
       </div>
-    
+    <g-link class="card-layout__link" :to="entry.path" />
   </div>
 </template>
 
@@ -32,6 +32,8 @@ export default {
 
 <style lang="scss">
 .card-layout {
+  position: relative;
+
   &__header {
     border-radius: var(--radius) var(--radius) 0 0;
     overflow: hidden;
@@ -60,8 +62,12 @@ export default {
   }
 
   &__link {
-    text-decoration: none;
-    color: currentColor;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0.0;
     z-index: 0;
   }
 }
