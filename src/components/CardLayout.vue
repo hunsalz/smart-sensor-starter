@@ -11,7 +11,7 @@
       </div>
       <div class="card-layout__main">
         <h2 class="card-layout__title" v-html="entry.title" />
-        <ChartLayout :entry="entry" />
+        
         <TagList class="card-layout__tags" :entry="entry" />
       </div>
     </g-link>
