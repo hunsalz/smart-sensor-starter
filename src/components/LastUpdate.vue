@@ -8,7 +8,7 @@ export default {
   methods: {
     format(datetime) {
       if (datetime) {
-        return this.$moment(datetime).format("L / LTS");
+        return this.$moment(datetime).format("LTS - L");
       } else {
         return "n/a";
       }
