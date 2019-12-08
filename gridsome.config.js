@@ -7,9 +7,8 @@
 module.exports = {
   siteName: "Sensor Dashboard",
   siteDescription: "Dashboard with various sensor values",
-  siteUrl: "https://hunsalz.github.io",
-  pathPrefix: "/smart-sensor-starter", // TODO rename to gridsome-starter-dashboard
-
+  siteUrl: process.env.SITE_URL,
+  pathPrefix: process.env.PATH_PREFIX,
   templates: {
     Entry: "/:title",
     Tag: "/tag/:id"
