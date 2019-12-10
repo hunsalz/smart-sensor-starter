@@ -6,6 +6,7 @@ RUN apk add --no-cache --virtual add \
     autoconf \
     automake \
     g++ \
+    git \
     python \
     libtool \
     make \
@@ -15,11 +16,11 @@ RUN apk add --no-cache --virtual add \
 
 RUN npm install -g gridsome --unsafe-perm
 
-WORKDIR /app
-VOLUME /data
+WORKDIR /site
 
-COPY ./package.json .
+COPY package*.json ./
 RUN npm install
+
 COPY . .
 COPY ./entry.sh /
 RUN chmod +x /entry.sh
