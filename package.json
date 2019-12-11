@@ -7,6 +7,9 @@
     "explore": "gridsome explore",
     "deploy": "gh-pages -d dist"
   },
+  "keywords": [
+    "gridsome"
+  ],
   "dependencies": {
     "@gridsome/source-filesystem": "^0.6.2",
     "@gridsome/transformer-remark": "^0.4.0",
