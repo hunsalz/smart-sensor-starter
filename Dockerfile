@@ -1,27 +1,27 @@
-FROM node:13-alpine
+FROM node:13-alpine as builder
 
-EXPOSE 8080
+WORKDIR /app
+
+COPY . /app
 
 RUN apk add --no-cache --virtual add \
     autoconf \
     automake \
     g++ \
-    git \
     python \
     libtool \
     make \
     nasm \
     pkgconf \
-    util-linux
+    util-linux \
+    && npm install -g gridsome --unsafe-perm \
+    && npm install \
+    && npm build
 
-RUN npm install -g gridsome --unsafe-perm
+FROM nginx:alpine as stage
 
-WORKDIR /site
+ARG PREFIX=
 
-COPY package*.json ./
-RUN npm install
+COPY --from=builder /app/dist /usr/share/nginx/html${PREFIX}
 
-COPY . .
-COPY ./entry.sh /
-RUN chmod +x /entry.sh
-ENTRYPOINT ["/entry.sh"]
+CMD ["nginx", "-g", "daemon off;"]
