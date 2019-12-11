@@ -3,12 +3,12 @@
 > A simple, hackable & minimalistic starter for Gridsome that uses Markdown for content.
 
 ## Features
-- Simple design
 - Markdown for content
 - Tags support
 - Dark / light toggle
 - CSS variables, SCSS & BEM for styling
-- 100, 100, 100, 100 score on Google Lighthouse
+- 100, 100, 100, 100, (100) score on Google Lighthouse
+- Dockerized
 
 ## Demo URL
 
@@ -25,4 +25,10 @@ https://hunsalz.github.io/smart-sensor-starter
 1. `gridsome create my-gridsome-site https://github.com/hunsalz/smart-sensor-starter.git`
 2. `cd my-gridsome-site` to open folder
 3. `gridsome develop` to start local dev server at `http://localhost:8080`
-4. Happy coding 🎉🙌
+
+## Staging build with Docker
+
+Mounting dist folder into nginx
+```
+docker run --name nginx-stage -p 8080:80 -v ${PWD}/dist/:/usr/share/nginx/html/smart-sensor-starter:ro -d nginx
+```
