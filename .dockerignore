@@ -1,3 +1,6 @@
 .cache
+.git*
 **/dist
 **/node_modules
+README.md
+settings.json
