@@ -1,7 +1,7 @@
 <template>
   <div class="chart-layout">
     <div v-for="data in entry.data" :key="data.title">
-      <div class="chart-layout__container" v-if="data.labels.length === 0 || data.values.length === 0">
+      <div v-if="data.labels.length === 0 || data.values.length === 0">
         <!-- RENDER NOTHING -->
       </div>
       <div class="chart-layout__container" v-if="data.type === 'Bar'">

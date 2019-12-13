@@ -1,18 +1,17 @@
 <template>
   <Layout :show-back-button="false">
+    <TagFilter :tags="tags" v-on:remove-tag="onRemoveTag" />
     <div class="grid">
-      <CardLayout
-        v-for="edge in $page.entries.edges"
-        :key="edge.node.id"
-        :entry="edge.node"
-      />
+      <div v-for="edge in computedCards" :key="edge.node.id">
+        <CardLayout :entry="edge.node" />
+      </div>
     </div>
   </Layout>
 </template>
 
 <page-query>
 query {
-  entries: allEntry(filter: { visible: { eq: true }}) {
+  entries: allEntry(filter: { visible: { eq: true }}, sortBy: "title", order: ASC,) {
     edges {
       node {
         id
@@ -41,14 +40,49 @@ query {
 
 <script>
 import CardLayout from "~/components/CardLayout.vue";
+import TagFilter from "~/components/TagFilter.vue";
 
 export default {
   components: {
-    CardLayout
+    CardLayout,
+    TagFilter
+  },
+  data: function() {
+    return {
+      tags: ["Room", "Home"]
+    };
   },
   metaInfo: {
     title: "Overview page",
     titleTemplate: "%s"
+  },
+  computed: {
+    computedCards: function() {
+      console.log("Filter: ", this.tags);
+
+      let edges = this.$page.entries.edges;
+      // filter matching cards
+      let result = edges.filter(
+        edge =>
+          // compose intersection between tags per node and given filter array.
+          // for that reason map tag.titles into a temporary array
+          _.intersection(_.map(edge.node.tags, "title"), this.tags).length ===
+          // force exact match of all filtered tag elements
+          this.tags.length
+      );
+
+      console.log("Result: ", result);
+
+      return result;
+    }
+  },
+  methods: {
+    // TODO explain
+    onRemoveTag: function(tag) {
+      this.tags = _.remove(this.tags, function(n) {
+        return n != tag;
+      });
+    }
   }
 };
 </script>

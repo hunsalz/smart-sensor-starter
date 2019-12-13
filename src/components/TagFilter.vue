@@ -1,31 +1,34 @@
 <template>
-  <div class="tag-list">
-    <g-link
-      class="tag-list__link"
-      v-for="tag in entry.tags"
-      :key="tag.id"
-      :to="tag.path"
+  <div class="tag-filter">
+    <button
+      class="tag-filter__button"
+      v-for="tag in tags"
+      :key="tag"
+      v-on:click="$emit('remove-tag', tag)"
     >
       <span>#</span>
-      {{ tag.title }}
-    </g-link>
+      {{ tag }}
+    </button>
   </div>
 </template>
 
 <script>
 export default {
-  props: ["entry"]
+  props: {
+    tags: Array
+  }
 };
 </script>
 
 <style lang="scss">
-.tag-list {
-  margin: 1em 0 0;
+.tag-filter {
+  margin: 1em 0 1em 0;
 
-  &__link {
+  &__button {
     margin-right: 0.7em;
     padding: 0.5em;
     font-size: 0.8em;
+    color: currentColor;
     text-decoration: none;
     background-color: var(--bg-color);
     color: currentColor !important;
