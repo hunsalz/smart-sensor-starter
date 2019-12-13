@@ -6,6 +6,7 @@ cover_image: ./images/office.jpg
 tags: 
   - 'Temperature' 
   - 'Humidity'
+  - 'Room'
 data:
     - title: Temperature
       labels: 

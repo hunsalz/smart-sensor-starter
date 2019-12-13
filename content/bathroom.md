@@ -7,6 +7,7 @@ tags:
   - 'Temperature' 
   - 'Humidity'
   - 'Home'
+  - 'Room'
 data:
     - title: Temperature
       labels: 
