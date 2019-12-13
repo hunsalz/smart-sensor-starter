@@ -8,7 +8,6 @@
 - Dark / light toggle
 - CSS variables, SCSS & BEM for styling
 - 100, 100, 100, 100, (100) score on Google Lighthouse
-- Dockerized
 
 ## Demo URL
 
