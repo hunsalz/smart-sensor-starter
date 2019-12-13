@@ -10,7 +10,7 @@
     <div class="card-layout__main">
       <h2 class="card-layout__title" v-html="entry.title" />
       <ChartLayout :entry="entry" />
-      <TagList class="card-layout__tags" :entry="entry" />
+      <TagList class="card-layout__tags" :tags="entry.tags" />
     </div>
     <g-link class="card-layout__link" :to="entry.path" />
   </div>

@@ -2,9 +2,9 @@
   <div class="tag-filter">
     <button
       class="tag-filter__button"
-      v-for="tag in tags"
-      :key="tag"
-      v-on:click="$emit('remove-tag', tag)"
+      v-for="(tag, index) in tags"
+      :key="index"
+      @click="$emit('remove-tag', tag)"
     >
       <span>#</span>
       {{ tag }}

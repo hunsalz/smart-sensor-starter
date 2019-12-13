@@ -14,7 +14,7 @@
       <div class="entry__main">
         <ChartLayout :entry="$page.entry" />
         <div class="entry__content" v-html="$page.entry.content" />
-        <TagList class="entry__tags" :entry="$page.entry" />
+        <!--TagList class="entry__tags" :entry="$page.entry" /-->
       </div>
     </div>
   </Layout>

@@ -3,7 +3,7 @@
     <TagFilter :tags="tags" v-on:remove-tag="onRemoveTag" />
     <div class="grid">
       <div v-for="edge in computedCards" :key="edge.node.id">
-        <CardLayout :entry="edge.node" />
+        <CardLayout :entry="edge.node" v-on:add-tag="onAddTag" />
       </div>
     </div>
   </Layout>
@@ -49,7 +49,7 @@ export default {
   },
   data: function() {
     return {
-      tags: ["Room", "Home"]
+      tags: []
     };
   },
   metaInfo: {
@@ -58,8 +58,6 @@ export default {
   },
   computed: {
     computedCards: function() {
-      console.log("Filter: ", this.tags);
-
       let edges = this.$page.entries.edges;
       // filter matching cards
       let result = edges.filter(
@@ -71,18 +69,28 @@ export default {
           this.tags.length
       );
 
-      console.log("Result: ", result);
+      //console.log("Result: ", result);
 
       return result;
     }
   },
   methods: {
     // TODO explain
+    onAddTag: function(tag) {
+      //console.log("add", tag);
+      this.tags = _.union(this.tags, [tag]);
+    },
+    // TODO explain
     onRemoveTag: function(tag) {
-      this.tags = _.remove(this.tags, function(n) {
-        return n != tag;
-      });
+      //console.log("remove", tag);
+      this.tags = _.without(this.tags, tag);
     }
+  },
+  created() {
+    this.$eventBus.$on("addTag", this.onAddTag);
+  },
+  beforeDestroy() {
+    this.$eventBus.$off("addTag");
   }
 };
 </script>
