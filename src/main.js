@@ -3,6 +3,7 @@ import "~/assets/style/index.scss";
 import DefaultLayout from "~/layouts/Default.vue";
 
 import moment from "moment";
+import VueLodash from "vue-lodash";
 
 export default function(Vue, { router, head, isClient }) {
   // set default layout as a global component
@@ -10,4 +11,7 @@ export default function(Vue, { router, head, isClient }) {
   // set Moment.js globally available
   moment.locale("de"); // TODO make configurable
   Vue.prototype.$moment = moment;
+
+  const options = { name: "lodash" };
+  Vue.use(VueLodash, options);
 }
