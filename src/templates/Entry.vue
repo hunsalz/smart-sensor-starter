@@ -14,7 +14,7 @@
       <div class="entry__main">
         <ChartLayout :entry="$page.entry" />
         <div class="entry__content" v-html="$page.entry.content" />
-        <!--TagList class="entry__tags" :entry="$page.entry" /-->
+        <!--TagCloud class="entry__tags" :entry="$page.entry" /-->
       </div>
     </div>
   </Layout>
@@ -22,12 +22,12 @@
 
 <script>
 import ChartLayout from "~/components/ChartLayout";
-import TagList from "~/components/TagList";
+import TagCloud from "~/components/TagCloud";
 
 export default {
   components: {
     ChartLayout,
-    TagList
+    TagCloud
   },
   metaInfo() {
     return {
@@ -49,11 +49,7 @@ query Entry ($id: ID!) {
     title
     path
     cover_image (width: 860, blur: 10)
-    tags {
-      id
-      title
-      path
-    }
+    tags
     data {
       title
       labels

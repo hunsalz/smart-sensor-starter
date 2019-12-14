@@ -1,9 +1,9 @@
 <template>
   <Layout :show-back-button="false">
-    <TagFilter :tags="tags" v-on:remove-tag="onRemoveTag" />
+    <TagCloud :event="'removeTag'" :tags="selectedTags" />
     <div class="grid">
       <div v-for="edge in computedCards" :key="edge.node.id">
-        <CardLayout :entry="edge.node" v-on:add-tag="onAddTag" />
+        <CardLayout :entry="edge.node" />
       </div>
     </div>
   </Layout>
@@ -11,18 +11,14 @@
 
 <page-query>
 query {
-  entries: allEntry(filter: { visible: { eq: true }}, sortBy: "title", order: ASC,) {
+  entries: allEntry(filter: { visible: { eq: true }}, sortBy: "title", order: ASC) {
     edges {
       node {
         id
         title
         path
         cover_image (width: 770, height: 380, blur: 10)
-        tags {
-          id
-          title
-          path
-        }
+        tags
         data {
           title
           labels
@@ -40,16 +36,16 @@ query {
 
 <script>
 import CardLayout from "~/components/CardLayout.vue";
-import TagFilter from "~/components/TagFilter.vue";
+import TagCloud from "~/components/TagCloud.vue";
 
 export default {
   components: {
     CardLayout,
-    TagFilter
+    TagCloud
   },
   data: function() {
     return {
-      tags: []
+      selectedTags: []
     };
   },
   metaInfo: {
@@ -59,14 +55,16 @@ export default {
   computed: {
     computedCards: function() {
       let edges = this.$page.entries.edges;
+
+      //console.log("edges", edges);
+
       // filter matching cards
       let result = edges.filter(
         edge =>
           // compose intersection between tags per node and given filter array.
-          // for that reason map tag.titles into a temporary array
-          _.intersection(_.map(edge.node.tags, "title"), this.tags).length ===
+          _.intersection(edge.node.tags, this.selectedTags).length ===
           // force exact match of all filtered tag elements
-          this.tags.length
+          this.selectedTags.length
       );
 
       //console.log("Result: ", result);
@@ -78,19 +76,21 @@ export default {
     // TODO explain
     onAddTag: function(tag) {
       //console.log("add", tag);
-      this.tags = _.union(this.tags, [tag]);
+      this.selectedTags = _.union(this.selectedTags, [tag]);
     },
     // TODO explain
     onRemoveTag: function(tag) {
       //console.log("remove", tag);
-      this.tags = _.without(this.tags, tag);
+      this.selectedTags = _.without(this.selectedTags, tag);
     }
   },
   created() {
     this.$eventBus.$on("addTag", this.onAddTag);
+    this.$eventBus.$on("removeTag", this.onRemoveTag);
   },
   beforeDestroy() {
     this.$eventBus.$off("addTag");
+    this.$eventBus.$off("removeTag");
   }
 };
 </script>

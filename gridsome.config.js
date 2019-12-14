@@ -10,8 +10,7 @@ module.exports = {
   siteUrl: process.env.SITE_URL,
   pathPrefix: process.env.PATH_PREFIX,
   templates: {
-    Entry: "/:title",
-    Tag: "/tag/:id"
+    Entry: "/:title"
   },
 
   plugins: [
@@ -20,13 +19,7 @@ module.exports = {
       options: {
         typeName: "Entry",
         baseDir: "./content",
-        path: "*.md",
-        refs: {
-          tags: {
-            typeName: "Tag",
-            create: true
-          }
-        }
+        path: "*.md"
       }
     }
     /*     {

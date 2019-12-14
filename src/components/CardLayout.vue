@@ -10,7 +10,7 @@
     <div class="card-layout__main">
       <h2 class="card-layout__title" v-html="entry.title" />
       <ChartLayout :entry="entry" />
-      <TagList class="card-layout__tags" :tags="entry.tags" />
+      <TagCloud class="card-layout__tags" :event="'addTag'" :tags="entry.tags" />
     </div>
     <g-link class="card-layout__link" :to="entry.path" />
   </div>
@@ -18,12 +18,12 @@
 
 <script>
 import ChartLayout from "~/components/ChartLayout";
-import TagList from "~/components/TagList";
+import TagCloud from "~/components/TagCloud";
 
 export default {
   components: {
     ChartLayout,
-    TagList
+    TagCloud
   },
   props: ["entry"]
 };
