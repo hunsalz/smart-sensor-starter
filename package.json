@@ -15,7 +15,7 @@
     "@gridsome/transformer-remark": "^0.4.0",
     "chart.js": "^2.9.3",
     "gh-pages": "^2.1.1",
-    "gridsome": "^0.7.11",
+    "gridsome": "^0.7.12",
     "gridsome-plugin-pwa": "0.0.10",
     "moment": "^2.24.0",
     "vue-chartjs": "^3.5.0",
