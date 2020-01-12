@@ -8,28 +8,31 @@
     "deploy": "gh-pages -d dist"
   },
   "keywords": [
-    "gridsome"
+    "gridsome",
+    "pwa",
+    "grid"
   ],
   "dependencies": {
     "@gridsome/source-filesystem": "^0.6.2",
     "@gridsome/transformer-remark": "^0.4.0",
     "chart.js": "^2.9.3",
-    "gh-pages": "^2.1.1",
-    "gridsome": "^0.7.11",
-    "gridsome-plugin-pwa": "0.0.10",
+    "file-saver": "^2.0.2",
+    "gridsome": "^0.7.12",
+    "gridsome-plugin-pwa": "0.0.12",
     "moment": "^2.24.0",
     "vue-chartjs": "^3.5.0",
     "vue-lodash": "^2.0.2"
   },
   "devDependencies": {
     "babel-eslint": "^10.0.3",
-    "eslint": "^6.7.2",
-    "eslint-config-prettier": "^6.7.0",
+    "eslint": "^6.8.0",
+    "eslint-config-prettier": "^6.9.0",
     "eslint-loader": "^3.0.3",
-    "eslint-plugin-prettier": "^3.1.1",
-    "eslint-plugin-vue": "^6.0.1",
+    "eslint-plugin-prettier": "^3.1.2",
+    "eslint-plugin-vue": "^6.1.2",
     "node-sass": "^4.13.0",
     "prettier": "^1.19.1",
-    "sass-loader": "^8.0.0"
+    "sass-loader": "^8.0.1",
+    "gh-pages": "^2.2.0"
   }
 }
