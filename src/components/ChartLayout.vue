@@ -1,6 +1,6 @@
 <template>
   <div class="chart-layout">
-    <div v-for="data in entry.data" :key="data.title">
+    <div v-for="data in record.data" :key="data.title">
       <div v-if="data.labels.length === 0 || data.values.length === 0">
         <!-- RENDER NOTHING -->
       </div>
@@ -44,7 +44,12 @@ export default {
     LineChart,
     ValueChart
   },
-  props: ["entry"]
+  props: {
+    record: {
+      type: Object,
+      required: true
+    }
+  },
 };
 </script>
 
