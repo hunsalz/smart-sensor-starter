@@ -2,8 +2,8 @@
   <button
     role="button"
     aria-label="Toggle dark/light"
-    @click.prevent="toggleTheme"
     class="toggle-theme"
+    @click.prevent="toggleTheme"
   >
     <svg
       v-if="darkTheme"
@@ -16,7 +16,6 @@
       stroke-width="2"
       stroke-linecap="round"
       stroke-linejoin="round"
-      class="feather feather-sun"
     >
       <circle cx="12" cy="12" r="5" />
       <line x1="12" y1="1" x2="12" y2="3" />
@@ -53,16 +52,15 @@ export default {
       darkTheme: false
     };
   },
+  mounted() {
+    if (window.__theme == "dark") this.darkTheme = true;
+  },
   methods: {
     toggleTheme() {
       this.darkTheme = !this.darkTheme;
-
-      // This is using a script that is added in index.html
+      // corresponding script is added in index.html
       window.__setPreferredTheme(this.darkTheme ? "dark" : "light");
     }
-  },
-  mounted() {
-    if (window.__theme == "dark") this.darkTheme = true;
   }
 };
 </script>
@@ -70,14 +68,16 @@ export default {
 <style lang="scss">
 .toggle-theme {
   background-color: transparent;
-  border: 0;
   color: var(--header-color);
+  border: 0;
   cursor: pointer;
 
-  &:hover {
+  :hover {
     opacity: 0.8;
+    transition: opacity 0.5s;
   }
-  &:focus {
+
+  :focus {
     outline: none;
   }
 }
