@@ -12,8 +12,8 @@ export default function(Vue, { router, head, isClient }) {
   moment.locale("de"); // TODO make configurable
   Vue.prototype.$moment = moment;
 
-  Vue.prototype.$eventBus = new Vue(); // global event bus
-
-  const options = { name: "lodash" };
-  Vue.use(VueLodash, options);
+  // set global lodash
+  Vue.use(VueLodash, { name: "lodash" });
+  // set global event bus
+  Vue.prototype.$eventBus = new Vue();
 }
