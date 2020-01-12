@@ -1,16 +1,18 @@
-name: Node CI
+name: Gridsome CI-CD
 
 on: [push]
 
+env:
+  HAS_EMAIL: ${{ secrets.EMAIL }}
+  HAS_GH_TOKEN: ${{ secrets.GH_PAGES_TOKEN }}
+  # workaround until Actions supports something like exists()
+
 jobs:
   build:
-
     runs-on: ubuntu-latest
-
     strategy:
       matrix:
         node-version: [13.x]
-
     steps:
     - uses: actions/checkout@v1.2.0
     - name: Use Node.js ${{ matrix.node-version }}
@@ -24,8 +26,9 @@ jobs:
       env:
         CI: true
     - name: Deploy to GitHub Pages
+      if: env.HAS_EMAIL != '' && env.HAS_GH_TOKEN != '' # run deployment not until both env vars are available  
       uses: Cecilapp/GitHub-Pages-deploy@master
       env:
-        EMAIL: hunsalz@users.noreply.github.com
+        EMAIL: ${{ secrets.EMAIL }}
         GH_TOKEN: ${{ secrets.GH_PAGES_TOKEN }}
         BUILD_DIR: dist/
