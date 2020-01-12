@@ -6,18 +6,18 @@
 
 module.exports = {
   siteName: "Sensor Dashboard",
-  siteDescription: "Dashboard with various sensor values",
+  siteDescription: "Sensor Dashboard",
   siteUrl: process.env.SITE_URL,
   pathPrefix: process.env.PATH_PREFIX,
   templates: {
-    Entry: "/:title"
+    Record: "/:title"
   },
 
   plugins: [
     {
       use: "@gridsome/source-filesystem",
       options: {
-        typeName: "Entry",
+        typeName: "Record",
         baseDir: "./content",
         path: "*.md"
       }
