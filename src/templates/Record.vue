@@ -8,13 +8,19 @@
           :src="$page.record.cover_image"
           alt="Cover image"
         />
+        <ChartLayout :record="$page.record" />
       </div>
     </div>
   </Layout>
 </template>
 
 <script>
+import ChartLayout from "~/components/ChartLayout";
+
 export default {
+  components: {
+    ChartLayout
+  },
   metaInfo() {
     return {
       title: this.$page.record.title,
