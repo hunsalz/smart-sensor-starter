@@ -2,30 +2,48 @@
   <div class="card-layout content-box">
     <div class="card-layout__header">
       <g-image
-        v-if="entry.cover_image"
-        :src="entry.cover_image"
+        v-if="record.cover_image"
+        :src="record.cover_image"
         alt="Cover image"
       />
     </div>
     <div class="card-layout__main">
-      <h2 class="card-layout__title" v-html="entry.title" />
-      <ChartLayout :entry="entry" />
-      <TagCloud class="card-layout__tags" :event="'addTag'" :tags="entry.tags" />
+      <h2 class="card-layout__title" v-html="record.title" />
+      <ChartLayout :record="record" />
+      <TagCloud
+        class="card-layout__tags"
+        :event="__getAddTag()"
+        :tags="record.tags"
+      />
+      <ActionBar class="card-layout__actions" :record="record" />
     </div>
-    <g-link class="card-layout__link" :to="entry.path" />
+    <g-link class="card-layout__link_to_record" :to="record.path" />
   </div>
 </template>
 
 <script>
+import ActionBar from "~/components/ActionBar";
 import ChartLayout from "~/components/ChartLayout";
 import TagCloud from "~/components/TagCloud";
+import { ADD_TAG } from "~/components/js/Event.js";
 
 export default {
   components: {
+    ActionBar,
     ChartLayout,
     TagCloud
   },
-  props: ["entry"]
+  props: {
+    record: {
+      type: Object,
+      required: true
+    }
+  },
+  methods: {
+    __getAddTag: function() {
+      return ADD_TAG;
+    }
+  }
 };
 </script>
 
@@ -55,12 +73,17 @@ export default {
     margin-top: 0;
   }
 
-  &__tags {
-    z-index: 1;
+  &__actions {
     position: relative;
+    z-index: 1;
   }
 
-  &__link {
+  &__tags {
+    position: relative;
+    z-index: 1;
+  }
+
+  &__link_to_record {
     position: absolute;
     top: 0;
     left: 0;

@@ -2,21 +2,22 @@
   <div id="app">
     <header class="header">
       <div class="header__left">
-        <BackButton v-if="showBackButton" />
+        <BackLink v-if="showBackLink" />
       </div>
       <div class="header__right">
+        <ToggleView v-if="toggleView" />
         <ToggleTheme />
       </div>
     </header>
-
-    <div class="main">
-      <slot />
-    </div>
-
+    <transition name="fade" appear>
+      <div class="content">
+        <slot />
+      </div>
+    </transition>
     <footer class="footer">
-      <span class="footer__copyright"
-        >Copyright © {{ new Date().getFullYear() }}.</span
-      >
+      <span class="footer__copyright">
+        Copyright © {{ new Date().getFullYear() }}.
+      </span>
       <span class="footer__links">
         Powered by
         <a href="//gridsome.org">Gridsome</a>
@@ -26,16 +27,25 @@
 </template>
 
 <script>
-import BackButton from "~/components/BackButton.vue";
+import BackLink from "~/components/BackLink.vue";
 import ToggleTheme from "~/components/ToggleTheme.vue";
+import ToggleView from "~/components/ToggleView.vue";
 
 export default {
-  props: {
-    showBackButton: { default: true }
-  },
   components: {
-    BackButton,
-    ToggleTheme
+    BackLink,
+    ToggleTheme,
+    ToggleView
+  },
+  props: {
+    showBackLink: {
+      type: Boolean,
+      default: false
+    },
+    toggleView: {
+      type: Boolean,
+      default: false
+    }
   }
 };
 </script>
@@ -60,7 +70,7 @@ export default {
   }
 }
 
-.main {
+.content {
   margin-top: calc(var(--header-height) + 1em);
   margin-left: 1em;
   margin-right: 1em;
@@ -81,5 +91,13 @@ export default {
   a {
     color: currentColor;
   }
+}
+
+.fade-enter-active {
+  transition: opacity 0.5s;
+}
+
+.fade-enter {
+  opacity: 0;
 }
 </style>

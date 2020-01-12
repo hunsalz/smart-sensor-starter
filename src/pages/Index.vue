@@ -1,9 +1,9 @@
 <template>
-  <Layout :show-back-button="false">
-    <TagCloud :event="'removeTag'" :tags="selectedTags" />
+  <Layout :show-back-link="false" :toggle-view="showToggleView()">
+    <TagCloud :event="__getRemoveTag()" :tags="filter" />
     <div class="grid">
       <div v-for="edge in computedCards" :key="edge.node.id">
-        <CardLayout :entry="edge.node" />
+        <CardLayout :record="edge.node" />
       </div>
     </div>
   </Layout>
@@ -11,7 +11,11 @@
 
 <page-query>
 query {
-  entries: allEntry(filter: { visible: { eq: true }}, sortBy: "title", order: ASC) {
+  metadata {
+    siteName
+    siteDescription
+  }
+  records: allRecord(filter: { visible: { eq: true }}, sortBy: "title", order: ASC) {
     edges {
       node {
         id
@@ -37,6 +41,13 @@ query {
 <script>
 import CardLayout from "~/components/CardLayout.vue";
 import TagCloud from "~/components/TagCloud.vue";
+import {
+  ADD_TAG,
+  REMOVE_TAG,
+  TOGGLE_FAVORITE,
+  TOGGLE_VIEW
+} from "~/components/js/Event.js";
+import { DASHBOARD, FAVORITES } from "~/components/js/View.js";
 
 export default {
   components: {
@@ -45,52 +56,87 @@ export default {
   },
   data: function() {
     return {
-      selectedTags: []
+      view: DASHBOARD,
+      filter: [],
+      favorites: []
     };
   },
-  metaInfo: {
-    title: "Overview page",
-    titleTemplate: "%s"
+  metaInfo() {
+    return {
+      title: this.$page.metadata.siteName,
+      meta: [
+        {
+          name: "description",
+          content: this.$page.metadata.siteDescription
+        }
+      ]
+    };
+  },
+  created() {
+    // subscribe to event bus
+    this.$eventBus.$on(ADD_TAG, this.onAddTag);
+    this.$eventBus.$on(REMOVE_TAG, this.onRemoveTag);
+    this.$eventBus.$on(TOGGLE_FAVORITE, this.onChangeFavorite);
+    this.$eventBus.$on(TOGGLE_VIEW, this.onToggleView);
+  },
+  beforeDestroy() {
+    // unsubscribe from all event listeners at once
+    this.$eventBus.$off();
   },
   computed: {
     computedCards: function() {
-      let edges = this.$page.entries.edges;
-
-      //console.log("edges", edges);
-
-      // filter matching cards
-      let result = edges.filter(
-        edge =>
-          // compose intersection between tags per node and given filter array.
-          _.intersection(edge.node.tags, this.selectedTags).length ===
-          // force exact match of all filtered tag elements
-          this.selectedTags.length
-      );
-
-      //console.log("Result: ", result);
-
-      return result;
+      // view
+      if (this.view === FAVORITES && this.favorites.length > 0) {
+        // filter matching cards
+        return this.$page.records.edges.filter(
+          edge => _.indexOf(this.favorites, edge.node.id) > -1
+        );
+      } else {
+        // filter matching cards
+        return this.$page.records.edges.filter(
+          edge =>
+            // compose intersection between tags per node and given filter
+            _.intersection(edge.node.tags, this.filter).length ===
+            this.filter.length // force exact match of all filter elements
+        );
+      }
     }
   },
   methods: {
-    // TODO explain
+    // add a new tag to existing tag filter
     onAddTag: function(tag) {
-      //console.log("add", tag);
-      this.selectedTags = _.union(this.selectedTags, [tag]);
+      this.filter = _.union(this.filter, [tag]);
     },
-    // TODO explain
+    // remove a tag from existing tag filter
     onRemoveTag: function(tag) {
-      //console.log("remove", tag);
-      this.selectedTags = _.without(this.selectedTags, tag);
+      this.filter = _.without(this.filter, tag);
+    },
+    // control list of favorites
+    onChangeFavorite: function(id) {
+      // remove id if in place
+      let index = _.indexOf(this.favorites, id);
+      if (index != -1) {
+        this.favorites.splice(index, 1);
+        // force dashboard view when last id is removed
+        if (this.favorites.length === 0) {
+          this.view = DASHBOARD;
+        }
+        // add if not in place
+      } else {
+        this.favorites.push(id);
+      }
+    },
+    // set view setting
+    onToggleView: function(view) {
+      this.view = view;
+    },
+    // decide if toggle is visible
+    showToggleView: function() {
+      return this.favorites.length > 0 ? true : false;
+    },
+    __getRemoveTag: function() {
+      return REMOVE_TAG;
     }
-  },
-  created() {
-    this.$eventBus.$on("addTag", this.onAddTag);
-    this.$eventBus.$on("removeTag", this.onRemoveTag);
-  },
-  beforeDestroy() {
-    this.$eventBus.$off("addTag");
-    this.$eventBus.$off("removeTag");
   }
 };
 </script>

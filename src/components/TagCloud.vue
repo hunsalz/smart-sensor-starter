@@ -1,10 +1,12 @@
 <template>
   <div class="tag-filter">
     <button
-      class="tag-filter__button"
       v-for="(tag, index) in tags"
       :key="index"
-      @click="emitEvent(tag)"
+      role="button"
+      aria-label="Tag"
+      class="tag-filter__button"
+      @click.prevent="emitEvent(tag)"
     >
       <span># {{ tag }}</span>
     </button>
@@ -14,8 +16,14 @@
 <script>
 export default {
   props: {
-    event: String,
-    tags: Array
+    event: {
+      type: String,
+      required: true
+    },
+    tags: {
+      type: Array,
+      required: true
+    }
   },
   methods: {
     emitEvent(tag) {
@@ -31,16 +39,29 @@ export default {
 
   &__button {
     margin: 0.2em;
-    padding: 0.4em;
+    padding: 0.5em;
     font-size: 0.8em;
     text-decoration: none;
     background-color: var(--bg-color);
-    color: currentColor !important;
+    color: currentColor;
+    fill: currentColor;
     border-radius: var(--radius);
+    border-style: solid;
+    border-width: 1px;
+    border-color: currentColor;
+    box-shadow: 1px 1px 5px 0 rgba(0, 0, 0, 0.1);
+    opacity: 0.6;
     white-space: nowrap;
+    cursor: pointer;
   }
-  button:hover {
-    box-shadow: 1px 1px 5px 0 rgba(0, 0, 0, 0.2)
+
+  :hover {
+    opacity: 1;
+    transition: opacity 0.5s;
+  }
+
+  :focus {
+    outline: none;
   }
 }
 </style>
